@@ -1,26 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+
+        <!--Bootstrap CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="Page5and6.css" />
+        
         <title>User Login</title>
         <h2 class="pageName">User Login</h2>
     </head>
     <body>
-        <div class = "description">
+        <div class = "description mb-3">
             <h3>Welcome back!</h3>
             <p>Please log in to obtain the benefits of shopping with us.</p>
         </div>
-        <div class="fieldBkgrd">
-            <div >
-                <form class="field" action="">
-                    <label>Email</label><br />
-                    <input class = "inputBox" type = "email" name = "email" /><br /><br />
-                    <label>Password</label><br />
-                    <input class = "inputBox" type = "password" name = "password" /><br /><br />
-                    <input class="secButton" type = "button" value = "Forgot Password" /><br />
-                    <input class="mainButton" type = "submit" value = "SIGN IN" />
-                </form>
-            </div>
+        <div class="container-sm shadow rounded col col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 bg-light p-3">
+            <form action="">
+                <div class="row mb-3 justify-content-center">
+                    <div class="col-6">
+                        <label for="validationDefaultEmail" class="form-label">Email</label>
+                        <div class="input-group">
+                          <input type="email" class="form-control" id="validationDefaultEmail"  aria-describedby="inputGroupPrepend2" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3 justify-content-center">
+                    <div class="col-6">
+                        <label for="validationDefaultPassword" class="form-label">Password</label>
+                        <input class = "form-control" type = "password" id="validationDefaultPassword" name = "password" required>
+                    </div>
+                </div>
+                <div class="row mb-3 justify-content-center">
+                    <input class="btn btn-secondary col-4" type="button" value="Forgot Password">
+                </div>
+                <div class="row mb-3 justify-content-center">
+                    <input class="btn btn-primary col-4" type="submit" value="Sign In">
+                </div>
+            </form>
         </div>
+
+        <!--Bootstrap Javascript-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     </body>
 </html>
