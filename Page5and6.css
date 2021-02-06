@@ -4,53 +4,11 @@ html {
 .pageName {
     margin-left: 10%;
 }
-.fieldBkgrd {
-    background-color:#a8d0d6;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-left: -10px;
-    margin-right: -10px;
-}
 .description {
     margin-left: -10px;
     margin-right: -10px;
-    background-color: #e49e85;
+    background-color: #44c767;
     padding: 15px;
     color: #284048;
     text-align: center;
 }
-.field {
-    background-color: lightgray;
-    display: block;
-    padding: 25px;
-    width: 30%;
-    margin: auto;
-}
-.inputBox {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: calc(100% - 6px);
-    height: 35px;
-    border-color: gray;
-    border-width: 0px;
-    border-radius: 5px;
-}
-.mainButton, .secButton {
-    margin-top: 10px;
-    display: inline-block;
-    font-size: 16px;
-    width: 100%;
-    padding: 10px;
-    border-width: 0px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.mainButton {
-    background-color: black;
-    color: white;
-}
-.secButton {
-    background-color: darkgray;
-    color: black;
-}
-
