@@ -1,0 +1,55 @@
+h2{
+    font-size:30px;
+    color:green;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    color:black;
+}
+  
+a:hover {
+    background-color:orange;
+    color: black;
+}
+  
+.previous {
+    background-color: goldenrod;
+}
+#table{
+    margin-right: auto;
+    width:70%;
+    font-size: 30px;
+    box-shadow: 10px 10px 8px #888888;
+}
+#name{
+    width:40%;
+}
+.close {
+    cursor: pointer;
+    color:red;
+}
+.price{
+    text-align:center;
+}
+.Action{
+    text-align:center;
+}
+.close:hover {
+    background: #bbb;
+}
+input {
+    text-align:right;
+    float:right;
+    clear:left;
+    width:90%;
+}
+#table2{
+    position:absolute;
+    bottom:50px;
+    left:70%;
+    width:30%;
+    font-size: 20px;
+    box-shadow: 10px 10px 8px #888888;
+}
