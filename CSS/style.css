@@ -113,6 +113,7 @@ normally */
     border-radius: 20px;
     height: 32rem;
     overflow: hidden; 
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.9);
 }
 
 .row img {
