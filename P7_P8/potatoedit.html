@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/re.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="CSS/addproducts.css">
+    <title>Potato</title>
+</head>
+    <body>
+
+
+        <div class="sidebar">
+            <header>La Meilleure Épicerie</header>
+            <ul>
+                <li><a href="index.html">HOME</li>
+                <li><a href="products.html">PRODUCTS</li>
+                <li><a href="#">ORDERS</li>
+                <li><a href="#">ANALYTICS</li>
+                <li><a href="#">SETTINGS</li>
+            </ul>
+    
+    
+    
+        </div>
+    
+        <h2 class="title">EDIT PRODUCT</h2>
+        <div class="container">
+    
+    
+            <form id="theform" action="" method="">
+    
+                <p>
+                <div class="row">
+                    <label for="title">Product Name: </label>
+                    <input type="text" id="title" class="form-content" value="POTATO"> </br></br>
+                </div>
+                <div class="row">
+                    <label for="description">Description: </label>
+    
+                    <input type="text" id="des" class="form-content"> </br></br>
+                </div>
+                <div class="row">
+                    <label for="price">Price $: </label>
+                    <input type="number" step="any" id="price" class="form-content" value="0.79"> </br></br>
+                </div> <div class="row">
+                    <label for="stock">Units in Stock: </label>
+                    <input type="number" step="any" id="stock" class="form-content" value="1000"> </br></br>
+                </div> <div class="row">
+                    <label for="date">Exp Date: </label>
+                    <input type="date"  id="date" class="form-content" value="2021-02-20"> </br></br>
+                </div>  <div class="row">
+                    <label for="cat">Category </label>
+                    <select id="cat" name="cat">
+                        
+                        <option value="fruits-and-vegetables">Fruits & vegetables</option>
+                        <option value="meat">Meat</option>
+                        <option value="bakery">Bakery</option>
+                        <option value="fishandseafood">Fish & Seafood</option>
+                        <option value="none">None</option>
+                    </select>
+                </div> 
+                
+                <div class="row">
+                    <label for="Image">Upload Image: </label>
+                    <img src="Images/fruits-and-vegetables/potatoes.png" height="90px" width="90px">
+                    <input type="file" id="button" value="UPLOAD PRODUCT IMAGE"> </br> </br>
+                  
+    
+    
+    
+                    <button id="button">SAVE</button>
+                </div>
+                </p>
+            </form>
+    
+    
+    
+    
+        </div>
+    
+    </body>
+    
+    </html>
