@@ -233,7 +233,7 @@ normally */
 }
 
 /*Responsivness of the website*/
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 961px) {
     .banner {
         padding-left: 0;
         text-align: center;
@@ -249,7 +249,7 @@ normally */
     }
 }
 
-@media screen and (max-width: 595px) {
+@media screen and (max-width: 705px) {
     .nav-bar-content a, #right {
         float:none;
     }
