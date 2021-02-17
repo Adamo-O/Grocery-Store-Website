@@ -1,4 +1,6 @@
-
+html {
+    font-family: Helvetica, sans-serif, Arial;
+}
 .product{
     font-size:40px;
     text-align:center;
@@ -11,7 +13,6 @@
     position:absolute;
     margin-left:60%;
     font-weight:bold;
-    font-family: Helvetica;
 }
 .image{
     border: 5px solid #98FAC2;
