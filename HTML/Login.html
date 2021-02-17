@@ -15,43 +15,43 @@
         <link rel="shortcut icon" href="../Images/re.ico" type="image/x-icon">
 
         <title>User Login</title>
-        <h1 class="mx-auto p-3 text-center">La Meilleure Épicerie</h1>
+        <h1 class="mx-auto p-3 text-center" style = "font-size: 2.5rem;">La Meilleure Épicerie</h1>
         <div class="nav-bar mx-4">
-            <ul class="nav-bar-content">
-              <li><a href="#">Home</a></li>
-              <li><a href="#aisles">Aisles</a></li>
-              <li><a href="#offers">Offers</a></li>
-              <li><a href="#footer" id="cus">Contact Us</a></li>
-            </ul>
+            <ul class="nav-bar-content mb-0">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#aisles">Aisles</a></li>
+                <li><a href="index.html#offers">Offers</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="Sign Up.html">Sign Up</a></li>
+                <li><a href="ShoppingCart.html" style="float: right;">Shopping Cart</a></li>
+              </ul>
         </div>
-        <h2 class="col offset-lg-2 offset-xl-3 offset-md-2 pb-3">User Login</h2>
     </head>
     <body>
         <div class="banner mb-3 mx-4">
             <h3>Welcome back!</h3>
             <p>Please log in to obtain the benefits of shopping with us.</p>
         </div>
+        <h2 class="pb-3 text-center">User Login</h2>
         <div class="container-sm shadow rounded col col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 bg-light p-3">
             <form action="">
                 <div class="row mb-3 justify-content-center">
                     <div class="col-6">
-                        <label for="validationDefaultEmail" class="form-label">Email</label>
-                        <div class="input-group">
-                          <input type="email" class="form-control" id="validationDefaultEmail"  aria-describedby="inputGroupPrepend2" required>
-                        </div>
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
                     </div>
                 </div>
                 <div class="row mb-3 justify-content-center">
                     <div class="col-6">
-                        <label for="validationDefaultPassword" class="form-label">Password</label>
-                        <input class = "form-control" type = "password" id="validationDefaultPassword" name = "password" required>
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control"  id="password" name="password" required>
                     </div>
                 </div>
                 <div class="row mb-3 justify-content-center">
-                    <input class="btn btn-secondary col-4" type="button" value="Forgot Password">
+                    <input class="btn btn-secondary col-4" style="border: none;" type="button" value="Forgot Password">
                 </div>
                 <div class="row mb-3 justify-content-center">
-                    <input class="btn btn-primary col-4" type="submit" value="Sign In">
+                    <input class="btn col-4 submit" type="submit" value="Sign In">
                 </div>
             </form>
         </div>
