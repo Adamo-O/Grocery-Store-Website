@@ -9,10 +9,7 @@
   
 
 }
-.title{
-    text-decoration: underline;
-   
-}
+
 .container{
     
     margin-right: 500px;
@@ -37,7 +34,7 @@
     color: white;
     text-align: center;
     line-height: 70px;
-    background-color: #44c767;;
+    background-color: #438a5e;
 
 
 }
@@ -52,9 +49,11 @@
 }
 
 .title{
+    font-family:  Helvetica;
     text-align: center;
     font-size: 50px;
     color: black;
+   text-decoration: none;
 }
 
   #theform
@@ -63,7 +62,7 @@
 	color:white;
 	display: table;
 	padding:20px;
-	background-color: #2c8F77;
+	background-color:  #44c767;
 	border:solid 2px black;
    margin :0 auto;
    margin-top: 70px;
