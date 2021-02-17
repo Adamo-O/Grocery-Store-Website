@@ -11,6 +11,7 @@
     position:absolute;
     margin-left:60%;
     font-weight:bold;
+    font-family: Helvetica;
 }
 .image{
     border: 5px solid #98FAC2;
