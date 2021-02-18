@@ -1,9 +1,21 @@
-html {
-    font-family: Helvetica, sans-serif, Arial !important;
+/* Site Wide */
+body {    
+    background-color: #F6F5EB;
+    font-family: Helvetica, sans-serif !important;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3.75rem;
+    margin: 0;
+    padding: 0 0 1rem;
+    font-weight: bold;
 }
 
 /*Nav Bar*/
-
 .nav-bar-content {
     list-style-type: none;
     padding: 0;
@@ -27,21 +39,31 @@ html {
 }
 
 .nav-bar a:hover {
-    background-color: white;
-    color: #44c767;
+    background-color: #438a5e;
 }
 
+/* Heading Banner */
 .banner {
     background-color: #438a5e; 
     color:white;
     border-radius: 20px;
     padding: 15px;
-    padding-top: 20px;
+    padding-top: 25px;
     text-align: center;
 }
 
+/* Form links and input boxes */
 .link {
     color: #005555;
+    text-decoration: none;
+}
+
+h1 .link {
+    color: black;
+}
+
+h1 .link:hover {
+    color:#016464;
     text-decoration: none;
 }
 
@@ -49,6 +71,8 @@ html {
     color: #008080;
     text-decoration: none;
 }
+
+
 
 .form-control:focus {
     border-color: #02a8a8;
@@ -79,7 +103,7 @@ html {
 }
 
 #footer .fab:hover {
-    color: #8d7e7e;
+    color: #438a5e;
 }
 
 #footer h6 {
@@ -89,7 +113,7 @@ html {
     font-size: 1rem;
 }
 
-@media screen and (max-width: 595px) {
+@media screen and (max-width: 705px) {
     .nav-bar-content a, #right {
         float:none;
     }
