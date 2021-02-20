@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Order</title>
+  <link rel="stylesheet" href="css/edit.css">
+  <link rel="stylesheet" href="css/orderstyle.css">
+  <link rel="shortcut icon" href="../Images/re.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="sidebar">
+      <header>La Meilleure Épicerie</header>
+      <ul>
+        <li><a href="#">ACCOUNTS</li>
+        <li><a href="#">REPORTS</li>
+        <li><a href="orders.html">ORDERS</li>
+        <li><a href="#">ANALYTICS</li>
+        <li><a href="#">SETTINGS</li>
+      </ul>
+    </div>
+  
+    <section class="nav-bar">
+        <ul class="nav-bar-content">
+          <li><a href="../HTML/index.html">Home</a></li>
+          <li><a href="../HTML/index.html#aisles">Aisles</a></li>
+          <li><a href="../HTML/index.html#offers">Offers</a></li>
+          <li><a href="../HTML/index.html#footer" id="cus">Contact Us</a></li>
+          <li><a href="#" id="logout"> Admin, <strong>Logout</strong></a></li>
+        </ul>
+      </section>
+    
+
+    <div class="container">
+        <h2 class="title2">EDIT ORDER</h2>
+        <div class="edit">
+            <form action="">
+                <fieldset>
+                    <legend>order#13140003</legend>
+                    <table class = "edit-table">
+                        <tr>
+                            <th>select</th>
+                            <th colspan="2">item</th>
+                            <th>quantity</th>
+                            <th>action</th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input type="checkbox" class="larger"/></th>
+                            <td class="img"> <img src="../Images/meat/ribeye steak.jfif" height="80px" width="80px"></td>
+                            <td>rib eye steak</td>
+                            <td>
+                                <input type="number" step="any" id="quantity" class="form-content" value="1">
+                            </td>
+                            <td><button class = "sbutton">delete</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input type="checkbox" class="larger"/></th>
+                            <td class="img"> <img src="../Images/bakery/croissant.jfif" height="80px" width="80px"></td>
+                            <td>croissant</td>
+                            <td>
+                                <input type="number" step="any" id="quantity" class="form-content" value="5">
+                            </td>
+                            <td><button class = "sbutton">delete</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input type="checkbox" class="larger"/></th>
+                            <td class="img"> <img src="../Images/fish and sea food/salmon.png" height="80px" width="80px"></td>
+                            <td>salmon</td>
+                            <td>
+                                <input type="number" step="any" id="quantity" class="form-content" value="4">
+                            </td>
+                            <td><button class = "sbutton">delete</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input type="checkbox" class="larger"/></th>
+                            <td class="img"> <img src="../Images/meat/chicken breast.jfif" height="80px" width="80px"></td>
+                            <td>chicken breasts</td>
+                            <td>
+                                <input type="number" step="any" id="quantity" class="form-content" value="3">
+                            </td>
+                            <td><button class = "sbutton">delete</button></td>
+                        </tr>
+                        
+                            <th scope="row"><input type="checkbox" class="larger"/></th>
+                            <td class="img"> <img src="../Images/bakery/cupcake.jfif" height="80px" width="80px"></td>
+                            <td>cupcakes</td>
+                            <td>
+                                <input type="number" step="any" id="quantity" class="form-content" value="1">
+                            </td>
+                            <td><button class = "sbutton">delete</button></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+
+        </div>
+
+        <br>
+        <a href = "#"><button class = "bbutton">add</button></a></th>
+        <div class = "large-buttons">
+          <a href = "#"><button class = "bbutton">save</button></a></th>
+          <a href = "#"><button class = "bbutton">delete</button></a></th>
+        </div>
+
+    </div>
