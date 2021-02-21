@@ -86,7 +86,7 @@ body{
 
 .container {
   position: relative;
-  margin-left:360px; 
+  margin-left:363px; 
 	margin-right: 15px;
 	margin-bottom: 10px;
 	margin-top: 5px;
@@ -97,29 +97,30 @@ body{
  
   .table,.edit {
     
-    background-color: #438a5e;
-    color: #fff;
+    background-color: #f1f1f1;
+    color: rgb(82, 82, 82);
     margin-bottom: 0;
     padding: 20px;
     padding-top: 10px;
     border-radius: 20px;
     min-height: 200px;
     height: 100%;
-    max-height: 480px;
+    max-height: 520px;
     overflow-y: scroll;
     margin-right: 5%;
   }
+  
 
   .table td,.table th {
   
     padding: 10px 25px;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 1px solid rgb(109, 109, 109);
 
 }
 
   th {
     
-    color: snow;
+    color: rgb(109, 109, 109);
     font-size: large;
     
   }
@@ -137,33 +138,37 @@ body{
 .sbutton {
   border: none;
   color: rgb(255, 255, 255);
-  background-color: #a700d1;
+  background-color: #13960f;
   padding: 5px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 15px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 /*big buttons*/
 .bbutton {
   border: none;
   color: rgb(255, 255, 255);
-  background-color: #a700d1;
-  padding: 5px 20px;
+  background-color: #179733;
+  padding: 6px 12px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 25px;
+  font-size: 20px;
   cursor: pointer;
   border-radius: 8px;
   
 }
 
-.large-buttons{
+#save-order{
+  margin-left: 20px;
+}
+#delete-order{
   float: right;
-  margin-right: 55px;
+  margin-right: 65px;
 }
 
 
