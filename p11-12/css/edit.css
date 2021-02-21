@@ -29,16 +29,29 @@
   }
 
   .edit-table{
-    color: #fff;
+    color: rgb(82, 82, 82);
     margin-bottom: 0;
     padding: 20px;
-    margin-left: 60px;
+    margin-left: 70px;
     
   }
 
   .edit-table td,.edit-table th {
   
     padding: 10px 25px;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 1px solid rgb(109, 109, 109);
 
+}
+
+.large-buttons-edit{
+  margin-left: 90px;
+}
+
+#save-edit{
+  margin-left: 280px;
+}
+
+#delete-edit{
+  float: right;
+  margin-right: 95px;
 }
