@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order History</title>
+  <link rel="stylesheet" href="css/orderstyle.css">
+  <link rel="stylesheet" href="css/edit.css">
+  <link rel="shortcut icon" href="../Images/re.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
+  
+
+<body>
+  <div class="sidebar">
+    <header>La Meilleure Épicerie</header>
+    <ul>
+      <li><a href="#">ACCOUNTS</li>
+      <li><a href="#">REPORTS</li>
+      <li><a href="orders.html">ORDERS</li>
+      <li><a href="#">ANALYTICS</li>
+      <li><a href="#">SETTINGS</li>
+    </ul>
+  </div>
+  
+    <section class="nav-bar">
+      <ul class="nav-bar-content">
+        <li><a href="../HTML/index.html">Home</a></li>
+        <li><a href="../HTML/index.html#aisles">Aisles</a></li>
+        <li><a href="../HTML/index.html#offers">Offers</a></li>
+        <li><a href="../HTML/index.html#footer" id="cus">Contact Us</a></li>
+        <li><a href="#" id="logout"> Admin, <strong>Logout</strong></a></li>
+      </ul>
+    </section>
+    
+
+    <div class="container">
+        <h2 class="title">ORDER HISTORY</h2> 
+        <div class="order table">
+            <table class = "table" >
+                <tr>
+                    <th>select</th>
+                    <th>order date</th>
+                    <th>order number</th>
+                    <th>order price</th>
+                    <th>order details</th>
+                    <th colspan="2">actions</th>
+                
+                </tr>
+                <tr>
+                    <th scope="row"><input type="checkbox" class="larger"/></th>
+                    <td>2021.02.14</td>
+                    <td>13140001</td>
+                    <td>$131.5</td>
+                    <td>potatoes x3, oranges x3, pineapples x2, chicken breasts x3, cupcake x1</td>
+                    <td><a href= "order1.html"><button class = "sbutton">edit</button></a></td>
+                    <td><a href = "#"><button class = "sbutton">delete</button></a></td>
+                    
+                </tr>
+                <tr>
+                  <th scope="row"><input type="checkbox" class="larger"/></th>
+                  <td>2021.02.17</td>
+                  <td>13140002</td>
+                  <td>$75.3</td>
+                  <td>pears x2, t-bone steak x2, sausages x3</td>
+                  <td><a href= "order2.html"><button class = "sbutton">edit</button></a></td>
+                  <td><a href = "#"><button class = "sbutton">delete</button></a></td>
+              </tr>
+              <tr>
+                <th scope="row"><input type="checkbox" class="larger"/></th>
+                <td>2021.02.19</td>
+                <td>13140003</td>
+                <td>$152.2</td>
+                <td>rib eye steak x1, croissant x5, salmon x4, chicken breasts x3, cupcake x1</td>
+                <td><a href= "order3.html"><button class = "sbutton">edit</button></a></td>
+                <td><a href = "#"><button class = "sbutton">delete</button></a></td>
+            </tr>
+                
+            </table>
+
+            <br>
+            <div class = "large-buttons">
+              <a href = "#"><button class = "bbutton" id = "save-order">save changes</button></a></th>
+              <a href = "#"><button class = "bbutton" id = "delete-order">delete orders</button></a></th>
+            </div>
+
+            
+        </div>
+        
+        
+    </div>
+
+
+
+</body>

@@ -1,5 +1,6 @@
 body {
     background-color: #F6F5EB;
+    font-family: Helvetica, sans-serif;
 }
 
 /*Header*/
@@ -40,8 +41,7 @@ body {
 }
 
 .nav-bar a:hover {
-    background-color: #fdfcfa;
-    color: #44c767;
+    background-color: #438a5e;
 }
 
 /*Banner Section*/
@@ -91,7 +91,7 @@ body {
 /*Offers Section*/
 
 .section-title {
-    background-color: #44c767;
+    background-color: #438a5e;
     border-radius: 20px;
     color: #ffffff;
     padding: 1rem 1.5rem;
@@ -150,9 +150,9 @@ normally */
 }
 
 .check {
-    background-color:#44c767;
+    background-color:#02a8a8;
 	border-radius:28px;
-	border:1px solid #18ab29;
+	border:1px solid #007e7e;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -166,7 +166,7 @@ normally */
 
 .check:hover {
     background-color: #ffffff;
-    color: #44c767;
+    color: #02a8a8;
 }
 
 /*Remove clear the float so the following section will not include the products*/
@@ -180,7 +180,7 @@ normally */
 #aisles {
     border-radius: 20px;
     margin: 1.6rem;
-    background-color: #44c767;;
+    background-color: #438a5e;
 }
 
 #aisles .section-title {
@@ -205,7 +205,7 @@ normally */
 
 #aisles a:hover {
     background-color: #ffffff;
-    color: #44c767;
+    color: #438a5e;
 }
 
 /*Footer Section*/
@@ -221,7 +221,7 @@ normally */
 }
 
 #footer .fab:hover {
-    color: #8d7e7e;
+    color: #438a5e;
 }
 
 #footer h6 {
@@ -232,7 +232,7 @@ normally */
 }
 
 /*Responsivness of the website*/
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 961px) {
     .banner {
         padding-left: 0;
         text-align: center;
@@ -248,7 +248,7 @@ normally */
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 705px) {
     .nav-bar-content a, #right {
         float:none;
     }

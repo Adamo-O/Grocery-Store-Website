@@ -1,0 +1,57 @@
+
+/*edit order title*/
+.title2{
+    margin-top: 20px;
+    margin-left: 36%;
+    font-family: Helvetica;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 30px;
+   }
+
+
+  fieldset{
+    margin-left: 3px;
+    margin-right: 3px;
+    padding-top: 0.5em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 0px
+  }
+
+  legend{
+    font-size: 20px;
+  }
+
+  label{
+      font-size: 25px;
+  }
+
+  .edit-table{
+    color: rgb(82, 82, 82);
+    margin-bottom: 0;
+    padding: 20px;
+    margin-left: 70px;
+    
+  }
+
+  .edit-table td,.edit-table th {
+  
+    padding: 10px 25px;
+    border-bottom: 1px solid rgb(109, 109, 109);
+
+}
+
+.large-buttons-edit{
+  margin-left: 90px;
+}
+
+#save-edit{
+  margin-left: 280px;
+}
+
+#delete-edit{
+  float: right;
+  margin-right: 95px;
+}

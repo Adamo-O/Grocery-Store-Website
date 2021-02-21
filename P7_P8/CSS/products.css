@@ -3,18 +3,13 @@ body{
     background-color: #44c767;
 
 }
-*{
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    text-decoration: none;
 
-}
 .title{
  margin-left: 500px;
  font-family: Helvetica;
  color: white;
- margin-bottom: 2px;
+ margin-bottom: 10px;
+ padding: 20px;
 }
 .sidebar{
     position: fixed;
@@ -26,6 +21,7 @@ body{
 
 }
 .sidebar header {
+  margin-top: 0%;
     font-size: 22px;
     color: white;
     text-align: center;
@@ -35,62 +31,16 @@ body{
 
 
 }
-.sidebar li  {
-  
-   text-align: left;
-   padding: 10px;
-}
-.sidebar li a{
-    color: red;
 
-
-}
-/*Nav Bar*/
-
-.nav-bar-content {
-    list-style-type: none;
-    padding: 0;
-	margin-left:310px; 
-	margin-right: 10px;
-    background-color: #438a5e;
-    overflow: hidden;
-    border-radius: 20px;
-}
-
-.nav-bar-content a {
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    padding: 1rem; 
-    color: #ffffff;
-    float: left;
-    font-size: 1.25rem;
-}
 
 #login{
-    float: right;
-}
-
-
-
-.nav-bar a:hover {
-    background-color: #fdfcfa;
-    color: #44c767;
-}
-
-.main{
-    background-color: whitesmoke;
-   
-	margin-left:310px; 
-	margin-right: 10px;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	padding: 20px;
-	border-radius: 5px;
-	font-size:110%; 
-  font-family: Helvetica;
+  position: absolute;
+  bottom: 0px;
  
 }
+
+
+
 
 .container {
     position: relative;
@@ -98,7 +48,6 @@ body{
     margin-left:310px; 
 	margin-right: 10px;
 	margin-bottom: 10px;
-	margin-top: 10px;
 	padding: 20px;
   }
   .col {
@@ -109,7 +58,7 @@ body{
  
   .table {
     
-    background-color: #438a5e;
+    background-color: whitesmoke;
     color: #fff;
     font-size: 85%;
     margin-bottom: 0;
@@ -133,18 +82,21 @@ body{
 
   thead {
     
-    color: snow;
+    color: #44c767;
     font-size: large;
     
 
     
     
   }
+  td{
+    color: black;
+  }
 
 .product-name {
     font-size: medium;
     font-weight: 600;
-    color: blueviolet;
+    color: black;
   }
   .buttons{
     display: flex;
@@ -168,10 +120,13 @@ body{
     
 
   }
+  .buttons :hover{
+    color: black;
+  }
 
   .edit{
     font-size: medium;
-    color: blueviolet;
+    color: #02a8a8;
    text-decoration: underline;
    
 
@@ -180,6 +135,9 @@ body{
   @media (max-width: 1200px) {
    .product-name{
      color: black;
+   }
+   .container{
+     width: fit-content;
    }
    
     table thead {
@@ -210,7 +168,7 @@ body{
     table td::before {
       content: attr(class);
       float: left;
-      color: white;
+      color: #44c767;
       font-weight: bold;
     }
 
@@ -224,7 +182,7 @@ body{
   }
   .title{
     font-size: large;
-    margin-left: 250px;
+    margin-left: 200px;
   
   }
     
@@ -242,6 +200,9 @@ body{
   .buttons{
     margin-left: 0%;
     padding: 5px;
+  }
+  .title{
+   margin-left: 200px;
   }
 }
     

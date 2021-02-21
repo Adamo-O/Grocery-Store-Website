@@ -1,21 +1,30 @@
-
- 
- 
- *{
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    text-decoration: none;
+body{
+  font-family:Helvetica, sans-serif;
+  background-color: #44c767
+}
+*{
+  text-decoration: none;
   
-
 }
 
+ 
+.title{
+  font-family:  Helvetica;
+  text-align: center;
+  color: white;
+ text-decoration: none;
+ padding: 20px;
+ 
+}
+
+
+
 .container{
-    
     margin-right: 500px;
-    margin-left: 600px;
+    margin-left: 500px;
     cursor: default;
     margin-bottom: 20px;
+    padding: 20px;
     
     
 }
@@ -36,36 +45,26 @@
     line-height: 70px;
     background-color: #438a5e;
 
-
 }
-.sidebar li  {
-  
-   text-align: left;
-   padding: 10px;
-}
-.sidebar li a{
-    color: red;
-
+#login{
+  position: absolute;
+  bottom: 0px;
+ 
 }
 
-.title{
-    font-family:  Helvetica;
-    text-align: center;
-    font-size: 50px;
-    color: black;
-   text-decoration: none;
-}
+
+
 
   #theform
 {
    
-	color:white;
+	color:#44c767;
 	display: table;
 	padding:20px;
-	background-color:  #44c767;
+	background-color: whitesmoke;
 	border:solid 2px black;
    margin :0 auto;
-   margin-top: 70px;
+   margin-top: 50px;
    font-size: 25px;
    display: flex;
     flex-direction: column;
@@ -73,12 +72,13 @@
 }
 
 .form-content {
+  cursor:text ;
     width: 100%;
     padding: 19px 18px;
     border-radius: 0;
     height: 50px;
     color: black;
-    border: 0;
+   
   }
 
 
@@ -113,7 +113,7 @@ text-align: center;
 @media (max-width:1300px){
     .container{
         margin-left: 310px;
-        margin-right: autoss;
+        margin-right: auto;
     }
     #theform{
         float: left;
@@ -123,6 +123,7 @@ text-align: center;
     .title{
         font-size: large;
         margin-left: 250px;
+        margin-left: 0%;
       
         
         
@@ -141,8 +142,8 @@ text-align: center;
     }
     .title{
         font-size: 25px;
-        margin-left: 0%;
-      
+       
+        
       }
 }
 
