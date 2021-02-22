@@ -1,8 +1,9 @@
 # SOEN-287
  Group assignment where we make a website
 
-
-
+Ghaith Chrit (40114180)
+p1-2 html: index.html, bakery.html, fish-and-sea-food.html, fruits-and-vegetables.html, meat.html
+	 css : style.css, all.css (fas icons)
 
 Mehdi Samy Refik (40175150)
 p9-10 html: userList.html, EditUser.html, users html files (Alexandre.html, Antonius.html...)
