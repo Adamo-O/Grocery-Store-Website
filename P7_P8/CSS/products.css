@@ -113,8 +113,8 @@ body{
    margin-right: 10px;;
     max-width: 100%;
     color: #fff;
-    background-color: #02a8a8;
-    border: 2px solid #02a8a8;
+    background-color: #438a5e;
+    border: 2px solid #438a5e;
     font-size: 90%;
     font-weight: 600;
     
@@ -188,14 +188,23 @@ body{
     
 }
 @media (max-width: 800px){
-  .sidebar{
-    display: none;
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
   }
+  .sidebar a {float: left;}
+
+ 
   .nav-bar-content{
     margin-left: 0%;
   }
   .container{
     margin-left: 0%;
+    width: 80%;
+    height: auto;
+    position: relative;
+    float: left;
   }
   .buttons{
     margin-left: 0%;
