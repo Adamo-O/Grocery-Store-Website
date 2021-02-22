@@ -36,6 +36,11 @@ button {
   margin-top: 1rem;
 }
 
+#login{
+  position: absolute;
+  bottom: 0px;
+}
+
 .list-group-item {
   font-family: Helvetica, sans-serif;
   height: 3rem;
@@ -65,41 +70,39 @@ label {
 
 
 }
-.sidebar li  {
-
- text-align: left;
- padding: 10px;
-}
-.sidebar li a{
-  color: red;
-}
-
-.nav-bar-content {
-  list-style-type: none;
-  padding: 0px;
-  margin-left:310px; 
-  margin-right: 10px;
-  background-color: #438a5e;
-  overflow: hidden;
-  border-radius: 20px;
-}
-
-.nav-bar-content a {
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  padding: 1rem; 
-  color: #ffffff;
-  float: left;
-  font-size: 1.25rem;
-}
 
 #logout{
   float: right;
   margin-right: 10px;
 }
 
-.nav-bar a:hover {
-  background-color: #fdfcfa;
-  color: #44c767;
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+
+  .container-sm {
+    width: 80%;
+    height: auto;
+    position: relative;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+
+  .container-sm {
+    width: 50%;
+    height: auto;
+    position: relative;
+    float: left;
+  }
 }
