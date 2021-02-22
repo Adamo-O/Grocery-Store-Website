@@ -1,192 +1,144 @@
 body{
-    font-family: Helvetica;
-    background-color: #44c767;
+  font-family: Helvetica;
+  background-color: #44c767;
 
 }
-*{
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    text-decoration: none;
 
-}
 .title{
- margin-top: 20px;
- margin-left: 34%;
- font-family: Helvetica;
- color: white;
- margin-bottom: 10px;
- font-size: 30px;
+margin-left: 34%;
+font-family: Helvetica;
+color: white;
+margin-bottom: 10px;
+padding: 20px;
 }
-
 .sidebar{
-    position: fixed;
-    left: 0px;
-    width: 300px;
-    height: 100%;
-    background: whitesmoke;
-    font-family: Helvetica;
+  position: fixed;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  background: whitesmoke;
+  font-family: Helvetica;
+ 
 
 }
 .sidebar header {
-    font-size: 22px;
-    color: white;
-    text-align: center;
-    line-height: 70px;
-    background-color: #438a5e;
-    font-family: Helvetica;
 
-
-}
-.sidebar li  {
-  
-   text-align: left;
-   padding: 10px;
-}
-.sidebar li a{
-    color: red;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+  background-color: #438a5e;
+  font-family: Helvetica;
 
 
 }
 
-/*Nav Bar*/
 
-.nav-bar-content {
-    list-style-type: none;
-    padding: 0px;
-	  margin-left:310px; 
-	  margin-right: 10px;
-    background-color: #438a5e;
-    overflow: hidden;
-    border-radius: 20px;
-}
+#login{
+position: absolute;
+bottom: 0px;
 
-.nav-bar-content a {
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    padding: 1rem; 
-    color: #ffffff;
-    float: left;
-    font-size: 1.25rem;
-}
-
-#logout{
-    float: right;
-    margin-right: 10px;
 }
 
 
-
-.nav-bar a:hover {
-    background-color: #fdfcfa;
-    color: #44c767;
-}
 
 
 .container {
   position: relative;
-  margin-left:363px; 
-	margin-right: 15px;
-	margin-bottom: 10px;
-	margin-top: 5px;
-	padding: 20px;
-  }
-
-
  
-  .table,.edit {
-    
-    background-color: #f1f1f1;
-    color: rgb(82, 82, 82);
-    margin-bottom: 0;
-    padding: 20px;
-    padding-top: 10px;
-    border-radius: 20px;
-    min-height: 200px;
-    height: 100%;
-    max-height: 520px;
-    overflow-y: scroll;
-    margin-right: 5%;
-  }
-  
+  margin-left:310px; 
+margin-right: 10px;
+margin-bottom: 10px;
+padding: 20px;
+}
 
-  .table td,.table th {
+
+.table {
   
-    padding: 10px 25px;
-    border-bottom: 1px solid rgb(109, 109, 109);
+  background-color: whitesmoke;
+
+  margin-bottom: 0;
+  padding: 20px;
+  padding-top: 0px;
+  border-radius: 20px;
+  min-height: 300px;
+  height: 100%;
+  max-height: 520px;
+  overflow-y: scroll;
+}
+
+.table td,
+.table th {
+  text-align: center;
+  padding: 10px 25px;
+  padding-top: 35px;
+  
+  
+  border-bottom: 1px solid rgb(109, 109, 109);
 
 }
 
-  th {
-    
-    color: rgb(109, 109, 109);
-    font-size: large;
-    
-  }
+th {
+  
+  color: rgb(82, 82, 82);
+  font-size: large;
+  
+}
+td{
+  
+  color: black;
+  font-size: medium;
+}
 
-  td {
-    font-size: medium;
-  }
-
-  input.larger{
-    width:20px;
-    height:20px;
-  }
-
-/*small buttons*/
-.sbutton {
+button{
   border: none;
-  color: rgb(255, 255, 255);
   background-color: #13960f;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  cursor: pointer;
-  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  padding: 6px 12px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 15px;
+cursor: pointer;
+border-radius: 8px;
+transition-duration: 0.3s;
 }
 
-/*big buttons*/
-.bbutton {
-  border: none;
-  color: rgb(255, 255, 255);
-  background-color: #179733;
-  padding: 6px 12px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  cursor: pointer;
-  border-radius: 8px;
-  
-}
+
 
 #save-order{
-  margin-left: 20px;
+float: left;
 }
 #delete-order{
-  float: right;
-  margin-right: 65px;
+float: right;
+
+}
+
+button:hover{
+  background-color: #0b4d08;
+}
+
+input.larger{
+  width:20px;
+  height:20px;
 }
 
 
 @media (max-width: 800px){
-  .sidebar{
-    display: none;
-  }
-  .nav-bar-content{
-    margin-left: 0%;
-  }
-  .container{
-    margin-left: 0%;
-  }
-  .buttons{
-    margin-left: 0%;
-    padding: 5px;
-  }
+.sidebar{
+  display: none;
 }
-    
- 
+
+.container{
+  margin-left: 1%;
+  height: 100%;
+  max-width: fit-content;
+}
+
+
+.title{
+ margin-left: 20%;
+}
+}
   
+
