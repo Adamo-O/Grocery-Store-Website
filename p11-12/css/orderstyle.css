@@ -53,7 +53,7 @@ padding: 20px;
 }
 
 
-.table {
+.table{
   
   background-color: whitesmoke;
 
@@ -61,9 +61,9 @@ padding: 20px;
   padding: 20px;
   padding-top: 0px;
   border-radius: 20px;
-  min-height: 300px;
+  min-height: 400px;
   height: 100%;
-  max-height: 520px;
+  max-height: 600px;
   overflow-y: scroll;
 }
 
@@ -132,13 +132,15 @@ input.larger{
 .container{
   margin-left: 1%;
   height: 100%;
-  max-width: fit-content;
+  max-width: 100%;
 }
-
 
 .title{
  margin-left: 20%;
 }
+
+
+
 }
   
 

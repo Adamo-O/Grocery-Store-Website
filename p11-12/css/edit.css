@@ -1,57 +1,50 @@
+#title2{
+  margin-left: 37%;
+}
 
-/*edit order title*/
-.title2{
-    margin-top: 20px;
-    margin-left: 36%;
-    font-family: Helvetica;
-    color: white;
-    margin-bottom: 10px;
-    font-size: 30px;
-   }
+#ordernum{
+  color: rgb(70, 69, 69);
+}
 
-
-  fieldset{
-    margin-left: 3px;
-    margin-right: 3px;
-    padding-top: 0.5em;
-    padding-bottom: 0.625em;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-    border: 0px
-  }
-
-  legend{
-    font-size: 20px;
-  }
-
-  label{
-      font-size: 25px;
-  }
 
   .edit-table{
-    color: rgb(82, 82, 82);
+    
     margin-bottom: 0;
     padding: 20px;
-    margin-left: 70px;
+    margin-left: 150px;
+    
     
   }
 
-  .edit-table td,.edit-table th {
+
+
+  .large-buttons-edit{
+    margin-left: 150px;
+    
+  }
   
-    padding: 10px 25px;
-    border-bottom: 1px solid rgb(109, 109, 109);
+  #save-edit{
+    
+    margin-left: 400px;
+  }
+  
 
-}
 
-.large-buttons-edit{
-  margin-left: 90px;
-}
+  @media (max-width: 800px){
+    #title2{
+      margin-left: 25%;
+    }
 
-#save-edit{
-  margin-left: 280px;
-}
+    .large-buttons-edit{
+      margin-left: 70px;
+    }
+    
+    #save-edit{
+      margin-left: 1px;
+    }
+    
+  
+  }
 
-#delete-edit{
-  float: right;
-  margin-right: 95px;
-}
+
+
