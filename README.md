@@ -20,6 +20,23 @@ HTML:
 CSS:
 - style.css 
 - all.css (fas icons)
+### Abhay Panchoo (40174642) P3-4
+HTML: 
+-GreenBellPaper.html
+-Lobster.html
+-Mackerel.html
+-Oranges.html
+-Pears.html
+-Pineapple.html
+-Potatoes.html
+-Rib Eye Steak.html
+-Salmon.html
+-Sausages.html and other product pages
+-Shopping Cart (P4)
+
+CSS:
+-P3.css
+-P4.css
 
 ### Adamo Orsini (40174716) P5-6
 HTML:
