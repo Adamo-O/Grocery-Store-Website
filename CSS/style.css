@@ -273,6 +273,111 @@ normally */
     font-weight: normal;
     font-size: 1rem;
 }
+/*Contact us form*/
+.contact-us {
+    margin: 20px auto 10px;
+    width: 80%;
+    padding: 16px;
+    background-color: #438a5e;
+    border-radius: 20px;
+}
+
+.col-50 {
+    width: 50%;
+    float: left;  
+}
+
+.contact-us h3 {
+    text-align: left;
+    font-size: 3rem;
+    margin: 10px;
+    text-decoration: underline;
+    color: #dbdbd4;
+}
+
+#result {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+input[type=text], textarea {
+    background: none;
+    box-sizing: border-box;
+    border: none;
+    color: #F6F5EB;
+    font-weight: bold;
+    outline: none;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 10px 0;
+}
+
+input[type=text] {
+
+    padding: 10px 0 10px 10px;
+    border-bottom: 2px solid #dbdbd4;
+    font-size: 1rem;
+}
+
+input[type=text]:focus {
+    border-bottom-color: #fff;
+}
+
+textarea {
+    margin-bottom: 0;
+    height: 6rem;
+    resize: none;
+    background-image: repeating-linear-gradient(transparent, transparent 31px, #dbdbd4 31px, #dbdbd4 33px, transparent 33px);
+    line-height: 31px;
+    font-size: 1.5rem;
+    padding: 0 0 2px 10px;
+}
+
+input[type=text]::placeholder, textarea::placeholder {
+    color: #dbdbd4;
+}
+
+textarea:focus {
+    background-image: repeating-linear-gradient(transparent, transparent 31px, #fff 31px, #fff 33px, transparent 33px);
+}
+
+.buttons {
+    text-align: center;
+}
+
+.btn-form {
+    background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #44c767;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:9px 18px;
+    text-shadow:0px 1px 0px #2f6627;
+    margin-right: 10px;
+    outline: none;
+}
+
+.btn-form:hover {
+    background-color: #ffffff;
+    color: #438a5e;
+}
+
+.contact-us::after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+/*Miscellaneous Class*/
+.wrong {
+    color: #9E0000;
+}
+
+.correct {
+    color: #F4C70F;
+}
 
 /*Responsivness of the website*/
 @media screen and (max-width: 961px) {
@@ -288,6 +393,15 @@ normally */
 
     .col {
         width: 100%;
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    .contact-us h3 {
+        text-decoration: none;
+        text-align: center;
     }
 }
 
