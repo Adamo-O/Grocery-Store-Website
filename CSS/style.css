@@ -379,6 +379,10 @@ textarea:focus {
     color: #F4C70F;
 }
 
+.display-none {
+    display: none;
+}
+
 /*Responsivness of the website*/
 @media screen and (max-width: 961px) {
     .banner {

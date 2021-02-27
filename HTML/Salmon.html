@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bakery</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <link href="../css-fas/all.css" rel="stylesheet">
     <link rel="shortcut icon" href="../Images/re.ico" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/P3.css">
+    <title>Salmon</title>
 </head>
-<body>
+<body onload="checkItemPrice()">
     <section class="header">
       <h1><a href="index.html">La Meilleure Épicerie</a></h1>
       </section>
@@ -25,7 +25,7 @@
       </section>
     <h2 class="product">Salmon</h2>
     <img class ="image" src ="../Images/fish and sea food/salmon.png" alt ="Salmon Image">
-    <p class ="price">Price: $21.99 per pound</p>
+    <p class ="price"></p>
     <button class="desButton">More Description</button>
     <button class ="cartButton">Add To Cart🛒</button>
     <label for="quantity">Quantity:</label>
@@ -41,5 +41,7 @@
           To contact us please use one of our social media.
         </h6>
       </section>
+
+      <script src="../JS/dealPrices.js"></script>
 </body>
 </html>
