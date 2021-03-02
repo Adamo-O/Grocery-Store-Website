@@ -137,6 +137,9 @@ text-align: center;
     height: auto;
     position: relative;
   }
+  #theform{
+    width: 300px;
+  }
   .sidebar a {float: left;}
     .nav-bar-content{
       margin-left: 0%;
