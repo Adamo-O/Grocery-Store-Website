@@ -103,12 +103,14 @@ function validate(formId) {
     var toValidate = inputs.length;
 
     for (i = 0; i < inputs.length; i++) {
+        inputs[i].style.boxShadow = "";
         if (inputs[i].id == "email") {
             var emailInvalid = document.getElementById("emailInvalid");
 
             emailInvalid.innerHTML = "";
 
             if (inputs[i].value.search(/\w+[@]\w+[.]\w+$/i) == -1) {
+                inputs[i].style.boxShadow = "0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px red";
                 emailInvalid.innerHTML = "Please enter a valid email address.";
                 break;
             }
@@ -122,6 +124,7 @@ function validate(formId) {
             postalCodeInvalid.innerHTML = "";
 
             if (inputs[i].value.search(/[A-Za-z]\d[A-Za-z]\s?\d[A-Za-z]\d$/i) == -1) {
+                inputs[i].style.boxShadow = "0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px red";
                 postalCodeInvalid.innerHTML = "Please enter a valid Postal Code in the form A1B 2C3 or A1B2C3.";
                 break;
             }
@@ -137,6 +140,7 @@ function validate(formId) {
             lnameInvalid.innerHTML = "";
 
             if (inputs[i].value.search(/[a-z]+$/i) == -1) {
+                inputs[i].style.boxShadow = "0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px red";
                 fnameInvalid.innerHTML = "Please enter a valid first name.";
 
                 // If screen is larger than medium breakpoint, make two lines under other name field
@@ -157,6 +161,7 @@ function validate(formId) {
             fnameInvalid.innerHTML = "";
 
             if (inputs[i].value.search(/[a-z]+$/i) == -1) {
+                inputs[i].style.boxShadow = "0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px red";
                 lnameInvalid.innerHTML = "Please enter a valid last name.";
 
                 // If screen is larger than medium breakpoint, make two lines under other name field
@@ -175,6 +180,7 @@ function validate(formId) {
             passwordInvalid.innerHTML = "";
 
             if (inputs[i].value.search(/\w+/) == -1) {
+                inputs[i].style.boxShadow = "0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px red";
                 passwordInvalid.innerHTML = "Please enter your password.";
                 break;
             }
