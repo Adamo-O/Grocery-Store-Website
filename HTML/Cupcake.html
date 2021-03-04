@@ -2,44 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Bakery</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <link href="../css-fas/all.css" rel="stylesheet">
     <link rel="shortcut icon" href="../Images/re.ico" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/P3.css">
-</head>
-<body>
-    <section class="header">
-      <h1><a href="index.html">La Meilleure Épicerie</a></h1>
-      </section>
-      <section class="nav-bar">
-        <ul class="nav-bar-content">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <div class="header p-3">
+      <h1><a href="index.html" class="link">La Meilleure Épicerie</a></h1>
+  </div>
+  <div class="nav-bar mx-4">
+      <ul class="nav-bar-content mb-3">
           <li><a href="index.html">Home</a></li>
           <li><a href="index.html#aisles">Aisles</a></li>
           <li><a href="index.html#offers">Offers</a></li>
           <li><a href="Login.html">Login</a></li>
           <li><a href="Sign Up.html">Sign Up</a></li>
           <li><a href="ShoppingCart.html" id="right">Shopping Cart</a></li>
-        </ul>
-      </section>
-    <h2 class="product">Cupcake</h2>
-    <img class ="image" src ="../Images/bakery//cupcake.jfif" alt ="Cupcake Image">
-    <p class ="price">Price: $24.99 per 12 cupcakes</p>
-    <button class="desButton">More Description</button>
-    <button class ="cartButton">Add To Cart🛒</button>
-    <label for="quantity">Quantity:</label>
-    <div class="input">
-      <input type="number" class="quantity" name="quantity">
+      </ul>
+  </div>
+</head>
+<body  onload="checkItemPrice()">
+    <div class="container h-100 d-flex flex-column">
+      <div class="row h-75 mb-4">
+        <div class="col-md-6 col-lg-6 grey" style="margin-top:30px">
+          <h2 class ="product">Cupcake</h2>
+          <br/>
+          <div class ="image">
+            <img src="../Images/bakery/cupcake.jfif"class="img-fluid" alt="Bread">
+          </div>
+        </div> 
+        <div class="col-md-6 col-sm-12 col-lg-6 grey" style="margin-top:30px">
+          <h3 class ="price">
+            Price: $24.99 per 12 cupcakes
+          </h3>
+          <label for="quantity"> Quantity:</label>
+          <div class="input">
+            <input type="number" class="quantity" name="quantity">
+          </div>
+          <button  class="btn" class="desButton">More Description</button>
+          <br/>
+          <button class="btn" class ="cartButton">Add To Cart🛒</button>
+        </div>
     </div>
-    <section id="footer">
-        <a href="https://facebook.com" target="_blank"><em class="fab fa-facebook fa-2x"></em></a>
-        <a href="https://instagram.com" target="_blank"><em class="fab fa-instagram fa-2x"></em></a>
-        <a href="https://twitter.com" target="_blank"><em class="fab fa-twitter-square fa-2x"></em></a>
-        <h6>
-          Thanks for shopping at La Meilleure Épicerie. <br>
-          To contact us please use one of our social media.
-        </h6>
-      </section>
+  <div id="footer">
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+    <h6>
+        Thanks for shopping at La Meilleure Épicerie. <br> 
+        To contact us please use one of our social media.
+    </h6>
+  </div>
 </body>
 </html>
