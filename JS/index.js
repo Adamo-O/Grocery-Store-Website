@@ -1,3 +1,22 @@
+// To make the covid warning to dissappear.
+const disappear = target => {
+	const warning = target.parentNode;
+	warning.classList.add("display-none");
+  // Safe the value of notShow to be true that will be used to know if the user closed the banner
+  // so the website won't show the same message when refreshing.
+	sessionStorage.setItem("notShow", "true");
+}
+
+// Check if the covid warning should be closed and close it.
+const warningStatus = () => {
+	const notShow = sessionStorage.getItem("notShow");
+	if (notShow) {
+		document.querySelector(".covid-19").classList.add("display-none");
+	}
+}
+
+// To check the input of the contact-us form as well as check if the input are given in the
+// correct format or not and give the user a message that corresponds to their inputs.
 const checkInput = () => {
 	const inputs = document.contact.elements;
 	const result = document.querySelector("#result");
@@ -26,17 +45,4 @@ const checkInput = () => {
 	result.innerHTML = "Thanks for your message";
 	result.classList.add("correct");
 	result.classList.remove("wrong");
-}
-
-const disappear = (target) => {
-	const warning = target.parentNode;
-	warning.classList.add("display-none");
-	sessionStorage.setItem("notShow", "true");
-}
-
-const warningStatus = () => {
-	const notShow = sessionStorage.getItem("notShow");
-	if (notShow) {
-		document.querySelector(".covid-19").classList.add("display-none");
-	}
 }
