@@ -1,0 +1,173 @@
+/*The product styles*/
+
+.content-container {
+  margin: 1.6rem;
+  padding: 16px;
+  background-color: #438a5e;
+  border-radius: 20px;
+  color: #F6F5EB;
+}
+
+.content-container::after {
+  content: " ";
+  clear: both;
+  display: block;
+}
+
+.col-50 {
+  width: 50%;
+  float: left;
+}
+
+.content-container h3 {
+  text-align: left;
+  font-size: 3rem;
+  margin: 10px;
+  text-decoration: underline;
+}
+
+.img-container {
+  width: 90%;
+  height: 70%;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 2rem 0.67rem 0;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.price {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.general-btn {
+  background-color: #02a8a8;
+  border-radius: 28px;
+  border: 1px solid #007e7e;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 9px 18px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+  margin-top: 5px;
+  min-width: 50px;
+  outline: none;
+}
+
+.general-btn:hover {
+  background-color: #ffffff;
+  color: #02a8a8;
+}
+
+.des-btn {
+  width: 100%;
+}
+
+.quantity-container {
+  display: block;
+  float: right;
+}
+
+#quantity {
+  background: #F6F5EB;
+  border-radius: 20px;
+  border: 1px solid #007e7e;
+  width: 100px;
+  height: 40px;
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+  color: #007e7e;
+}
+
+/*More description style*/
+
+.description {
+  border-radius: 20px;
+  background-color: #F6F5EB;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.description-details {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #000;
+}
+
+
+/*Table styles*/
+
+.nutrition-value {
+  color: #000;
+  border-collapse: collapse;
+  border: 2px solid #44c767;
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.nutrition-value td, .nutrition-value th {
+  padding: 8px;
+}
+
+.nutrition-value tr:nth-child(even) {
+  background-color: #F6F5EB;
+}
+
+.nutrition-value tr:nth-child(odd) {
+  background-color: #44c767;
+}
+
+.nutrition-value td:hover, .nutrition-value th:hover {
+  background-color: #49865a;
+}
+
+/*Classes for JavaScript*/
+
+.inactive-btn {
+  background-color: #ffffff;
+  color: #02a8a8;
+  cursor: default;
+}
+
+.expanded-btn {
+  background-color: #ffffff;
+  color: #02a8a8;
+}
+
+.show {
+  border: 2px solid #007e7e;
+  padding: 10px;
+}
+
+/*Responsivness of the website*/
+
+@media screen and (max-width: 1024px) {
+  .col-50 {
+    width: 100%;
+    float: none;
+  }
+
+  .content-container {
+    text-align: center;
+  }
+
+  .content-container h3, .img-container {
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  .quantity-container {
+    float: none;
+  }
+}

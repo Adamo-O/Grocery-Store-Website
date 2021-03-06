@@ -1,8 +1,10 @@
+// Form the varaible that contains the prices of the products in the deals section
 var pineapplePrice = 1.99;
 var salmonPrice = 21.99;
 var BeltedGallowaySirloinPrice = 7.99;
 var breadPrice = 0.99;
 
+// To update the prices in the index.html page
 const checkDealPrices = () => {
 	const offers = document.querySelectorAll(".offer-price");
 	const prices = [pineapplePrice, salmonPrice, BeltedGallowaySirloinPrice, breadPrice];
@@ -15,16 +17,17 @@ const checkDealPrices = () => {
 	}
 }
 
+// To update the price of each product in their corresponding page
 const checkItemPrice = () => {
 	const documentTitle = document.title;
 	const price = document.querySelector(".price");
 	if (documentTitle === "Pineapple") {
-		price.textContent = `Price: $${pineapplePrice} per pound`
+		price.textContent = `For only $${pineapplePrice} per pound`
 	} else if (documentTitle == "Belted Galloway Sirloin") {
-		price.textContent = `Price: $${BeltedGallowaySirloinPrice} per pound`
+		price.textContent = `For only $${BeltedGallowaySirloinPrice} per pound`
 	} else if (documentTitle == "Salmon") {
-		price.textContent = `Price: $${salmonPrice} per pound`
+		price.textContent = `For only $${salmonPrice} per pound`
 	} else if (documentTitle == "Bread") {
-		price.textContent = `Price: $${breadPrice} per oz`
+		price.textContent = `For only $${breadPrice} per oz`
 	}
 }
