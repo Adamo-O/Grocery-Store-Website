@@ -8,6 +8,7 @@
     <link href="../css-fas/all.css" rel="stylesheet">
     <link rel="shortcut icon" href="../Images/re.ico" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/P3.css">
+    <link rel="stylesheet" href="/CSS/meatDesc.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <div class="header p-3">
@@ -25,8 +26,8 @@
   </div>
 </head>
 <body  onload="checkItemPrice()">
-    <div class="container h-100 d-flex flex-column">
-      <div class="row h-75 mb-4">
+    <div class="container d-flex flex-column">
+      <div class="row mb-4" id="productContainer">
         <div class="col-md-6 col-lg-6 grey" style="margin-top:30px">
           <h2 class ="product">Chicken Breast</h2>
           <br/>
@@ -42,9 +43,42 @@
           <div class="input">
             <input type="number" class="quantity" name="quantity">
           </div>
-          <button  class="btn" class="desButton">More Description</button>
+          <button class="btn cartButton">Add To Cart🛒</button>
           <br/>
-          <button class="btn" class ="cartButton">Add To Cart🛒</button>
+          <button  class="btn desButton" onclick="showDescription()">More Description</button>
+          <div id="description" class="hideDesc">
+            <p id="description-text">
+              The chicken breast's white meat and health benefits make it the most valuable cut of chicken.<br/>
+              It can be cooked in a variety of ways, making it a versatile and healthy meat option.
+            </p>
+            <div>
+              <table id="nutrition">
+              <tr>
+                <th id="nutritionTitle" colspan="2">Nutritional Facts</th>
+              </tr>
+              <tr>
+                <th id="nutritionLegend" colspan="2">Values per 100g</th>
+              </tr>
+              <tr>
+                <td>Total Calories</td>
+                <td>165</td>
+              </tr>
+              <tr>
+                <td>Total Fat 3g</td>
+                <td>18%</td>
+              </tr>
+              <tr>
+                <td>Saturated Fat 0.3g</td>
+                <td>2%</td>
+              </tr>
+              <tr>
+                <td>Cholesterol 58mg</td>
+                <td>19%</td>
+              </tr>
+            </table>
+            </div>
+            
+          </div>
         </div>
     </div>
   <div id="footer">
@@ -56,5 +90,7 @@
         To contact us please use one of our social media.
     </h6>
   </div>
+  <script src="../JS/prices.js"></script>
+  <script src="/JS/meat.js"></script>
 </body>
 </html>

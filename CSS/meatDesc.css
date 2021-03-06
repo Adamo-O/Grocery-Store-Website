@@ -1,0 +1,56 @@
+#productContainer {
+    height: 100%;
+}
+
+.hideDesc {
+    display: none;
+}
+
+.desButton {
+    margin-bottom: 10px;
+}
+
+#description {
+    background-color: #7aca8f49;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#description-text {
+    display: inline;
+    /*To fix inheritance issue from style.css without changing it*/
+    color: black;
+    font-size: 1rem;
+    text-shadow: none;
+    position: initial;
+    text-align: initial;
+    left: initial;
+    right: initial;
+    top: initial;
+}
+
+#nutrition {
+    margin-top: 20px;
+    display: inline-table;
+    border: 2px solid #49865a;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+#nutritionTitle {
+    background-color: #44c767;
+}
+
+#nutritionTitle, #nutritionLegend {
+    border-bottom: 2px solid #49865a;
+}
+
+#nutrition td {
+    width: 50%;
+}
+
+#nutrition td, #nutrition th {
+    padding: 8px;
+}
