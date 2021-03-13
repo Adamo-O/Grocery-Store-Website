@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Bakery</title>
+    <title>Tomahawk Steak</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <link href="../css-fas/all.css" rel="stylesheet">
     <link rel="shortcut icon" href="../Images/re.ico" type="image/x-icon">
@@ -25,7 +25,7 @@
       </ul>
   </div>
 </head>
-<body  onload="checkItemPrice()">
+<body>
     <div class="container d-flex flex-column">
       <div class="row mb-4" id="productContainer">
         <div class="col-md-6 col-lg-6 grey" style="margin-top:30px">
@@ -36,14 +36,14 @@
           </div>
         </div> 
         <div class="col-md-6 col-sm-12 col-lg-6 grey" style="margin-top:30px">
-          <h3 class ="price">
+          <h3 id="price" class ="price">
             Price: $34.99 per pound
           </h3>
           <label for="quantity"> Quantity:</label>
           <div class="input">
-            <input type="number" class="quantity" name="quantity">
+            <input type="number" id="quantity" class="quantity" name="quantity">
           </div>
-          <button class="btn cartButton">Add To Cart🛒</button>
+          <button class="btn cartButton" onclick ="getData()">Add To Cart🛒</button>
           <br/>
           <button class="btn desButton" onclick="showDescription()">More Description</button>
           <div id="description" class="hideDesc">
@@ -92,5 +92,6 @@
   </div>
   <script src="../JS/prices.js"></script>
   <script src="../JS/meat.js"></script>
+  <script src ="../JS/p3.js"></script>
 </body>
 </html>

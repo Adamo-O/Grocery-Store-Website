@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../CSS/P3.css">
     <link rel="stylesheet" href="../CSS/meatDesc.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="../JS/p3.js"></script>
 
     <div class="header p-3">
       <h1><a href="index.html" class="link">La Meilleure Épicerie</a></h1>
@@ -25,7 +26,7 @@
       </ul>
   </div>
 </head>
-<body  onload="checkItemPrice()">
+<body>
     <div class="container d-flex flex-column">
       <div class="row mb-4" id="productContainer">
         <div class="col-md-6 col-lg-6 grey" style="margin-top:30px">
@@ -36,12 +37,12 @@
           </div>
         </div> 
         <div class="col-md-6 col-sm-12 col-lg-6 grey" style="margin-top:30px">
-          <h3 class ="price">
+          <h3 id ="price" class ="price">
             Price: $4.99 per pound
           </h3>
           <label for="quantity"> Quantity:</label>
           <div class="input">
-            <input type="number" class="quantity" name="quantity">
+            <input type="number" id="quantity" class="quantity" name="quantity">
           </div>
           <button class="btn cartButton">Add To Cart🛒</button>
           <br/>

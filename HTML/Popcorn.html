@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Snacks</title>
+    <title>Popcorn</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <link href="../css-fas/all.css" rel="stylesheet">
     <link rel="shortcut icon" href="../Images/re.ico" type="image/x-icon">
@@ -27,7 +27,7 @@
       </ul>
   </div>
 </head>
-<body  onload="checkItemPrice()">
+<body>
     <div class="container h-100 d-flex flex-column">
       <div class="row h-75 mb-4">
         <div class="col-md-6 col-lg-6 grey" style="margin-top:30px">
@@ -38,17 +38,17 @@
           </div>
         </div> 
         <div class="col-md-6 col-sm-12 col-lg-6 grey" style="margin-top:30px">
-          <h3 class ="price">
+          <h3 id="price" class ="price">
             Price: $3.87 for 6 packs
           </h3>
           <label for="quantity"> Quantity:</label>
           <div class="input">
-            <input type="number" class="quantity" name="quantity">
+            <input type="number" id="quantity" class="quantity" name="quantity">
           </div>
           <button  class="btn" class="desButton" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">More Description</button>
           <br/>
           <h4 class="collapse" id="collapseExample"></h4> 
-          <button class="btn" class ="cartButton">Add To Cart🛒</button>
+          <button class="btn" class ="cartButton" onclick="getData()">Add To Cart🛒</button>
         </div>
     </div>
   <div id="footer">

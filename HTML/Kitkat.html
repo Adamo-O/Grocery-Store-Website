@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Snacks</title>
+    <title>Kitkat</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <link href="../css-fas/all.css" rel="stylesheet">
     <link rel="shortcut icon" href="../Images/re.ico" type="image/x-icon">
@@ -12,7 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script src="../JS/p3.js"></script>
     <div class="header p-3">
       <h1><a href="index.html" class="link">La Meilleure Épicerie</a></h1>
   </div>
@@ -27,28 +27,61 @@
       </ul>
   </div>
 </head>
-<body  onload="checkItemPrice()">
+<body">
     <div class="container h-100 d-flex flex-column">
-      <div class="row h-75 mb-4">
+      <div class="row h-100 mb-4">
         <div class="col-md-6 col-lg-6 grey" style="margin-top:30px">
-          <h2 class ="product">Kitkat</h2>
+          <h2 id="price" class ="product">Kitkat</h2>
           <br/>
           <div class ="image">
             <img src="../Images/Snacks/Kitkat.jpg" class="img-fluid" alt="Kitkat Image">
           </div>
         </div> 
         <div class="col-md-6 col-sm-12 col-lg-6 grey" style="margin-top:30px">
-          <h3 class ="price">
+          <h3 id ="price" class ="price">
             Price: $3.47
           </h3>
           <label for="quantity"> Quantity:</label>
           <div class="input">
-            <input type="number" class="quantity" name="quantity">
+            <input type="number"id="quantity" class="quantity" id="quantity" name="quantity">
           </div>
-          <button  class="btn" class="desButton" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">More Description</button>
           <br/>
-          <h4 class="collapse" id="collapseExample"></h4> 
-          <button class="btn" class ="cartButton">Add To Cart🛒</button>
+          <button  class="btn" style ="background-color:cyan" class="desButton" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">More Description</button>
+          <br/>
+          <h4 class="collapse" id="collapseExample"><br/>It’s the classic chocolate-lovers’ delight! KIT KAT 4-Finger Milk Chocolate Bar with the signature KIT KAT crisp wafer, enrobed in a smooth and delicious milk chocolate coating – made from NESTLÉ COCOA PLAN sustainably-sourced cocoa.<br/></h4> 
+          <table class="collapse"  id="collapseExample" style="border: 1px solid">
+            <tr><th>Nutrition</th></tr>
+            <tr>
+              <th colspan ="2"></th>
+              <th colspan ="2">% DV</th>
+            </tr>
+            <tr>
+              <th>Total fat</th>
+              <td></td>
+              <td>18%</td>
+            </tr>
+            <tr>
+              <th>Total carbohydrate</th>
+              <td></td>
+              <td>10%</td>
+            </tr>
+            <tr>
+              <th>Vitamin A</th>
+              <td></td>
+              <td>2%</td>
+            </tr>
+            <tr>
+              <th>Calcium</th>
+              <td></td>
+              <td>6%</td>
+            </tr>
+            <tr>
+              <th>Iron</th>
+              <td></td>
+              <td>8%</td>
+            </tr>
+          </table><br/>
+          <button class="btn" style ="background-color:cyan" id ="cartButton"  onclick="getData()">Add To Cart🛒</button>
         </div>
     </div>
   <div id="footer">
