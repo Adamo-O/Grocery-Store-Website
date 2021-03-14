@@ -1,12 +1,16 @@
-const documentTitle = document.title;
-
 function getData(){
-    let itemsArray = JSON.parse(sessionStorage.getItem('items'));
+    let itemsArray =[];
+    itemsArray = JSON.parse(sessionStorage.getItem('items'));
     var itemName = document.title;
     var price = document.getElementById("price").innerHTML;
     var quantity = document.getElementById("quantity").value;
     let itemData =[itemName,quantity,price];
-    itemsArray.push(itemData);
+    if(itemsArray ===null){
+        itemsArray = [itemData]
+    }
+    else{
+        itemsArray.push(itemData);
+    }
     sessionStorage.setItem('items', JSON.stringify(itemsArray));
 }
 function addRows(){
@@ -30,6 +34,5 @@ function addRows(){
             sessionStorage.setItem('items', JSON.stringify(arr));
         };
     }
-    console.log(arr[0]);
 }
  
