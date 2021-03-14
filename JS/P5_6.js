@@ -1,102 +1,3 @@
-function loginValidate() {
-    var email = document.getElementById("email");
-    var password = document.getElementById("password");
-    var emailInvalid = document.getElementById("emailInvalid");
-    var passwordInvalid = document.getElementById("passwordInvalid");
-
-    // Clear previous invalid errors
-    emailInvalid.innerHTML = "";
-    passwordInvalid.innerHTML = "";
-
-    if (email.value.search(/\w+[@]\w+[.]\w+$/i) == -1) {
-        emailInvalid.innerHTML = "Please enter a valid email address.";
-    } else if (password.value.search(/\w+/) == -1) {
-        passwordInvalid.innerHTML = "Please enter your password.";
-    } else {
-        alert("Login is valid! Welcome back.");
-    }
-}
-
-function validate1() {
-    var toValidate = arguments.length;
-
-    for (i = 0; i < arguments.length; i++) {
-        if (arguments[i] == "email") {
-            var email = document.getElementById("email");
-            var emailInvalid = document.getElementById("emailInvalid");
-
-            emailInvalid.innerHTML = "";
-
-            if (email.value.search(/\w+[@]\w+[.]\w+$/i) == -1) {
-                emailInvalid.innerHTML = "Please enter a valid email address.";
-                break;
-            }
-            else {
-                toValidate--;
-            }
-        }
-        else if (arguments[i] == "postalCode") {
-            var postalCode = document.getElementById("postalCode");
-            var postalCodeInvalid = document.getElementById("postalCodeInvalid");
-
-            postalCodeInvalid.innerHTML = "";
-
-            if (postalCode.value.search(/[A-Za-z]\d[A-Za-z]\s?\d[A-Za-z]\d$/i) == -1) {
-                postalCodeInvalid.innerHTML = "Please enter a valid Postal Code in the form A1B 2C3 or A1B2C3.";
-                break;
-            }
-            else {
-                toValidate--;
-            }
-        }
-        else if (arguments[i] == "fname") {
-            var fname = document.getElementById("fname");
-            var fnameInvalid = document.getElementById("fnameInvalid");
-
-            fnameInvalid.innerHTML = "";
-
-            if (fname.value.search(/[a-z]+$/i) == -1) {
-                fnameInvalid.innerHTML = "Please enter a valid first name.";
-                break;
-            }
-            else {
-                toValidate--;
-            }
-        }
-        else if (arguments[i] == "lname") {
-            var lname = document.getElementById("lname");
-            var lnameInvalid = document.getElementById("lname");
-
-            lnameInvalid.innerHTML = "";
-
-            if (lname.value.search(/[a-z]+$/i) == -1) {
-                lnameInvalid.innerHTML = "Please enter a valid last name.";
-                break;
-            }
-            else {
-                toValidate--;
-            }
-        }
-        else if (arguments[i] == "password") {
-            var password = document.getElementById("password");
-            var passwordInvalid = document.getElementById("passwordInvalid");
-
-            passwordInvalid.innerHTML = "";
-
-            if (password.value.search(/\w+/) == -1) {
-                passwordInvalid.innerHTML = "Please enter your password.";
-                break;
-            }
-            else {
-                toValidate--;
-            }
-        }
-    }
-    if (toValidate == 0) {
-        document.getElementsByTagName("form")[0].submit();
-    }
-}
-
 function validate(formId) {
     var form = document.getElementById(formId);
     var inputs = form.getElementsByTagName("input"); 
@@ -203,6 +104,34 @@ function validate(formId) {
         }
     }
     if (toValidate == 0) {
+        form.submit();
+    }
+}
+
+function passwordValidate() {
+    var form = document.getElementById("forgotForm");
+
+    var password = document.getElementById("password");
+    var repeatPassword = document.getElementById("repeatPassword");
+
+    var passwordInvalid = document.getElementById("passwordInvalid");
+    var repeatPasswordInvalid = document.getElementById("repeatPasswordInvalid");
+
+    passwordInvalid.innerHTML = "";
+    repeatPasswordInvalid.innerHTML = "";
+
+    password.style.boxShadow = "";
+    repeatPassword.style.boxShadow = "";
+
+    if (password.value.search(/\w+/) == -1) {
+        password.style.boxShadow = "0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px red";
+        passwordInvalid.innerHTML = "Please enter your password.";
+    }
+    else if (repeatPassword.value.search(password.value) == -1) {
+        repeatPassword.style.boxShadow = "0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px red";
+        repeatPasswordInvalid.innerHTML = "Please make sure both passwords match.";
+    }
+    else {
         form.submit();
     }
 }
