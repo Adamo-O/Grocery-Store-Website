@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link href="../css-fas/all.css" rel="stylesheet">
     <link rel="shortcut icon" href="../Images/re.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="../CSS/P4.css">
+    <script src="../JS/p3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
-<body>
+<body onload="addRows()">
     <section class="header">
         <h1>La Meilleure Épicerie</h1>
     </section>
@@ -25,95 +29,47 @@
         </ul>
     </section>
     <h2>Shopping bag</h2>
+    <br/>
     <a href="index.html" class="previous">&laquo; Continue Shopping</a>
-    <br/><br/>
-    <table border=1 id ="table">
-        <tr>
-            <th colspan="1" id="name" class="name">
-                Name
-            </th>
-            <th colspan="1" id="Quantity" class="Quantity">
-                Quantity
-            </th>
-            <th colspan="1" id="price" class="price">
-                Price
-            </th>
-            <th colspan ="1" class="Action" id="Action">
-                Action
-            </th>
-        </tr>
-        <tr>
-            <td class="name">Name1</td>
-            <td>
-                <label for="Quantity"></label>
-                <input type="number" class="Quantity" name="Quantity">
-            </td>
-            <td class="price">$1.99</td>
-            <td class="Action"><span class="close">&times;</span></td>
-        </tr>
-        <tr>
-            <td class="name">Name2</td>
-            <td>
-                <label for="Quantity"></label>
-                <input type="number" class="Quantity" name="Quantity">
-            </td>
-            <td class="price">$1.99</td>
-            <td class="Action"><span class="close">&times;</span></td>
-        </tr>
-        <tr>
-            <td class="name">Name3</td>
-            <td>
-                <label for="Quantity"></label>
-                <input type="number" class="Quantity" name="Quantity">
-            </td>
-            <td class="price">$1.99</td>
-            <td class="Action"><span class="close">&times;</span></td>
-        </tr>
-        <tr>
-            <td class="name">Name4</td>
-            <td>
-                <label for="Quantity"></label>
-                <input type="number" class="Quantity" name="Quantity">
-            </td>
-            <td class="price">$1.99</td>
-            <td class="Action"><span class="close">&times;</span></td>
-        </tr>
-        <tr>
-            <td class="name">Name5</td>
-            <td>
-                <label for="Quantity"></label>
-                <input type="number" class="Quantity" name="Quantity">
-            </td>
-            <td class="price">$1.99</td>
-            <td class="Action"><span class="close">&times;</span></td>
-        </tr>
-    </table>
+    <br/><br/><br/>
+    <table id="table1"  class="table">
+      <tr>
+        <th scope="col" style = "color:orange" >Name</th>
+        <th scope="col " style = "color:orange">Quantity</th>
+        <th scope="col" style = "color:orange" >Price</th>
+        <th scope="col" style = "color:orange">Action</th>
+      </tr>
+      </table>
     <div class = "table">
-    <table border="1" id="table2">
-        <tr>
-            <th id="title" colspan="2"> Cart Summary 🛒</th>
-        </tr>
-        <tr>
-            <th id="numberOfitems">Number of items: </th>
-            <td class="numberOfitems">5</td> 
-        </tr>
-        <tr>
-            <th id="OrderTotal">Order Total: </th>
-            <td class="OrderTotal">$9.95</td> 
-        </tr>
-        <tr>
-            <th id="qst">QST: </th>
-            <td class="qst">$0.50</td> 
-        </tr>
-        <tr>
-            <th id="gst">GST: </th>
-            <td class="gst">$1.49</td> 
-        </tr>
-        <tr>
-            <th id="total">Total:</th>
-            <td class="total">11.94</td> 
-        </tr>
-    </table>
+        <table class="table" id="table2">
+            <thead>
+              <tr>
+                <th scope="col">Cart Summary</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Number of items</th>
+                <td class = "numberOfitems">5</td>
+              </tr>
+              <tr>
+                <th scope="row">Order Total: </th>
+                <td class = "OrderTotal">$9.95</td>
+              </tr>
+              <tr>
+                <th scope="row">QST:</th>
+                <td class ="qst">$0.50</td>
+              </tr>
+              <tr>
+                <th scope="row">GST:</th>
+                <td class ="qst">$1.49</td>
+              </tr>
+              <tr>
+                <th scope="row">QST:</th>
+                <td class ="total">$11.49</td>
+              </tr>
+            </tbody>
+          </table>
     </div>
     <section id="footer">
         <a href="https://facebook.com" target="_blank"><em class="fab fa-facebook fa-2x"></em></a>

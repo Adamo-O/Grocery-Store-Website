@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Bakery</title>
+    <title>Belted Sirloin Meat</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <link href="../css-fas/all.css" rel="stylesheet">
     <link rel="shortcut icon" href="../Images/re.ico" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/P3.css">
     <link rel="stylesheet" href="../CSS/meatDesc.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+    <script src ="../JS/p3.js"></script>
     <div class="header p-3">
       <h1><a href="index.html" class="link">La Meilleure Épicerie</a></h1>
     </div>
@@ -25,7 +25,7 @@
       </ul>
   </div>
 </head>
-<body onload="checkItemPrice()">
+<body>
     <div class="container d-flex flex-column">
       <div class="row mb-4" id="productContainer">
         <div class="col-md-6 col-lg-6 grey" style="margin-top:30px">
@@ -36,14 +36,14 @@
           </div>
         </div> 
         <div class="col-md-6 col-sm-12 col-lg-6 grey" style="margin-top:30px">
-          <h3 class ="price">
+          <h3 id="price" class ="price">
             Price: $4.99 per pound
           </h3>
           <label for="quantity"> Quantity:</label>
           <div class="input">
-            <input type="number" class="quantity" name="quantity">
+            <input type="number" id="quantity" class="quantity" name="quantity">
           </div>
-          <button class="btn cartButton">Add To Cart🛒</button><br />
+          <button class="btn cartButton" onclick ="getData()">Add To Cart🛒</button><br />
           <button class="btn desButton" onclick="showDescription()">More Description</button>
           <div id="description" class="hideDesc">
             <p id="description-text">Belted Galloway meat is considered one of the best tasting and healthiest meats.<br />

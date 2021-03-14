@@ -4,6 +4,9 @@ html {
 html,body{
     height:120%;
 }
+#collapseExample{
+    font-size:20px;
+}
 .img-fluid {
     max-width: auto; /* or to whatever you want here */
     max-height: auto; /* or to whatever you want here */
