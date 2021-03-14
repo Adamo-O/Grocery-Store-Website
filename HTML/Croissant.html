@@ -10,21 +10,22 @@
     <link rel="stylesheet" href="../CSS/P3.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src ="../JS/p3.js"></script>
-    <div class="header p-3">
-      <h1><a href="index.html" class="link">La Meilleure Épicerie</a></h1>
-  </div>
-  <div class="nav-bar mx-4">
-      <ul class="nav-bar-content mb-3">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#aisles">Aisles</a></li>
-          <li><a href="index.html#offers">Offers</a></li>
-          <li><a href="Login.html">Login</a></li>
-          <li><a href="Sign Up.html">Sign Up</a></li>
-          <li><a href="ShoppingCart.html" id="right">Shopping Cart</a></li>
-      </ul>
-  </div>
+    <script src="../JS/products.js"></script>
+   
 </head>
 <body>
+  <div class="header p-3">
+    <h1><a href="index.html" class="link">La Meilleure Épicerie</a></h1>
+  </div>
+<div class="nav-bar mx-4">
+    <ul class="nav-bar-content mb-3">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#aisles">Aisles</a></li>
+        <li><a href="index.html#offers">Offers</a></li>
+        <li><a href="Login.html">Login</a></li>
+        <li><a href="Sign Up.html">Sign Up</a></li>
+        <li><a href="ShoppingCart.html" id="right">Shopping Cart</a></li>
+    </ul>
     <div class="container h-100 d-flex flex-column">
       <div class="row h-75 mb-4">
         <div class="col-md-6 col-lg-6 grey" style="margin-top:30px">
@@ -38,9 +39,11 @@
           <h3 id="price" class ="price">
             Price: $5.99 per bundle
           </h3>
-          <label for="quantity"> Quantity:</label>
-          <div class="input">
-            <input type="number" id="quantity" class="quantity" name="quantity">
+          <div class="quantity-container">
+            <label for="quantity"></label>
+            <button class="general-btn add" onclick="add()">+</button>
+            <input readonly type="text" id="quantity" name="quantity" placeholder="Quantity">
+            <button class="general-btn subtract inactive-btn" onclick="subtract()">-</button>
           </div>
           <button  class="btn" class="desButton">More Description</button>
           <br/>
