@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link href="../css-fas/all.css" rel="stylesheet">
+  <link rel="shortcut icon" href="../Images/re.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../CSS/ProductDes.css">
+  <title>Butter</title>
+</head>
+
+<body onload="checkItemPrice()">
+  <section class="header">
+    <h1><a href="index.html">La Meilleure Épicerie</a></h1>
+  </section>
+  <section class="nav-bar">
+    <ul class="nav-bar-content">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#aisles">Aisles</a></li>
+      <li><a href="index.html#offers">Offers</a></li>
+      <li><a href="Login.html">Login</a></li>
+      <li><a href="Sign Up.html">Sign Up</a></li>
+      <li><a href="ShoppingCart.html" id="right">Shopping Cart</a></li>
+    </ul>
+  </section>
+  <div class="content-container">
+    <div class="col-50">
+      <h3>Butter</h3>
+      <div class="img-container">
+        <img src="../Images/MilkProducts/butter.jpg" alt="Milk Image">
+      </div>
+    </div>
+    <div class="col-50">
+      <p class = "price"> For $1.99 </p>
+      <button class="general-btn">Add To Cart</button>
+      <div class="quantity-container">
+        <label for="quantity"></label>
+        <button class="general-btn add" onclick="add()">+</button>
+        <input readonly type="text" id="quantity" name="quantity" placeholder="Quantity">
+        <button class="general-btn subtract inactive-btn" onclick="subtract()">-</button>
+      </div>
+      <button class="general-btn des-btn" onclick="moredescription()">More Description</button>
+      <div id= "des" style="visibility: hidden;">
+        <p>
+          Butter is made from 100% canadian quality milk and contains only two ingredients: cream and a touch of salt. Good for a keto diet or to enhance the taste of your food.
+           A must to make all kinds of outstanding recipes or simply to put on your corn on the cob!
+        </p>
+        <table class="nutrition-value">
+          <tr>
+            <th colspan="2">Nutrition Facts</th>
+          </tr>
+          <tr>
+            <th colspan="2">Amounts are per 1tbsp</th>
+          </tr>
+          <tr>
+            <th>Total Calories</th>
+            <td>102  </td>
+          </tr>
+          <tr>
+            <th>Total fat</th>
+            <td>11.5g </td>
+          </tr>
+        
+          <tr>
+            <th colspan="2">Vitamins & Minerals</th>
+          </tr>
+          <tr>
+            <td>Vitamin B12 </td>
+            <td>Vitamin A </td>
+          </tr>
+          <tr>
+            <td>Vitamin K </td>
+            <td>Vitamin E  </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <section id="footer">
+    <a href="https://facebook.com" target="_blank"><em class="fab fa-facebook fa-2x"></em></a>
+    <a href="https://instagram.com" target="_blank"><em class="fab fa-instagram fa-2x"></em></a>
+    <a href="https://twitter.com" target="_blank"><em class="fab fa-twitter-square fa-2x"></em></a>
+    <h6>
+      Thanks for shopping at La Meilleure Épicerie. <br>
+      To contact us, please click <a href="contact-us.html" class="contact-page">here</a>.
+    </h6>
+  </section>
+  <script src="../JS/milkproduct.js"></script>
+ 
+</body>
+
+</html>

@@ -113,18 +113,22 @@ text-align: center;
 
 @media (max-width:1300px){
     .container{
-        margin-left: 310px;
+        margin-left: 260px;
         margin-right: auto;
     }
+    .sidebar{
+      width: 250px;
+    }
     #theform{
+      margin-left: 0%;
         float: left;
-        width: 500px;
+        width: 400px;
     }
 
     .title{
         font-size: large;
-        margin-left: 250px;
-        margin-left: 0%;
+       text-align: left;
+       
       
         
         
@@ -133,17 +137,24 @@ text-align: center;
 }
 @media (max-width: 800px){
   .sidebar {
-    width: 100%;
+    width: 120%;
     height: auto;
     position: relative;
   }
   .sidebar a {float: left;}
-    .nav-bar-content{
-      margin-left: 0%;
-    }
+   
 
-    .container{
+  .container{
+    margin-left: 0%;
+    width: 80%;
+    height: auto;
+    position: relative;
+    float: left;
+  }
+    #theform{
       margin-left: 0%;
+        float: left;
+        width: 320px;
     }
     .title{
         font-size: 25px;
