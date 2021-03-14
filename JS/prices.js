@@ -1,4 +1,5 @@
 // Form the varaible that contains the prices of the products in the deals section
+// will be changed when implementing the feature to change the prices from the server side.
 var pineapplePrice = 1.99;
 var salmonPrice = 21.99;
 var BeltedGallowaySirloinPrice = 7.99;
@@ -23,11 +24,11 @@ const checkItemPrice = () => {
 	const price = document.querySelector(".price");
 	if (documentTitle === "Pineapple") {
 		price.textContent = `For only $${pineapplePrice} per pound`
-	} else if (documentTitle == "Belted Galloway Sirloin") {
+	} else if (documentTitle === "Belted Sirloin Meat") {
 		price.textContent = `For only $${BeltedGallowaySirloinPrice} per pound`
-	} else if (documentTitle == "Salmon") {
+	} else if (documentTitle === "Salmon") {
 		price.textContent = `For only $${salmonPrice} per pound`
-	} else if (documentTitle == "Bread") {
+	} else if (documentTitle === "Bread") {
 		price.textContent = `For only $${breadPrice} per oz`
 	}
 }
