@@ -3,56 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Sausages</title>
-    <link rel="stylesheet" href="../../CSS/style.css">
-    <link href="../../css-fas/all.css" rel="stylesheet">
-    <link rel="shortcut icon" href="../../Images/re.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../../CSS/P3.css">
-    <link rel="stylesheet" href="../../CSS/meatDesc.css">
-    <link rel="stylesheet" href="../../CSS/ProductDes.css">
+    <title>Tomahawk Steak</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="../css-fas/all.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../Images/re.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/P3.css">
+    <link rel="stylesheet" href="../CSS/meatDesc.css">
+    <link rel="stylesheet" href="../CSS/ProductDes.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+    
 </head>
 <body>
   <div class="header p-3">
-    <h1><a href="../index.html" class="link">La Meilleure Épicerie</a></h1>
-  </div>
+    <h1><a href="index.html" class="link">La Meilleure Épicerie</a></h1>
+</div>
 <div class="nav-bar mx-4">
     <ul class="nav-bar-content mb-3">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../index.html#aisles">Aisles</a></li>
-        <li><a href="../index.html#offers">Offers</a></li>
-        <li><a href="../Login.html">Login</a></li>
-        <li><a href="../Sign Up.html">Sign Up</a></li>
-        <li><a href="../ShoppingCart.html" id="right">Shopping Cart</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#aisles">Aisles</a></li>
+        <li><a href="index.html#offers">Offers</a></li>
+        <li><a href="Login.html">Login</a></li>
+        <li><a href="Sign Up.html">Sign Up</a></li>
+        <li><a href="ShoppingCart.html" id="right">Shopping Cart</a></li>
     </ul>
-    </div>
+</div>
     <div class="container d-flex flex-column">
       <div class="row mb-4" id="productContainer">
         <div class="col-md-6 col-lg-6 grey" style="margin-top:30px">
-          <h2 class ="product">Sausages</h2>
+          <h2 class ="product">Tomahawk Steak</h2>
           <br/>
           <div class ="image">
-            <img src="../../Images/meat/sausages.jfif"class="img-fluid" alt="Sausages">
+            <img src="../Images/meat/Tomahawk Steak.jfif"class="img-fluid" alt="Tomahawk Steak">
           </div>
         </div> 
         <div class="col-md-6 col-sm-12 col-lg-6 grey" style="margin-top:30px">
           <h3 id="price" class ="price">
-            Price: $7.99 per pound
+            Price: $34.99 per pound
           </h3>
           <div class="quantity-container">
             <label for="quantity"></label>
             <button class="general-btn add" onclick="add()">+</button>
             <input readonly type="text" id="quantity" name="quantity" placeholder="Quantity">
             <button class="general-btn subtract inactive-btn" onclick="subtract()">-</button>
-          </div>          
+          </div>
           <button class="btn cartButton" onclick ="getData()">Add To Cart🛒</button>
           <br/>
           <button class="btn desButton" onclick="showDescription()">More Description</button>
           <div id="description" class="hideDesc">
             <p id="description-text">
-              Being one of our most popular imported meats, Italian Sausage merits its praise.<br/>
-              Perfect for sandwiches, combining with cheese spreads, or just devouring it alone. You can never go wrong with this one.
+              The Tomahawk steak isn't just dreamy-it's real.<br/>
+              It is huge, well marbled, buttery, and perfect for sharing with others. Or going caveman-style on it yourself.
             </p>
             <div>
               <table id="nutrition">
@@ -64,18 +65,18 @@
               </tr>
               <tr>
                 <td>Total Calories</td>
-                <td>344</td>
+                <td>280</td>
               </tr>
               <tr>
-                <td>Total Fat 27g</td>
-                <td>42%</td>
+                <td>Total Fat 22g</td>
+                <td>34%</td>
               </tr>
               <tr>
-                <td>Saturated Fat 10g</td>
-                <td>50%</td>
+                <td>Saturated Fat 9g</td>
+                <td>45%</td>
               </tr>
               <tr>
-                <td>Cholesterol 57mg</td>
+                <td>Cholesterol 58mg</td>
                 <td>19%</td>
               </tr>
             </table>
@@ -92,9 +93,10 @@
         Thanks for shopping at La Meilleure Épicerie. <br> 
         To contact us please use one of our social media.
     </h6>
-  </div>  
+  </div>
   <script src="../../JS/prices.js"></script>
   <script src="../../JS/meat.js"></script>
+  <script src ="../../JS/p3.js"></script>
   <script src="../../JS/p3.js"></script>
   <script src="../../JS/products.js"></script>
 </body>

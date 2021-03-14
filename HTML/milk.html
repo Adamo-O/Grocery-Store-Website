@@ -4,36 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../CSS/style.css">
-  <link href="../../css-fas/all.css" rel="stylesheet">
-  <link rel="shortcut icon" href="../../Images/re.ico" type="image/x-icon">
-  <link rel="stylesheet" href="../../CSS/ProductDes.css">
-  <title>Cheese</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link href="../css-fas/all.css" rel="stylesheet">
+  <link rel="shortcut icon" href="../Images/re.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../CSS/ProductDes.css">
+  <title>Milk</title>
 </head>
 
-<body>
+<body onload="checkItemPrice()">
   <section class="header">
-    <h1><a href="../index.html">La Meilleure Épicerie</a></h1>
+    <h1><a href="index.html">La Meilleure Épicerie</a></h1>
   </section>
   <section class="nav-bar">
     <ul class="nav-bar-content">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../index.html#aisles">Aisles</a></li>
-      <li><a href="../index.html#offers">Offers</a></li>
-      <li><a href="../Login.html">Login</a></li>
-      <li><a href="../Sign Up.html">Sign Up</a></li>
-      <li><a href="../ShoppingCart.html" id="right">Shopping Cart</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#aisles">Aisles</a></li>
+      <li><a href="index.html#offers">Offers</a></li>
+      <li><a href="Login.html">Login</a></li>
+      <li><a href="Sign Up.html">Sign Up</a></li>
+      <li><a href="ShoppingCart.html" id="right">Shopping Cart</a></li>
     </ul>
   </section>
   <div class="content-container">
     <div class="col-50">
-      <h3>Cheese</h3>
+      <h3>Milk</h3>
       <div class="img-container">
-        <img src="../../Images/MilkProducts/americancheese.jpg" alt="Milk Image">
+        <img src="../Images/MilkProducts/milkjug.jpg" alt="Milk Image">
       </div>
     </div>
     <div class="col-50">
-      <p class = "price"> For $2.99 per pack</p>
+      <p class = "price"> For $2.99 per Gallon </p>
       <button class="general-btn">Add To Cart</button>
       <div class="quantity-container">
         <label for="quantity"></label>
@@ -43,13 +43,14 @@
       </div>
       <button class="general-btn des-btn" onclick="moredescription()">More Description</button>
       <div id= "des" style="visibility: hidden;">
-        <table class="nutrition-value">
-          <p>
-           <p>
-            Say yes please to extra cheese at your next pizza night. Made with 100% Canadian milk, Cheese is a good source of calcium that’s high in protein, too.
-            This family-sized 400 g block is a great way to create ooey-gooey, extra cheesy, luscious layers of lasagna, and melty masterpieces of pizza pie perfection.
-          </p>
-          </p>
+        <p>
+          Nothing compares to a cold glass of fresh Sealtest Milk. A light, refreshing and natural taste with immense nutritional value. Sealtest offers you quality milk in all varieties. 
+          Whether it’s Homogenized, 2%, 1% or skim milk, Sealtest Milk provides an excellent source of calcium and vitamin D.No antibiotics or artificial growth hormones.
+        </p>
+        
+      
+     
+                  <table class="nutrition-value">
           <tr>
             <th colspan="2">Nutrition Facts</th>
           </tr>
@@ -58,30 +59,26 @@
           </tr>
           <tr>
             <th>Total Calories</th>
-            <td>402  </td>
+            <td>149  </td>
           </tr>
           <tr>
             <th>Total fat</th>
-            <td>33g </td>
+            <td>4.8g </td>
           </tr>
           <tr>
             <th>Total Carbohydrate</th>
-            <td>1.2g </td>
+            <td>12g </td>
           </tr>
           <tr>
             <th colspan="2">Vitamins & Minerals</th>
           </tr>
           <tr>
-            <td>Vitamin A </td>
-            <td>Magmesium </td>
+            <td>Vitamin B12 </td>
+            <td>Phosphorus </td>
           </tr>
           <tr>
             <td>Calcium </td>
             <td>Vitamin D  </td>
-          </tr>
-          <tr>
-            <td>Cobalamin </td>
-            <td>Vitamin C  </td>
           </tr>
         </table>
       </div>
@@ -97,9 +94,9 @@
     </h6>
   </section>
   <script src="../../JS/milkproduct.js"></script>
+
   <script src="../../JS/p3.js"></script>
-  <script src ="../../JS/products.js"></script>
- 
+  <script src="../../JS/products.js"></script>
 </body>
 
 </html>
