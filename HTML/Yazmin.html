@@ -27,31 +27,31 @@
         <h1>Account</h1>
         <form id = "pravForm">
             <div class="form-group row">
-              <label for="first name" id="fname" class="col-sm-2 col-form-label">First Name</label>
+              <label for="first name" id="yazminfname" class="col-sm-2 col-form-label">First Name</label>
               <div class="col-sm-3">
-                <input class="form-control" type="text" placeholder="Yazmin" readonly>
+                <input class="form-control" id="fnameyaz" type="text" placeholder="Yazmin" readonly>
               </div>
-              <label for="last name" id = "lname" class="col-sm-2 col-form-label">Last Name</label>
+              <label for="last name" id = "yazminlname" class="col-sm-2 col-form-label">Last Name</label>
               <div class="col-sm-3">
-                  <input class="form-control" type="text" placeholder="Gabriel" readonly>
+                  <input class="form-control" id="lnameyaz"type="text" placeholder="Gabriel" readonly>
               </div>
             </div>
             <div class="form-group row">
-                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                <label for="email" id="yazminemail" class="col-sm-2 col-form-label">Email</label>
                 <div class = "col-sm-3">
-                    <input class="form-control" type="text" placeholder="kathig@hotmail.com" readonly>
+                    <input class="form-control" id="emailyaz" type="text" placeholder="kathig@hotmail.com" readonly>
                 </div>
             </div>
             <div class = "form-group row">
-                <label for="postcode" id="postalcode" class="col-sm-2 col-form-label">Postal Code</label>
+                <label for="postcode" id="yazminpostalcode" class="col-sm-2 col-form-label">Postal Code</label>
                 <div class="col-sm-3">
-                    <input class="form-control" type="text" placeholder="P4B 8A6" readonly>
+                    <input class="form-control" id="postalcodeyaz" type="text" placeholder="P4B 8A6" readonly>
                 </div>
             </div>
             <div class = "form-group row">
-                <label for="password" id="password" class="col-sm-2 col-form-label">Password</label>
+                <label for="password" id="yazminpassword" class="col-sm-2 col-form-label">Password</label>
                 <div class="col-sm-3">
-                    <input class="form-control" type="password" placeholder="••••••••" readonly>
+                    <input class="form-control" id="passwordYaz" type="password" placeholder="••••••••" readonly>
                 </div>
             </div>
         </form>
@@ -59,23 +59,23 @@
             <h1>General Information</h1>
             <form id = "pravForm">
                 <div class="form-group row">
-                  <label for="date" id="date" class="col-sm-2 col-form-label">Date Joined:</label>
+                  <label for="date"  class="col-sm-2 col-form-label">Date Joined:</label>
                   <div class="col-sm-3">
-                    <input class="form-control" type="text" placeholder="17/03/2012" readonly>
+                    <input class="form-control" id="dateYaz" type="text" placeholder="17/03/2012" readonly = 'dateYazz'>
                   </div>
-                  <label for="membership" id = "member" class="col-sm-2 col-form-label">Member Since:</label>
+                  <label for="membership"  class="col-sm-2 col-form-label">Member Since:</label>
                   <div class="col-sm-3">
-                      <input class="form-control" type="text" placeholder="12/06/2018" readonly>
+                      <input class="form-control" id = "memberYaz" type="text" placeholder="12/06/2018" readonly = 'memberYazz'>
                   </div>
                 </div>
                 <div class="form-group row">
                     <label for="memberid" class="col-sm-2 col-form-label">Member ID</label>
                     <div class = "col-sm-3">
-                        <input class="form-control" type="text" placeholder="8719362" readonly>
+                        <input class="form-control" id="memberIdYaz" type="text" placeholder="8719362" readonly = 'memberIdYazz'>
                     </div>
                     <label for="points" id="points" class="col-sm-2 col-form-label">Points Accumulated</label>
                     <div class="col-sm-3">
-                        <input class="form-control" type="text" placeholder="0" readonly>
+                        <input class="form-control" id="pointsYaz" type="text" placeholder="0" readonly = 'pointsYazz'>
                     </div>
                 </div>
                 <div class = "form-group row">
@@ -84,8 +84,9 @@
             </form>
         </div>
         <div class = "text-center">
-            <button type = "button" id = "editBtn" onclick = "location.href='EditUser.html'" class = "btn btn-success">Edit this user</button>
+            <button type = "button" id = "editbtnyaz" onclick = 'editUserYaz()' class = "btn btn-success">Edit this user</button>
             <button type = "button" id = "userListBtn" onclick = "location.href='userList.html'" class = "btn btn-success">Select another user</button>
         </div>
       </div>
+      <script src="../JS/users.js"></script>
 </html>
