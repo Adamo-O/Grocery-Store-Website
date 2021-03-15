@@ -39,11 +39,9 @@
           <h3 id="price" class ="price">
             
           </h3>
-          <div class="quantity-container">
-            <label for="quantity"></label>
-            <button class="general-btn add" onclick="add()">+</button>
-            <input readonly type="text" id="quantity" name="quantity" placeholder="Quantity">
-            <button class="general-btn subtract inactive-btn" onclick="subtract()">-</button>
+          <label for="quantity">Quantity:</label>
+          <div class="input">
+            <input type="number" class="quantity" name="quantity">
           </div>
           <button class="btn cartButton" onclick ="getData()">Add To Cart🛒</button><br />
           <button class="btn desButton" onclick="showDescription()">More Description</button>

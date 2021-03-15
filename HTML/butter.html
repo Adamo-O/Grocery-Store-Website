@@ -35,12 +35,10 @@
     <div class="col-50">
       <p class = "price"> For $1.99 </p>
       <button class="general-btn">Add To Cart</button>
-      <div class="quantity-container">
-        <label for="quantity"></label>
-        <button class="general-btn add" onclick="add()">+</button>
-        <input readonly type="text" id="quantity" name="quantity" placeholder="Quantity">
-        <button class="general-btn subtract inactive-btn" onclick="subtract()">-</button>
-      </div>
+      <label for="quantity">Quantity:</label>
+          <div class="input">
+            <input type="number" class="quantity" name="quantity">
+          </div>
       <button class="general-btn des-btn" onclick="moredescription()">More Description</button>
       <div id= "des" style="visibility: hidden;">
         <p>
