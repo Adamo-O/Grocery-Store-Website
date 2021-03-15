@@ -8,6 +8,7 @@
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     
     <link rel="stylesheet" href="CSS/addproducts.css">
+    <script type="text/javascript" src="../P7_P8/JS/edit.js"></script>
     <title>Shrimp</title>
 </head>
     <body>
@@ -66,26 +67,26 @@
                     <label for="date">Exp Date: </label>
                     <input type="date"  id="date" class="form-content" value="2021-03-28"> </br></br>
                 </div>  <div class="row">
-                    <label for="cat">Category </label>
-                    <select id="cat" name="cat">
-                        <option value="fishandseafood">Fish & Seafood</option>
-                        <option value="bakery">Bakery</option>
-                        <option value="fruits-and-vegetables">Fruits & vegetables</option>
-                        <option value="meat">Meat</option>
-                       
-                        <option value="none">None</option>
-                    </select>
+                 
+                    <label for="cat">Category:  </label>
+                    <input type="radio" name="cate" id="fruits-and-vegetables" value="fruits-and-vegetables" checked />Fruits & vegetables
+                     <input type="radio" name="cate" id="meat" value="meat" /> Meat
+                     <input type="radio" name="cate" id="bakery" value="bakery" />Bakery
+                     <input type="radio" name="cate" id="fishandseafood" value="fishandseafood" /> Fish and Seafood
+                     <input type="radio" name="cate" id="dairyproducts" value="dairyproducts" /> Dairy Products
+                     <input type="radio" name="cate" id="snacks" value="snacks" /> Snacks
                 </div> 
                 
                 <div class="row">
                     <label for="Image">Upload Image: </label>
                     <img src="Images/fish and sea food/shrimp.jfif"  height="90px" width="90px">
+                    <p id="q"></p>
                     <input type="file" id="button" value="UPLOAD PRODUCT IMAGE"> </br> </br>
                   
     
     
     
-                    <button id="button">SAVE</button>
+                    <button id="button" onclick="return edit()" >SAVE</button>
                 </div>
                 </p>
             </form>
