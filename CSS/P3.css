@@ -54,4 +54,14 @@ Button:active {
     background-color: #02a8a8;
     transform: translateY(4px);
 }        
-
+input{
+    background-color: #98FAC2;
+    padding: 10px 32px;
+}
+input:hover {
+    background-color: lime;
+  }
+label{
+    color:green;
+    font-size:30px;text-align:center;
+}

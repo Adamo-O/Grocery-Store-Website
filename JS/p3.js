@@ -9,7 +9,15 @@ function getData(){
         itemsArray = [itemData]
     }
     else{
-        itemsArray.push(itemData);
+        for(let i = 0; i<itemsArray.length;i++){
+            if(itemsArray[i][0] === itemName){
+                itemsArray[i][1] = parseInt(quantity) + parseInt(itemsArray[i][1]);
+                break; 
+            }
+            else if(i==itemsArray.length-1){
+                itemsArray.push(itemData);
+            }
+        }
     }
     sessionStorage.setItem('items', JSON.stringify(itemsArray));
 }
