@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../CSS/style.css">
-  <link href="../css-fas/all.css" rel="stylesheet">
+  <link href="../../css-fas/all.css" rel="stylesheet">
   <link rel="shortcut icon" href="../../Images/re.ico" type="image/x-icon">
   <link rel="stylesheet" href="../../CSS/ProductDes.css">
   <title>Milk</title>
 </head>
 
-<body onload="checkItemPrice()">
+<body>
   <section class="header">
     <h1><a href="../index.html">La Meilleure Épicerie</a></h1>
   </section>
@@ -33,8 +33,8 @@
       </div>
     </div>
     <div class="col-50">
-      <p class = "price"> For $2.99 per Gallon </p>
-      <button class="general-btn">Add To Cart</button>
+      <p id="price" class = "price">For only $2.99 per Gallon </p>
+      <button class="general-btn" onclick="getData()">Add To Cart</button>
       <div class="quantity-container">
         <label for="quantity"></label>
         <button class="general-btn add" onclick="add()">+</button>
