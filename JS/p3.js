@@ -22,7 +22,7 @@ function getData(){
                 break; 
             }
             else if(i==itemsArray.length-1){
-                itemsArray.push(itemData);
+                itemsArray.push(itemData);break;
             }
         }
     }
@@ -55,6 +55,20 @@ function addRows(){
             }
             sessionStorage.setItem('items', JSON.stringify(arr));
         };
+        var numberOfRows = table1.rows.length;
+        document.getElementById("numberOfItems").innerHTML = (numberOfRows -1);
+        var orderTotal;
+        for(let j =0;j<arr.length;i++){
+            orderTotal = parseFloat(orderTotal) + parseFloat(arr[j][3]); 
+        }
+        document.getElementById("orderTotal").innerHTML = orderTotal;
+        var qst =9.975/100 * orderTotal;
+        document.getElementById("qst") = qst;
+        var gst =5/100 * orderTotal;
+        document.getElementById("gst") = gst;
+        var total = orderTotal + qst + gst;
+        document.getElementById("total") = total; 
     }
 }
+
  
