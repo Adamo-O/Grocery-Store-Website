@@ -8,12 +8,12 @@
   <link href="../../css-fas/all.css" rel="stylesheet">
   <link rel="shortcut icon" href="../../Images/re.ico" type="image/x-icon">
   <link rel="stylesheet" href="../../CSS/ProductDes.css">
-  <title>Butter</title>
+  <title>Green Bell Pepper</title>
 </head>
 
 <body>
   <section class="header">
-    <h1><a href="../../index.html">La Meilleure Épicerie</a></h1>
+    <h1><a href="../index.html">La Meilleure Épicerie</a></h1>
   </section>
   <section class="nav-bar">
     <ul class="nav-bar-content">
@@ -27,53 +27,50 @@
   </section>
   <div class="content-container">
     <div class="col-50">
-      <h3>Butter</h3>
+      <h3>Green Bell Pepper</h3>
       <div class="img-container">
-        <img src="../../Images/MilkProducts/butter.jpg" alt="Milk Image">
+        <img src="../../Images/fish and sea food/Mackerel.jfif" alt="Green Bell Pepper Image">
       </div>
     </div>
     <div class="col-50">
-      <p id="price" class = "price">For only $1.25 </p>
-      <button class="general-btn" onclick ="getData()">Add To Cart</button>
+      <p id="price" class="price">For only $1.99 per pound</p>
+      <button onclick="getData()" class="general-btn">Add To Cart</button>
       <div class="quantity-container">
         <label for="quantity"></label>
         <button class="general-btn add" onclick="add()">+</button>
-        
         <input readonly type="text" id="quantity" name="quantity" placeholder="Quantity">
         <button class="general-btn subtract inactive-btn" onclick="subtract()">-</button>
       </div>
-      <button class="general-btn des-btn" onclick="moredescription()">More Description</button>
-      <div id= "des" style="visibility: hidden;">
-        <p>
-          Butter is made from 100% canadian quality milk and contains only two ingredients: cream and a touch of salt. Good for a keto diet or to enhance the taste of your food.
-           A must to make all kinds of outstanding recipes or simply to put on your corn on the cob!
+      <button class="general-btn des-btn" onclick="description()">More Description</button>
+      <div class="description">
+        <p class="description-details">
+          Grace Jack Mackerel - Grace Jack Mackerel brings delicious authentic flavour to your table. A Caribbean favorite, canned mackerel is perfect as a convenient meal or snack.
         </p>
         <table class="nutrition-value">
           <tr>
             <th colspan="2">Nutrition Facts</th>
           </tr>
           <tr>
-            <th colspan="2">Amounts are per 1tbsp</th>
-          </tr>
-          <tr>
-            <th>Total Calories</th>
-            <td>102  </td>
+            <th colspan="2">Amounts are pers serving</th>
           </tr>
           <tr>
             <th>Total fat</th>
-            <td>11.5g </td>
+            <td>38%</td>
           </tr>
-        
+          <tr>
+            <th>Protein</th>
+            <td>38%</td>
+          </tr>
           <tr>
             <th colspan="2">Vitamins & Minerals</th>
           </tr>
           <tr>
-            <td>Vitamin B12 </td>
-            <td>Vitamin A </td>
+            <td>Vitamin A 3%</td>
+            <td>Vitamin D 251%</td>
           </tr>
           <tr>
-            <td>Vitamin K </td>
-            <td>Vitamin E  </td>
+            <td>Calcium 6%</td>
+            <td>Iron 7%</td>
           </tr>
         </table>
       </div>
@@ -88,9 +85,8 @@
       To contact us, please click <a href="../contact-us.html" class="contact-page">here</a>.
     </h6>
   </section>
-  <script src="../../JS/milkproduct.js"></script>
-  <script src="../../JS/p3.js"></script>
-  <script src ="../../JS/products.js"></script>
+  <script src="../../JS/products.js"></script>
+  <script src ="../../JS/p3.js"></script>
 </body>
 
 </html>
