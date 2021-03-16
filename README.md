@@ -1,9 +1,6 @@
 # SOEN-287
  Group assignment where we make a website
 
-Ghaith Chrit (40114180)
-p1-2 html: index.html, bakery.html, fish-and-sea-food.html, fruits-and-vegetables.html, meat.html
-	 css : style.css, all.css (fas icons)
 
 # SOEN 287 Assignment 1
 Web Programming Assignment 1.
@@ -76,5 +73,11 @@ css:
 - edit.css 
 - orderstyle.css
         
-
-
+# SOEN 287 Assignment 2
+Web Programming Assignment 1.
+Due February 22nd.
+## Contributions
+### Ghaith Chrit (40114180) P1-2
+JS: 
+- prices.js
+- index.js
