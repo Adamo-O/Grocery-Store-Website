@@ -84,7 +84,7 @@ JS:
 JS:
 - P3.js
 ### Adamo Orsini (40174716) P5-6
-"More description" Buttons in meat aisle, P5-6
+"More description" Buttons in [meat aisle](HTML/Meat-Aisle)
 HTML:
 - [ForgotPassword.html](HTML/ForgotPassword.html)
 CSS:

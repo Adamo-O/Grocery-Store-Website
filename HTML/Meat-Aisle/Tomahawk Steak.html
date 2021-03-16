@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Bakery</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link href="../css-fas/all.css" rel="stylesheet">
-    <link rel="shortcut icon" href="../Images/re.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../CSS/P3.css">
-    <link rel="stylesheet" href="../CSS/meatDesc.css">
-    <link rel="stylesheet" href="../CSS/ProductDes.css">
+    <title>Tomahawk Steak</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <link href="../../css-fas/all.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../Images/re.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../CSS/P3.css">
+    <link rel="stylesheet" href="../../CSS/meatDesc.css">
+    <link rel="stylesheet" href="../../CSS/ProductDes.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     
 </head>
 <body>
   <div class="header p-3">
     <h1><a href="../index.html" class="link">La Meilleure Épicerie</a></h1>
-  </div>
+</div>
 <div class="nav-bar mx-4">
     <ul class="nav-bar-content mb-3">
         <li><a href="../index.html">Home</a></li>
@@ -26,28 +27,29 @@
         <li><a href="../Sign Up.html">Sign Up</a></li>
         <li><a href="../ShoppingCart.html" id="right">Shopping Cart</a></li>
     </ul>
+</div>
     <div class="container d-flex flex-column">
       <div class="row mb-4" id="productContainer">
         <div class="col-md-6 col-lg-6 grey" style="margin-top:30px">
-          <h2 class ="product">Chicken Breast</h2>
+          <h2 class ="product">Tomahawk Steak</h2>
           <br/>
           <div class ="image">
-            <img src="../../Images/meat/chicken breast.jfif" class="img-fluid" alt="Bread">
+            <img src="../../Images/meat/Tomahawk Steak.jfif"class="img-fluid" alt="Tomahawk Steak">
           </div>
         </div> 
         <div class="col-md-6 col-sm-12 col-lg-6 grey" style="margin-top:30px">
-          <h3 id ="price" class ="price">For only $4.99 per pound</h3>
+          <h3 id="price" class ="price">For only $34.99 per pound</h3>
           <label for="quantity">Quantity:</label>
           <div class="input">
             <input type="number" id="quantity" class="quantity" name="quantity">
           </div>
-          <button class="btn cartButton">Add To Cart🛒</button>
+          <button class="btn cartButton" onclick ="getData()">Add To Cart🛒</button>
           <br/>
-          <button  class="btn desButton" onclick="showDescription()">More Description</button>
+          <button class="btn desButton" onclick="showDescription()">More Description</button>
           <div id="description" class="hideDesc">
             <p id="description-text">
-              The chicken breast's white meat and health benefits make it the most valuable cut of chicken.<br/>
-              It can be cooked in a variety of ways, making it a versatile and healthy meat option.
+              The Tomahawk steak isn't just dreamy-it's real.<br/>
+              It is huge, well marbled, buttery, and perfect for sharing with others. Or going caveman-style on it yourself.
             </p>
             <div>
               <table id="nutrition">
@@ -59,15 +61,15 @@
               </tr>
               <tr>
                 <td>Total Calories</td>
-                <td>165</td>
+                <td>280</td>
               </tr>
               <tr>
-                <td>Total Fat 3g</td>
-                <td>18%</td>
+                <td>Total Fat 22g</td>
+                <td>34%</td>
               </tr>
               <tr>
-                <td>Saturated Fat 0.3g</td>
-                <td>2%</td>
+                <td>Saturated Fat 9g</td>
+                <td>45%</td>
               </tr>
               <tr>
                 <td>Cholesterol 58mg</td>
@@ -90,6 +92,7 @@
   </div>
   <script src="../../JS/prices.js"></script>
   <script src="../../JS/meat.js"></script>
+  <script src ="../../JS/p3.js"></script>
   <script src="../../JS/p3.js"></script>
   <script src="../../JS/products.js"></script>
 </body>
