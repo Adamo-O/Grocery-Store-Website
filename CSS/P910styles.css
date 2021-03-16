@@ -67,13 +67,39 @@ label {
   line-height: 70px;
   background-color: #438a5e;
   font-family: Helvetica;
-
-
 }
 
 #logout{
   float: right;
   margin-right: 10px;
+}
+
+/*Footer Section for consistency*/
+#footer {
+  height: 2rem;
+  font-size: 1.25m;
+  margin-left: 22rem;
+  text-align: center;
+}
+
+#footer .fab {
+  color: white;
+  padding: 1rem;
+}
+
+#footer .fab:hover {
+  color: white;
+}
+
+#footer h6 {
+  margin: 0;
+  padding-bottom: 1.25rem;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+#headFooter {
+  color: white;
 }
 
 @media screen and (max-width: 700px) {
