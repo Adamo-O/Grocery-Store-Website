@@ -31,7 +31,7 @@ $('#delUser').click(function() {
         if (document.getElementById('edward') != null) {
             document.getElementById('edward').className = 'list-group-item disabled';
         }
-
+        
         document.getElementById('pravinaclose').hidden = false;
         document.getElementById('estelleclose').hidden = false;
         document.getElementById('antoniusclose').hidden = false;
@@ -88,24 +88,56 @@ $('#delUser').click(function() {
 // Edit methods for all users
 
 function editUserAlex() {
+    
     if (document.getElementById('alexandrefname').readOnly == true) {
         document.getElementById('alexandrefname').readOnly= false;
         document.getElementById('alexandrelname').readOnly = false;
         document.getElementById('alexandreemail').readOnly= false;
         document.getElementById('alexandrepostalcode').readOnly = false;
         document.getElementById('alexandrepassword').readOnly= false;
-    
+
         document.getElementById('editbtnalex').innerHTML = 'Save Changes';
     }
     else {
-        document.getElementById('alexandrefname').readOnly= true;
-        document.getElementById('alexandrelname').readOnly = true;
-        document.getElementById('alexandreemail').readOnly= true;
-        document.getElementById('alexandrepostalcode').readOnly = true;
-        document.getElementById('alexandrepassword').readOnly= true;
-    
-        document.getElementById('editbtnalex').innerHTML = 'Edit User';
-        window.alert('Changes saved!');
+        var fname = document.getElementById('alexandrefname').value;
+        var lname = document.getElementById('alexandrelname').value;
+        var email = document.getElementById('alexandreemail').value;
+        var postalCode = document.getElementById('alexandrepostalcode').value;
+
+        var regex=/^[a-zA-Z]+$/;
+        var emailRegex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        var postCodeRegex = /[a-zA-Z][0-9][a-zA-Z](-| |)[0-9][a-zA-Z][0-9]/;
+        var isValid = false;
+        if (!fname.match(regex)) {
+            document.getElementById('alexandrefnameInv').style.color ='red';    
+            document.getElementById('alexandrefnameInv').innerHTML = 'The name must have letters';
+
+        }
+        if (!lname.match(regex)) {
+            document.getElementById('alexandrelnameInv').style.color='red';
+            document.getElementById('alexandrelnameInv').innerHTML='The name must have letters';
+        }
+        if (!email.match(emailRegex)) {
+            document.getElementById('alexandreemailInv').style.color='red';
+            document.getElementById('alexandreemailInv').innerHTML='This email is invalid.';
+        }
+        if (!postalCode.match(postCodeRegex)) {
+            document.getElementById('alexandrepostcodeInv').style.color='red';
+            document.getElementById('alexandrepostcodeInv').innerHTML='This postal code is invalid.';
+        }
+        if (fname.match(regex) && lname.match(regex) && email.match(emailRegex) && postalCode.match(postCodeRegex)) {
+            document.getElementById('alexandrefnameInv').hidden=true;
+            document.getElementById('alexandrelnameInv').hidden=true;
+            document.getElementById('alexandreemailInv').hidden=true;
+            document.getElementById('alexandrepostcodeInv').hidden=true;
+            document.getElementById('alexandrefname').readOnly= true;
+            document.getElementById('alexandrelname').readOnly = true;
+            document.getElementById('alexandreemail').readOnly= true;
+            document.getElementById('alexandrepostalcode').readOnly = true;
+            document.getElementById('alexandrepassword').readOnly= true;
+            document.getElementById('editbtnalex').innerHTML = 'Edit User';
+            window.alert('Changes saved!');
+        }
     }
 }
 function editUserAntonius(){
@@ -119,14 +151,45 @@ function editUserAntonius(){
         document.getElementById('editbtnantonius').innerHTML = 'Save Changes';
     }
     else {
-        document.getElementById('antoniusfname').readOnly= true;
-        document.getElementById('antoniuslname').readOnly = true;
-        document.getElementById('antoniusemail').readOnly= true;
-        document.getElementById('antoniuspostalcode').readOnly = true;
-        document.getElementById('antoniuspassword').readOnly= true;
-    
-        document.getElementById('editbtnantonius').innerHTML = 'Edit User';
-        window.alert('Changes saved!');
+        var fname = document.getElementById('antoniusfname').value;
+        var lname = document.getElementById('antoniuslname').value;
+        var email = document.getElementById('antoniusemail').value;
+        var postalCode = document.getElementById('antoniuspostalcode').value;
+
+        var regex=/^[a-zA-Z]+$/;
+        var emailRegex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        var postCodeRegex = /[a-zA-Z][0-9][a-zA-Z](-| |)[0-9][a-zA-Z][0-9]/;
+        var isValid = false;
+        if (!fname.match(regex)) {
+            document.getElementById('antoniusfnameInv').style.color ='red';    
+            document.getElementById('antoniusfnameInv').innerHTML = 'The name must have letters';
+
+        }
+        if (!lname.match(regex)) {
+            document.getElementById('antoniuslnameInv').style.color='red';
+            document.getElementById('antoniuslnameInv').innerHTML='The name must have letters';
+        }
+        if (!email.match(emailRegex)) {
+            document.getElementById('antoniusemailInv').style.color='red';
+            document.getElementById('antoniusemailInv').innerHTML='This email is invalid.';
+        }
+        if (!postalCode.match(postCodeRegex)) {
+            document.getElementById('antoniuspostalcodeInv').style.color='red';
+            document.getElementById('antoniuspostalcodeInv').innerHTML='This postal code is invalid.';
+        }
+        if (fname.match(regex) && lname.match(regex) && email.match(emailRegex) && postalCode.match(postCodeRegex)) {
+            document.getElementById('antoniusfnameInv').hidden=true;
+            document.getElementById('antoniuslnameInv').hidden=true;
+            document.getElementById('antoniusemailInv').hidden=true;
+            document.getElementById('antoniuspostalcodeInv').hidden=true;
+            document.getElementById('antoniusfname').readOnly= true;
+            document.getElementById('antoniuslname').readOnly = true;
+            document.getElementById('antoniusemail').readOnly= true;
+            document.getElementById('antoniuspostalcode').readOnly = true;
+            document.getElementById('antoniuspassword').readOnly= true;
+            document.getElementById('editbtnantonius').innerHTML = 'Edit User';
+            window.alert('Changes saved!');
+        }
     }
 }
 function editUserEdward() {
@@ -140,14 +203,45 @@ function editUserEdward() {
         document.getElementById('editbtnedward').innerHTML = 'Save Changes';
     }
     else {
-        document.getElementById('edwardfname').readOnly= true;
-        document.getElementById('edwardlname').readOnly = true;
-        document.getElementById('edwardemail').readOnly= true;
-        document.getElementById('edwardpostalcode').readOnly = true;
-        document.getElementById('edwardpassword').readOnly= true;
-    
-        document.getElementById('editbtnedward').innerHTML = 'Edit User';
-        window.alert('Changes saved!');
+        var fname = document.getElementById('edwardfname').value;
+        var lname = document.getElementById('edwardlname').value;
+        var email = document.getElementById('edwardemail').value;
+        var postalCode = document.getElementById('edwardpostalcode').value;
+
+        var regex=/^[a-zA-Z]+$/;
+        var emailRegex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        var postCodeRegex = /[a-zA-Z][0-9][a-zA-Z](-| |)[0-9][a-zA-Z][0-9]/;
+        var isValid = false;
+        if (!fname.match(regex)) {
+            document.getElementById('edwardfnameInv').style.color ='red';    
+            document.getElementById('edwardfnameInv').innerHTML = 'The name must have letters';
+
+        }
+        if (!lname.match(regex)) {
+            document.getElementById('edwardlnameInv').style.color='red';
+            document.getElementById('edwardlnameInv').innerHTML='The name must have letters';
+        }
+        if (!email.match(emailRegex)) {
+            document.getElementById('edwardemailInv').style.color='red';
+            document.getElementById('edwardemailInv').innerHTML='This email is invalid.';
+        }
+        if (!postalCode.match(postCodeRegex)) {
+            document.getElementById('edwardpostalcodeInv').style.color='red';
+            document.getElementById('edwardpostalcodeInv').innerHTML='This postal code is invalid.';
+        }
+        if (fname.match(regex) && lname.match(regex) && email.match(emailRegex) && postalCode.match(postCodeRegex)) {
+            document.getElementById('edwardfnameInv').hidden=true;
+            document.getElementById('edwardlnameInv').hidden=true;
+            document.getElementById('edwardemailInv').hidden=true;
+            document.getElementById('edwardpostalcodeInv').hidden=true;
+            document.getElementById('edwardfname').readOnly= true;
+            document.getElementById('edwardlname').readOnly = true;
+            document.getElementById('edwardemail').readOnly= true;
+            document.getElementById('edwardpostalcode').readOnly = true;
+            document.getElementById('edwardpassword').readOnly= true;
+            document.getElementById('editbtnedward').innerHTML = 'Edit User';
+            window.alert('Changes saved!');
+        }
     }
 }
 function editUserEstelle() {
@@ -161,14 +255,45 @@ function editUserEstelle() {
         document.getElementById('editbtnestelle').innerHTML = 'Save Changes';
     }
     else {
-        document.getElementById('estellefname').readOnly= true;
-        document.getElementById('estellelname').readOnly = true;
-        document.getElementById('estelleemail').readOnly= true;
-        document.getElementById('estellepostalcode').readOnly = true;
-        document.getElementById('estellepassword').readOnly= true;
-    
-        document.getElementById('editbtnestelle').innerHTML = 'Edit User';
-        window.alert('Changes saved!'); 
+        var fname = document.getElementById('estellefname').value;
+        var lname = document.getElementById('estellelname').value;
+        var email = document.getElementById('estelleemail').value;
+        var postalCode = document.getElementById('estellepostalcode').value;
+
+        var regex=/^[a-zA-Z]+$/;
+        var emailRegex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        var postCodeRegex = /[a-zA-Z][0-9][a-zA-Z](-| |)[0-9][a-zA-Z][0-9]/;
+        var isValid = false;
+        if (!fname.match(regex)) {
+            document.getElementById('estellefnameInv').style.color ='red';    
+            document.getElementById('estellefnameInv').innerHTML = 'The name must contain only letters';
+
+        }
+        if (!lname.match(regex)) {
+            document.getElementById('estellelnameInv').style.color='red';
+            document.getElementById('estellelnameInv').innerHTML='The name must contain only letters';
+        }
+        if (!email.match(emailRegex)) {
+            document.getElementById('estelleemailInv').style.color='red';
+            document.getElementById('estelleemailInv').innerHTML='This email is invalid.';
+        }
+        if (!postalCode.match(postCodeRegex)) {
+            document.getElementById('estellepostalcodeInv').style.color='red';
+            document.getElementById('estellepostalcodeInv').innerHTML='This postal code is invalid.';
+        }
+        if (fname.match(regex) && lname.match(regex) && email.match(emailRegex) && postalCode.match(postCodeRegex)) {
+            document.getElementById('estellefnameInv').hidden=true;
+            document.getElementById('estellelnameInv').hidden=true;
+            document.getElementById('estelleemailInv').hidden=true;
+            document.getElementById('estellepostalcodeInv').hidden=true;
+            document.getElementById('estellefname').readOnly= true;
+            document.getElementById('estellelname').readOnly = true;
+            document.getElementById('estelleemail').readOnly= true;
+            document.getElementById('estellepostalcode').readOnly = true;
+            document.getElementById('estellepassword').readOnly= true;
+            document.getElementById('editbtnestelle').innerHTML = 'Edit User';
+            window.alert('Changes saved!');
+        }
     }
 }
 function editUserKatrina() {
@@ -182,14 +307,45 @@ function editUserKatrina() {
         document.getElementById('editbtnkatrina').innerHTML = 'Save Changes';
     }
     else {
-        document.getElementById('katrinafname').readOnly= true;
-        document.getElementById('katrinalname').readOnly = true;
-        document.getElementById('katrinaemail').readOnly= true;
-        document.getElementById('katrinapostalcode').readOnly = true;
-        document.getElementById('katrinapassword').readOnly= true;
-    
-        document.getElementById('editbtnkatrina').innerHTML = 'Edit User';
-        window.alert('Changes saved!'); 
+        var fname = document.getElementById('katrinafname').value;
+        var lname = document.getElementById('katrinalname').value;
+        var email = document.getElementById('katrinaemail').value;
+        var postalCode = document.getElementById('katrinapostalcode').value;
+
+        var regex=/^[a-zA-Z]+$/;
+        var emailRegex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        var postCodeRegex = /[a-zA-Z][0-9][a-zA-Z](-| |)[0-9][a-zA-Z][0-9]/;
+        var isValid = false;
+        if (!fname.match(regex)) {
+            document.getElementById('katrinafnameInv').style.color ='red';    
+            document.getElementById('katrinafnameInv').innerHTML = 'The name must contain only letters';
+
+        }
+        if (!lname.match(regex)) {
+            document.getElementById('katrinalnameInv').style.color='red';
+            document.getElementById('katrinalnameInv').innerHTML='The name must contain only letters';
+        }
+        if (!email.match(emailRegex)) {
+            document.getElementById('katrinaemailInv').style.color='red';
+            document.getElementById('katrinaemailInv').innerHTML='This email is invalid.';
+        }
+        if (!postalCode.match(postCodeRegex)) {
+            document.getElementById('katrinapostalcodeInv').style.color='red';
+            document.getElementById('katrinapostalcodeInv').innerHTML='This postal code is invalid.';
+        }
+        if (fname.match(regex) && lname.match(regex) && email.match(emailRegex) && postalCode.match(postCodeRegex)) {
+            document.getElementById('katrinafnameInv').hidden=true;
+            document.getElementById('katrinalnameInv').hidden=true;
+            document.getElementById('katrinaemailInv').hidden=true;
+            document.getElementById('katrinapostalcodeInv').hidden=true;
+            document.getElementById('katrinafname').readOnly= true;
+            document.getElementById('katrinalname').readOnly = true;
+            document.getElementById('katrinaemail').readOnly= true;
+            document.getElementById('katrinapostalcode').readOnly = true;
+            document.getElementById('katrinapassword').readOnly= true;
+            document.getElementById('editbtnkatrina').innerHTML = 'Edit User';
+            window.alert('Changes saved!');
+        }
     }
 }
 function editUserMadelaine() {
@@ -203,14 +359,45 @@ function editUserMadelaine() {
         document.getElementById('editbtnmadelaine').innerHTML = 'Save Changes';
     }
     else {
-        document.getElementById('madelainefname').readOnly= true;
-        document.getElementById('madelainelname').readOnly = true;
-        document.getElementById('madelaineemail').readOnly= true;
-        document.getElementById('madelainepostalcode').readOnly = true;
-        document.getElementById('madelainepassword').readOnly= true;
-    
-        document.getElementById('editbtnmadelaine').innerHTML = 'Edit User';
-        window.alert('Changes saved!'); 
+        var fname = document.getElementById('madelainefname').value;
+        var lname = document.getElementById('madelainelname').value;
+        var email = document.getElementById('madelaineemail').value;
+        var postalCode = document.getElementById('madelainepostalcode').value;
+
+        var regex=/^[a-zA-Z]+$/;
+        var emailRegex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        var postCodeRegex = /[a-zA-Z][0-9][a-zA-Z](-| |)[0-9][a-zA-Z][0-9]/;
+        var isValid = false;
+        if (!fname.match(regex)) {
+            document.getElementById('madelainefnameInv').style.color ='red';    
+            document.getElementById('madelainefnameInv').innerHTML = 'The name must contain only letters';
+
+        }
+        if (!lname.match(regex)) {
+            document.getElementById('madelainelnameInv').style.color='red';
+            document.getElementById('madelainelnameInv').innerHTML='The name must contain only letters';
+        }
+        if (!email.match(emailRegex)) {
+            document.getElementById('madelaineemailInv').style.color='red';
+            document.getElementById('madelaineemailInv').innerHTML='This email is invalid.';
+        }
+        if (!postalCode.match(postCodeRegex)) {
+            document.getElementById('madelainepostalcodeInv').style.color='red';
+            document.getElementById('madelainepostalcodeInv').innerHTML='This postal code is invalid.';
+        }
+        if (fname.match(regex) && lname.match(regex) && email.match(emailRegex) && postalCode.match(postCodeRegex)) {
+            document.getElementById('madelainefnameInv').hidden=true;
+            document.getElementById('madelainelnameInv').hidden=true;
+            document.getElementById('madelaineemailInv').hidden=true;
+            document.getElementById('madelainepostalcodeInv').hidden=true;
+            document.getElementById('madelainefname').readOnly= true;
+            document.getElementById('madelainelname').readOnly = true;
+            document.getElementById('madelaineemail').readOnly= true;
+            document.getElementById('madelainepostalcode').readOnly = true;
+            document.getElementById('madelainepassword').readOnly= true;
+            document.getElementById('editbtnmadelaine').innerHTML = 'Edit User';
+            window.alert('Changes saved!');
+        }
     }
 }
 function editUserNathaniel() {
@@ -224,14 +411,45 @@ function editUserNathaniel() {
         document.getElementById('editbtnnathaniel').innerHTML = 'Save Changes';
     }
     else {
-        document.getElementById('nathanielfname').readOnly= true;
-        document.getElementById('nathaniellname').readOnly = true;
-        document.getElementById('nathanielemail').readOnly= true;
-        document.getElementById('nathanielpostalcode').readOnly = true;
-        document.getElementById('nathanielpassword').readOnly= true;
-    
-        document.getElementById('editbtnnathaniel').innerHTML = 'Edit User';
-        window.alert('Changes saved!'); 
+        var fname = document.getElementById('nathanielfname').value;
+        var lname = document.getElementById('nathaniellname').value;
+        var email = document.getElementById('nathanielemail').value;
+        var postalCode = document.getElementById('nathanielpostalcode').value;
+
+        var regex=/^[a-zA-Z]+$/;
+        var emailRegex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        var postCodeRegex = /[a-zA-Z][0-9][a-zA-Z](-| |)[0-9][a-zA-Z][0-9]/;
+        var isValid = false;
+        if (!fname.match(regex)) {
+            document.getElementById('nathanielfnameInv').style.color ='red';    
+            document.getElementById('nathanielfnameInv').innerHTML = 'The name must contain only letters';
+
+        }
+        if (!lname.match(regex)) {
+            document.getElementById('nathaniellnameInv').style.color='red';
+            document.getElementById('nathaniellnameInv').innerHTML='The name must contain only letters';
+        }
+        if (!email.match(emailRegex)) {
+            document.getElementById('nathanielemailInv').style.color='red';
+            document.getElementById('nathanielemailInv').innerHTML='This email is invalid.';
+        }
+        if (!postalCode.match(postCodeRegex)) {
+            document.getElementById('nathanielpostalcodeInv').style.color='red';
+            document.getElementById('nathanielpostalcodeInv').innerHTML='This postal code is invalid.';
+        }
+        if (fname.match(regex) && lname.match(regex) && email.match(emailRegex) && postalCode.match(postCodeRegex)) {
+            document.getElementById('nathanielfnameInv').hidden=true;
+            document.getElementById('nathaniellnameInv').hidden=true;
+            document.getElementById('nathanielemailInv').hidden=true;
+            document.getElementById('nathanielpostalcodeInv').hidden=true;
+            document.getElementById('nathanielfname').readOnly= true;
+            document.getElementById('nathaniellname').readOnly = true;
+            document.getElementById('nathanielemail').readOnly= true;
+            document.getElementById('nathanielpostalcode').readOnly = true;
+            document.getElementById('nathanielpassword').readOnly= true;
+            document.getElementById('editbtnnathaniel').innerHTML = 'Edit User';
+            window.alert('Changes saved!');
+        }
     }
 }
 function editUserPravina() {
@@ -245,14 +463,45 @@ function editUserPravina() {
         document.getElementById('editbtnpravina').innerHTML = 'Save Changes';
     }
     else {
-        document.getElementById('pravinafname').readOnly= true;
-        document.getElementById('pravinalname').readOnly = true;
-        document.getElementById('pravinaemail').readOnly= true;
-        document.getElementById('pravinapostalcode').readOnly = true;
-        document.getElementById('pravinapassword').readOnly= true;
-    
-        document.getElementById('editbtnpravina').innerHTML = 'Edit User';
-        window.alert('Changes saved!'); 
+        var fname = document.getElementById('pravinafname').value;
+        var lname = document.getElementById('pravinalname').value;
+        var email = document.getElementById('pravinaemail').value;
+        var postalCode = document.getElementById('pravinapostalcode').value;
+
+        var regex=/^[a-zA-Z]+$/;
+        var emailRegex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        var postCodeRegex = /[a-zA-Z][0-9][a-zA-Z](-| |)[0-9][a-zA-Z][0-9]/;
+        var isValid = false;
+        if (!fname.match(regex)) {
+            document.getElementById('pravinafnameInv').style.color ='red';    
+            document.getElementById('pravinafnameInv').innerHTML = 'The name must contain only letters';
+
+        }
+        if (!lname.match(regex)) {
+            document.getElementById('pravinalnameInv').style.color='red';
+            document.getElementById('pravinalnameInv').innerHTML='The name must contain only letters';
+        }
+        if (!email.match(emailRegex)) {
+            document.getElementById('pravinaemailInv').style.color='red';
+            document.getElementById('pravinaemailInv').innerHTML='This email is invalid.';
+        }
+        if (!postalCode.match(postCodeRegex)) {
+            document.getElementById('pravinapostalcodeInv').style.color='red';
+            document.getElementById('pravinapostalcodeInv').innerHTML='This postal code is invalid.';
+        }
+        if (fname.match(regex) && lname.match(regex) && email.match(emailRegex) && postalCode.match(postCodeRegex)) {
+            document.getElementById('pravinafnameInv').hidden=true;
+            document.getElementById('pravinalnameInv').hidden=true;
+            document.getElementById('pravinaemailInv').hidden=true;
+            document.getElementById('pravinapostalcodeInv').hidden=true;
+            document.getElementById('pravinafname').readOnly= true;
+            document.getElementById('pravinalname').readOnly = true;
+            document.getElementById('pravinaemail').readOnly= true;
+            document.getElementById('pravinapostalcode').readOnly = true;
+            document.getElementById('pravinapassword').readOnly= true;
+            document.getElementById('editbtnpravina').innerHTML = 'Edit User';
+            window.alert('Changes saved!');
+        }
     }
 }
 function editUserYaz() {
@@ -266,14 +515,45 @@ function editUserYaz() {
         document.getElementById('editbtnyaz').innerHTML = 'Save Changes';
     }
     else {
-        document.getElementById('fnameyaz').readOnly= true;
-        document.getElementById('lnameyaz').readOnly = true;
-        document.getElementById('emailyaz').readOnly= true;
-        document.getElementById('postalcodeyaz').readOnly = true;
-        document.getElementById('passwordYaz').readOnly= true;
-    
-        document.getElementById('editbtnyaz').innerHTML = 'Edit User';
-        window.alert('Changes saved!');
+        var fname = document.getElementById('fnameyaz').value;
+        var lname = document.getElementById('lnameyaz').value;
+        var email = document.getElementById('emailyaz').value;
+        var postalCode = document.getElementById('postalcodeyaz').value;
+
+        var regex=/^[a-zA-Z]+$/;
+        var emailRegex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        var postCodeRegex = /[a-zA-Z][0-9][a-zA-Z](-| |)[0-9][a-zA-Z][0-9]/;
+        var isValid = false;
+        if (!fname.match(regex)) {
+            document.getElementById('fnameyazInv').style.color ='red';    
+            document.getElementById('fnameyazInv').innerHTML = 'The name must have letters';
+
+        }
+        if (!lname.match(regex)) {
+            document.getElementById('lnameyazInv').style.color='red';
+            document.getElementById('lnameyazInv').innerHTML='The name must have letters';
+        }
+        if (!email.match(emailRegex)) {
+            document.getElementById('emailyazInv').style.color='red';
+            document.getElementById('emailyazInv').innerHTML='This email is invalid.';
+        }
+        if (!postalCode.match(postCodeRegex)) {
+            document.getElementById('postcodeyazInv').style.color='red';
+            document.getElementById('postcodeyazInv').innerHTML='This postal code is invalid.';
+        }
+        if (fname.match(regex) && lname.match(regex) && email.match(emailRegex) && postalCode.match(postCodeRegex)) {
+            document.getElementById('fnameyazInv').hidden=true;
+            document.getElementById('lnameyazInv').hidden=true;
+            document.getElementById('emailyazInv').hidden=true;
+            document.getElementById('postcodeyazInv').hidden=true;
+            document.getElementById('fnameyaz').readOnly= true;
+            document.getElementById('lnameyaz').readOnly = true;
+            document.getElementById('emailyaz').readOnly= true;
+            document.getElementById('postalcodeyaz').readOnly = true;
+            document.getElementById('passwordYaz').readOnly= true;
+            document.getElementById('editbtnyaz').innerHTML = 'Edit User';
+            window.alert('Changes saved!');
+        }
     }
 }
 // Add method
@@ -288,8 +568,11 @@ function confirm() {
     var lnameInv = document.getElementById('addlnameInvalid');
     var email = document.forms['addUserForm']['addemail'].value;
     var emailInv = document.getElementById('addemailInvalid');
+    var postalCode = document.forms['addUserForm']['addpostalCode'].value;
+    var postCodeInv = document.getElementById('addpostalCodeInvalid');
     var regex=/^[a-zA-Z]+$/;
-    var emailRegex=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    var emailRegex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var postCodeRegex = /[a-zA-Z][0-9][a-zA-Z](-| |)[0-9][a-zA-Z][0-9]/;
     var isValid = false;
         if (!fname.match(regex)) {
             fnameInv.style.color = 'red';
@@ -305,7 +588,24 @@ function confirm() {
         else if (lname.match(regex)) {
             lnameInv.hidden = true;
         }
-        if (fname.match(regex) && lname.match(regex)) {
+        if (!email.match(emailRegex)) {
+            emailInv.style.color = 'red';
+            emailInv.innerHTML= 'Invalid email';
+        }
+        else if (email.match(emailRegex)) {
+            emailInv.hidden = true;
+        }
+        if (!postalCode.match(postCodeRegex)) {
+            postCodeInv.style.color = 'red';
+            postCodeInv.innerHTML = 'Invalid postal code';
+        }
+        else if (postalCode.match(postCodeRegex)) {
+            postCodeInv.hidden = true;
+        }
+        if (!document.getElementById('addtermsCheck').checked) {
+            window.alert('Please agree to our terms and conditions before proceeding.')
+        }
+        if (fname.match(regex) && lname.match(regex) && email.match(emailRegex) && postalCode.match(postCodeRegex) && document.getElementById('addtermsCheck').checked) {
             isValid = true;
         }
     
