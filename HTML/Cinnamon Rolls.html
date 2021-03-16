@@ -30,7 +30,7 @@
     <div class="container h-100 d-flex flex-column">
       <div class="row h-75 mb-4">
         <div class="col-md-6 col-lg-6 grey" style="margin-top:30px">
-          <h2 class ="product">Cinnamom rolls</h2>
+          <h2 class ="product">Cinnamon rolls</h2>
           <br/>
           <div class ="image">
             <img src="../Images/bakery/cinnamon rolls.jfif" class="img-fluid" alt="Bread">
@@ -42,9 +42,55 @@
           <div class="input">
             <input type="number" id="quantity" class="quantity" name="quantity">
           </div>
-          <button  class="btn" class="desButton">More Description</button>
+          <button  class="btn" id="desButtonCinnamon" onclick="showDescriptionCinnamon()">More Description</button>
           <br/>
           <button class="btn" class ="cartButton" onclick ="getData()">Add To Cart🛒</button>
+          <div id="descContainerCinnamon" class="container-sm success shadow bg-success offset-3 p-4" hidden>
+            <h6 style="color: white;">Sweet and doughy rolls with thick buttercream icing.<br/>Perfect for breakfast!</h6>
+            <style>
+              table,
+              th,
+              td {
+                padding: 10px;
+                border: 2px solid white;
+                border-collapse: collapse;
+                text-align: center;
+              }
+            </style>
+            <table id="descTableCinnamon" style="color:white;">
+              <tr>
+                <th colspan="2">Nutrition Table</th>
+              </tr>
+              <tr>
+                <td>Calories</td>
+                <td>333</td>
+              </tr>
+              <tr>
+                <th>Values (per 184g)</th>
+                <th>Daily %</th>
+              </tr>
+              <tr>
+                <td>Total Fat 8.6g</td>
+                <td>13%</td>
+              </tr>
+              <tr>
+                <td>Cholesterol 0mg</td>
+                <td>0%</td>
+              </tr>
+              <tr>
+                <td>Sodium 153mg</td>
+                <td>6%</td>
+              </tr>
+              <tr>
+                <td>Carbohydrate 57.9g</td>
+                <td>19%</td>
+              </tr>
+              <tr>
+                <td>Protein 4.9g</td>
+                <td>10%</td>
+              </tr>
+            </table>
+          </div>
         </div>
     </div>
   <div id="footer">
@@ -58,5 +104,6 @@
   </div>
   <script src ="../JS/p3.js"></script>
   <script src=".../JS/products.js"></script>
+  <script src="../JS/bakery.js"></script>
 </body>
 </html>

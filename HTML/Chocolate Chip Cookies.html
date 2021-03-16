@@ -42,9 +42,55 @@
           <div class="input">
             <input type="number" id="quantity" class="quantity" name="quantity">
           </div>
-          <button  class="btn" class="desButton">More Description</button>
+          <button  class="btn" id="desButtonCcc" onclick="showDescriptionCcc()">More Description</button>
           <br/>
           <button class="btn" class ="cartButton" onclick ="getData()">Add To Cart🛒</button>
+          <div id="descContainerCcc" class="container-sm success shadow bg-success offset-3 p-4" hidden>
+            <h6 style="color: white;">Oven baked, sweet and crunchy bites with melted<br/> chocolate inside. A delightful way to start the day!</h6>
+            <style>
+              table,
+              th,
+              td {
+                padding: 10px;
+                border: 2px solid white;
+                border-collapse: collapse;
+                text-align: center;
+              }
+            </style>
+            <table id="descTableCcc" style="color:white;">
+              <tr>
+                <th colspan="2">Nutrition Table</th>
+              </tr>
+              <tr>
+                <td>Calories</td>
+                <td>120</td>
+              </tr>
+              <tr>
+                <th>Values (per cookie)</th>
+                <th>Daily %</th>
+              </tr>
+              <tr>
+                <td>Total Fat 4.0g</td>
+                <td>6%</td>
+              </tr>
+              <tr>
+                <td>Cholesterol 7.8mg</td>
+                <td>3%</td>
+              </tr>
+              <tr>
+                <td>Sodium 63.9mg</td>
+                <td>3%</td>
+              </tr>
+              <tr>
+                <td>Carbohydrate 22.8g</td>
+                <td>8%</td>
+              </tr>
+              <tr>
+                <td>Protein 1.4g</td>
+                <td>3%</td>
+              </tr>
+            </table>
+          </div>
         </div>
     </div>
   <div id="footer">
@@ -58,5 +104,6 @@
   </div>
   <script src ="../JS/p3.js"></script>
   <script src=".../JS/products.js"></script>
+  <script src="../JS/bakery.js"></script>
 </body>
 </html>

@@ -30,22 +30,26 @@
               <label for="first name" class="col-sm-2 col-form-label">First Name</label>
               <div class="col-sm-3">
                 <input class="form-control" id="katrinafname"type="text" placeholder="Katrina" readonly>
+                <p id="katrinafnameInv" class="invalid"></p>
               </div>
               <label for="last name"  class="col-sm-2 col-form-label">Last Name</label>
               <div class="col-sm-3">
                   <input class="form-control"id = "katrinalname" type="text" placeholder="Higini" readonly>
+                  <p id="katrinalnameInv" class="invalid"></p>
               </div>
             </div>
             <div class="form-group row">
                 <label for="email"  class="col-sm-2 col-form-label">Email</label>
                 <div class = "col-sm-3">
                     <input class="form-control" id="katrinaemail"type="text" placeholder="kathig@hotmail.com" readonly>
+                    <p id="katrinaemailInv" class="invalid"></p>
                 </div>
             </div>
             <div class = "form-group row">
                 <label for="postcode" class="col-sm-2 col-form-label">Postal Code</label>
                 <div class="col-sm-3">
                     <input class="form-control" id="katrinapostalcode" type="text" placeholder="K9A 4N5" readonly>
+                    <p id="katrinapostalcodeInv" class="invalid"></p>
                 </div>
             </div>
             <div class = "form-group row">
@@ -88,5 +92,14 @@
             <button type = "button" id = "userListBtn" onclick = "location.href='userList.html'" class = "btn btn-success">Select another user</button>
         </div>
       </div>
+      <div id="footer">
+        <a href="https://facebook.com" id="facebookIcon" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://instagram.com" id="instagramIcon" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://twitter.com" id="twitterIcon" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+        <h6 id="headFooter">
+            Thanks for shopping at La Meilleure Épicerie. <br>
+            To contact us, please click <a href="contact-us.html" class="contact-page">here</a>.
+        </h6>
+        </div>
       <script src="../JS/users.js"></script>
 </html>

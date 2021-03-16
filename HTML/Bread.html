@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/ProductDes.css">
 </head>
-<body onload ="checkItemPrice()">
+<body>
   <div class="header p-3">
     <h1><a href="index.html" class="link">La Meilleure Épicerie</a></h1>
    </div>
@@ -41,12 +41,55 @@
           <div class="input">
             <input type="number" id="quantity" class="quantity" name="quantity">
           </div>
-          <button  class="btn" class="desButton" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">More Description</button>
+          <button  class="btn" id="desButtonBread" onclick ="showDescriptionBread()" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">More Description</button>
           <br/>
           <h4 class="collapse" id="collapseExample"></h4> 
           <button class="btn" class ="cartButton" onclick ="getData()">Add To Cart🛒</button>
+          <div id="descContainerBread" class="container-sm success shadow bg-success offset-3 p-4" hidden>
+            <h6 style="color: white;">A mostly baked food product prepared with dough<br/> made of flour and water. A great addition to any meal!</h6>
+            <style>
+              table,
+              th,
+              td {
+                padding: 10px;
+                border: 2px solid white;
+                border-collapse: collapse;
+                text-align: center;
+              }
+            </style>
+            <table id="descTableBread" style="color:white;">
+              <tr>
+                <th colspan="2">Nutrition Table</th>
+              </tr>
+              <tr>
+                <td>Calories</td>
+                <td>274</td>
+              </tr>
+              <tr>
+                <th>Values (per 100g)</th>
+                <th>Daily %</th>
+              </tr>
+              <tr>
+                <td>Total Fat 4.5g</td>
+                <td>6%</td>
+              </tr>
+              <tr>
+                <td>Sodium 473mg</td>
+                <td>21%</td>
+              </tr>
+              <tr>
+                <td>Carbohydrate 48g</td>
+                <td>17%</td>
+              </tr>
+              <tr>
+                <td>Protein 11g</td>
+                <td>22%</td>
+              </tr>
+            </table>
+          </div>
         </div>
     </div>
+    
   <div id="footer">
     <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
     <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
@@ -59,5 +102,6 @@
   <script src ="../JS/p3.js"></script>
   <script src="../JS/products.js"></script>
   <script src="../JS/prices.js"></script>
+  <script src="../JS/bakery.js"></script>
 </body>
 </html>
