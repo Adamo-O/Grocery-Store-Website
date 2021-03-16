@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Images/re.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="../CSS/addproducts.css">
+    <script type="text/javascript" src="../../P7_P8/JS/edit.js"></script>
+    <title>Lobster</title>
+</head>
+    <body>
+
+
+        <div class="sidebar">
+            <header>La Meilleure Épicerie</header>
+            <div class="list-group"></div>
+            <a href="../../HTML/index.html" id="home"
+                    class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Home
+            
+            <a href="../products.html" id="Inventory"
+                    class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Inventory
+            
+            <a href="../../HTML/userList.html" id="accounts"
+                class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Accounts</a>
+            <a href="../../p11-12/order1.html" id="orders"
+                class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Orders</a>
+            <a href="#" id="analytics"
+                class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Analytics</a>
+            <a href="#" id="settings"
+                class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Settings</a>
+            <a href="" id="reports"
+                class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Reports</a>
+                <a href="#" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action" id="login"> <b>Logout</b></a></li>
+    
+    
+    
+           
+    
+        </div>
+        <div class="container">
+            <h2 class="title">EDIT PRODUCT</h2>
+
+    
+    
+            <form id="theform" action="" method="">
+    
+                <p>
+                <div class="row">
+                    <label for="title">Product Name: </label>
+                    <input type="text" id="title" class="form-content" value="Lobster"> </br></br>
+                </div>
+                <div class="row">
+                    <label for="description">Description: </label>
+    
+                    <input type="text" id="des" class="form-content"> </br></br>
+                </div>
+                <div class="row">
+                    <label for="price">Price $: </label>
+                    <input type="number" step="any" id="price" class="form-content" value="13.99"> </br></br>
+                </div> <div class="row">
+                    <label for="stock">Units in Stock: </label>
+                    <input type="number" step="any" id="stock" class="form-content" value="550"> </br></br>
+                </div> <div class="row">
+                    <label for="date">Exp Date: </label>
+                    <input type="date"  id="date" class="form-content" value="2021-02-28"> </br></br>
+                </div>  <div class="row">
+                    <label for="cat">Category:  </label>
+                    <input type="radio" name="cate" id="fruits-and-vegetables" value="fruits-and-vegetables"  />Fruits & vegetables
+                     <input type="radio" name="cate" id="meat" value="meat" /> Meat
+                     <input type="radio" name="cate" id="bakery" value="bakery" />Bakery
+                     <input type="radio" name="cate" id="fishandseafood" value="fishandseafood" checked/> Fish and Seafood
+                     <input type="radio" name="cate" id="dairyproducts" value="dairyproducts" /> Dairy Products
+                     <input type="radio" name="cate" id="snacks" value="snacks" /> Snacks
+                </div> 
+                
+                <div class="row">
+                    <label for="Image">Upload Image: </label>
+                    <img src="../Images/fish and sea food/lobster.jfif"  height="90px" width="90px">
+                    <p id="q"></p>
+                    <input type="file" id="button" value="UPLOAD PRODUCT IMAGE"> </br> </br>
+                  
+    
+    
+    
+                    <button id="button" onclick="return edit()" >SAVE</button>
+                </div>
+                </p>
+            </form>
+    
+    
+    
+    
+        </div>
+    
+    </body>
+    
+    </html>
