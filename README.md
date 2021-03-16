@@ -92,3 +92,8 @@ CSS:
 JS:
 - [P5_6.js](JS/P5_6.js)
 - [meat.js](JS/meat.js)
+### Mehdi Samy Refik (40175150) P9-10
+"More description" buttons in bakery aisle
+JS:
+- users.js
+- bakery.js
