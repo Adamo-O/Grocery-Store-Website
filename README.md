@@ -1,6 +1,5 @@
-# SOEN-287
- Group assignment where we make a website
-
+# Online Grocery Store Website
+Group assignment from SOEN 287 class where we make a website using HTML, CSS, JavaScript, and PHP.
 
 # SOEN 287 Assignment 1
 Web Programming Assignment 1.
@@ -74,8 +73,8 @@ css:
 - orderstyle.css
         
 # SOEN 287 Assignment 2
-Web Programming Assignment 1.
-Due February 22nd.
+Web Programming Assignment 2.
+Due March 16th.
 ## Contributions
 ### Ghaith Chrit (40114180) P1-2
 JS: 
@@ -83,4 +82,13 @@ JS:
 - index.js
 ### Abhay Panchoo (40174642) P3-4
 JS:
--P3.js
+- P3.js
+### Adamo Orsini (40174716) P5-6
+"More description" Buttons in meat aisle, P5-6
+HTML:
+- [ForgotPassword.html](HTML/ForgotPassword.html)
+CSS:
+- [meatDesc.css](CSS/meatDesc.css)
+JS:
+- [P5_6.js](JS/P5_6.js)
+- [meat.js](JS/meat.js)
