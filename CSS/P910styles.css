@@ -101,6 +101,23 @@ label {
 #headFooter {
   color: white;
 }
+@media screen and (max-width: 1050px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+
+  .container-sm {
+    width: 500px;
+    height: auto;
+    vertical-align: middle;
+    position: relative;
+    float: left;
+  }
+}
 
 @media screen and (max-width: 700px) {
   .sidebar {
@@ -112,8 +129,9 @@ label {
   div.content {margin-left: 0;}
 
   .container-sm {
-    width: 80%;
+    width: 500px;
     height: auto;
+    vertical-align: middle;
     position: relative;
     float: left;
   }
@@ -126,9 +144,15 @@ label {
   }
 
   .container-sm {
-    width: 50%;
+    width: 300px;
+    vertical-align: middle;
     height: auto;
     position: relative;
     float: left;
+  }
+
+  #footer {
+    vertical-align: middle;
+    text-align: center;
   }
 }
