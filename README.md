@@ -97,3 +97,10 @@ JS:
 JS:
 - users.js
 - bakery.js
+ ### Kunal Shah (40153500) P7-8
+"More description" buttons in Dairy Products aisle
+JS:
+- milkproducts.js
+- addproducts.js
+- edit.js
+- products.js
