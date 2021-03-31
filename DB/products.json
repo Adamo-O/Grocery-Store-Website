@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "name": "pineapple",
+      "stock": "500",
+      "price": 2.99,
+      "description": "",
+      "id": 0
+    },
+    {
+      "name": "oranges",
+      "stock": "500",
+      "price": 1.25,
+      "description": "",
+      "id": 1
+    }
+  ]  
+}

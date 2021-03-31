@@ -1,6 +1,6 @@
 // Form the varaible that contains the prices of the products in the deals section
 // will be changed when implementing the feature to change the prices from the server side.
-var pineapplePrice = 1.99;
+var pineapplePrice = 2.99;
 var salmonPrice = 21.99;
 var BeltedGallowaySirloinPrice = 7.99;
 var breadPrice = 0.99;
