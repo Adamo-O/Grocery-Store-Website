@@ -29,7 +29,7 @@
     },
     {
       "id": 3,
-      "name": bell-pepper",
+      "name": "bell-pepper",
       "stock": "550",
       "price": 0.49,
       "originalPrice": 0.49,
@@ -297,7 +297,7 @@
       "originalPrice": 1.25,
       "description": "",
       "aisle": "Dairy-Products-Aisle"
-    },
+    }
    
   ]  
 }

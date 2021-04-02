@@ -1,11 +1,11 @@
 {
   "users": [
     {
-      "firstName": "foo",
-      "lastName": "boo",
+      "firstName": "admin",
+      "lastName": "admin",
       "postalCode": "X1X1X1",
-      "email": "test@test.com",
-      "password": "123"
+      "email": "admin@admin.com",
+      "password": "admin"
     },
     {
       "firstName": "foo1",
