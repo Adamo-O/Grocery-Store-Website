@@ -29,14 +29,14 @@
             <h3>Contact Us</h3>
         </div>
         <div class="col-50">
-            <form action="" name="contact">
+            <form action="../php/contact.php" method="POST" name="contact" onsubmit="return checkInput()">
                 <div><p id="result"></p></div>
                 <input type="text" name="userName" placeholder="User Name">
                 <input type="text" name="itemNumber" placeholder="Item Number">
                 <input type="text" name="orderNumber" placeholder="Order Number as #12345AB">
                 <textarea name="question" placeholder="Message"></textarea>
                 <div class="buttons">
-                    <input type="button" value="Submit" onclick="checkInput()" class="btn-form">
+                    <input type="submit" value="Submit" class="btn-form">
                     <input type="reset" value="Clear" class="btn-form"> 
                 </div>
             </form>
