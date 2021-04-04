@@ -1,18 +1,1 @@
-{
-  "users": [
-    {
-      "firstName": "admin",
-      "lastName": "admin",
-      "postalCode": "X1X1X1",
-      "email": "admin@admin.com",
-      "password": "admin"
-    },
-    {
-      "firstName": "foo1",
-      "lastName": "boo1",
-      "postalCode": "X1X1X1",
-      "email": "test1@test.com",
-      "password": "123"
-    }
-  ]
-}
+{"users":[{"firstName":"admin","lastName":"admin","postalCode":"X1X1X1","email":"admin@admin.com","password":"admin"},{"firstName":"foo1","lastName":"boo1","postalCode":"X1X1X1","email":"test1@test.com","password":"123"},{"fname":"Adamo","lname":"Orsini","postalCode":"H9R 1S3","email":"adamo.12@hotmail.com","password":"123"},{"fname":"Jimbo","lname":"McBimbo","postalCode":"A1B2C3","email":"me@you.com","password":"woopee"},{"fname":"Mike","lname":"John","postalCode":"L0S1J1","email":"haha@test.com","password":"password"}]}
