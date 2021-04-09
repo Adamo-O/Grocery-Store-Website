@@ -18,6 +18,7 @@ if (isset($_POST['email'])) {
             </script>';
             echo "<script type='text/javascript'>alert('An account with the email " . $userInfo['email'] . " already exists. Please try with a different email or login with that email.');</script>";
             $accountExists = TRUE;
+            break;
         }
     }
     if (!$accountExists) {
