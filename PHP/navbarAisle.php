@@ -10,7 +10,7 @@
     if (empty($_SESSION['logIn']) || !$_SESSION['logIn']) {
     ?>
       <li><a href="../../PHP/Login.php">Login</a></li>
-      <li><a href="../../PHP/Sign Up.php">Sign Up</a></li>
+      <li><a href="../../PHP/signup.php">Sign Up</a></li>
     <?php
     }
     ?>
