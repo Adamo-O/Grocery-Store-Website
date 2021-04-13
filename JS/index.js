@@ -45,4 +45,5 @@ const checkInput = () => {
 	result.innerHTML = "Thanks for your message";
 	result.classList.add("correct");
 	result.classList.remove("wrong");
+  return true;
 }

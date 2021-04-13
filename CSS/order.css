@@ -1,0 +1,43 @@
+/*General*/
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.contact-us {
+  flex: 1 0 auto;
+}
+#footer {
+  flex-shrink: 0;
+}
+
+/*Table styles*/
+
+.order {
+  color: #000;
+  border-collapse: collapse;
+  border: 2px solid #44c767;
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.order td, .order th {
+  padding: 8px;
+}
+
+.order tr:nth-child(even) {
+  background-color: #F6F5EB;
+}
+
+.order tr:nth-child(odd) {
+  background-color: #44c767;
+}
+
+.order td:hover, .order th:hover {
+  background-color: #49865a;
+}
