@@ -76,4 +76,19 @@ function addRows(){
     }
 }
 
- 
+function order(){
+    if(window.localStorage!==undefined){
+        let array = JSON.parse(sessionStorage.getItem('items'));
+        $.ajax({
+            type: "POST",
+            url: "Order.php",
+            data: {array: array},
+            success: function(data) {
+               $('#output').html(data);
+            }
+         });
+    } 
+    else {
+        alert("Shopping Cart empty");
+    }
+}

@@ -35,13 +35,17 @@
         </div> 
         <div class="col-md-6 col-sm-12 col-lg-6 grey" style="margin-top:30px">
           <h3 id="price" class ="price">For only $9.99 per 6 pack</h3>
-          <label for="quantity">Quantity:</label>
-          <div class="input">
-            <input type="number" id="quantity" class="quantity" name="quantity">
-          </div>
+          <form method ="POST" action = "http://localhost/SOEN-287/PHP/Shopping Cart.php">
+
+            <input type ="hidden" name ="name" value ="Cinnamon-Rolls" class ="name">
+            <input type ="hidden" value = "9.99" name ="price"> </h3>
+            <label for="quantity">Quantity:</label></br>
+            <input type="number" id="quantity" class="quantity" name="quantity"></br>
+            <input type ="submit" class="btn" class ="cartButton" onclick ="alert('Succesfully added to cart')" value ="Add To Cart🛒">
+          
+          </form>
           <button  class="btn" id="desButtonCinnamon" onclick="showDescriptionCinnamon()">More Description</button>
           <br/>
-          <button class="btn" class ="cartButton" onclick ="getData()">Add To Cart🛒</button>
           <div id="descContainerCinnamon" class="container-sm success shadow bg-success offset-3 p-4" hidden>
             <h6 style="color: white;">Sweet and doughy rolls with thick buttercream icing.<br/>Perfect for breakfast!</h6>
             <style>

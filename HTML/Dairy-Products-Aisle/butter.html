@@ -34,13 +34,19 @@
     </div>
     <div class="col-50">
       <p id="price" class = "price">For only $1.25 </p>
-      <button class="general-btn" onclick ="getData()">Add To Cart</button>
+
       <div class="quantity-container">
-        <label for="quantity"></label>
-        <button class="general-btn add" onclick="add()">+</button>
         
-        <input readonly type="text" id="quantity" name="quantity" placeholder="Quantity">
-        <button class="general-btn subtract inactive-btn" onclick="subtract()">-</button>
+        <form method ="POST" action = "http://localhost/SOEN-287/PHP/Shopping Cart.php">
+          <button class="general-btn" type ="submit" class="btn" class ="general-btn" onclick ="alert('Succesfully added to cart')" value ="Add To Cart🛒">Add To Cart</button>
+          <input type ="hidden" name ="name" value ="Butter" class ="name">
+          <input type ="hidden" value = "1.25" name ="price"> </h3>
+          <button type ="button" class="general-btn add" onclick="add()">+</button>
+          
+          <input readonly type="text" id="quantity" name="quantity" placeholder="Quantity">
+          <button type ="button" class="general-btn subtract inactive-btn" onclick="subtract()">-</button>
+        
+        </form>
       </div>
       <button class="general-btn des-btn" onclick="moredescription()">More Description</button>
       <div id= "des" style="visibility: hidden;">

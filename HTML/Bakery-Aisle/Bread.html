@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../CSS/ProductDes.css">
 </head>
-<body>
+<body onload ="checkItemPrice()">
   <div class="header p-3">
     <h1><a href="../index.html" class="link">La Meilleure Épicerie</a></h1>
    </div>
@@ -37,14 +37,18 @@
           <h3 id="price" class ="price">
 
           </h3>
-          <label for="quantity">Quantity:</label>
-          <div class="input">
-            <input type="number" id="quantity" class="quantity" name="quantity">
-          </div>
+          <form method ="POST" action = "http://localhost/SOEN-287/PHP/Shopping Cart.php">
+
+            <input type ="hidden" name ="name" value ="Bread" class ="name">
+            <input type ="hidden" value = "0.99" name ="price"> </h3>
+            <label for="quantity">Quantity:</label></br>
+            <input type="number" id="quantity" class="quantity" name="quantity"></br>
+            <input type ="submit" name ="submit" class="btn" class ="cartButton" onclick ="alert('Succesfully added to cart')" value ="Add To Cart🛒">
+          
+          </form>
           <button  class="btn" id="desButtonBread" onclick ="showDescriptionBread()" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">More Description</button>
-          <br/>
+          <br/><br/>
           <h4 class="collapse" id="collapseExample"></h4> 
-          <button class="btn" class ="cartButton" onclick ="getData()">Add To Cart🛒</button>
           <div id="descContainerBread" class="container-sm success shadow bg-success offset-3 p-4" hidden>
             <h6 style="color: white;">A mostly baked food product prepared with dough<br/> made of flour and water. A great addition to any meal!</h6>
             <style>
