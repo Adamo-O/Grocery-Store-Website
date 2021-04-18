@@ -104,7 +104,7 @@ function validateForm(formId) {
 
             var allowedExt = /(\.jpg|\.jpeg|\.png|\.gif|\.jfif)$/i;
             if (!allowedExt.exec(filePath)) {
-                imgInvalid.innerHTML = "Please upload a valid Image File";
+                imgInvalid.innerHTML = "Please upload a valid .PNG  File";
                 imgInvalid.style.color = "red";
                 upload.value = "";
 

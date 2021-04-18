@@ -8,10 +8,10 @@
   <link href="../../css-fas/all.css" rel="stylesheet">
   <link rel="shortcut icon" href="../../Images/re.ico" type="image/x-icon">
   <link rel="stylesheet" href="../../CSS/ProductDes.css">
-  <title>Pineapple</title>
+  <title>Cheese</title>
 </head>
 
-<body onload="checkItemPrice()">
+<body>
 <?php
 
 
@@ -21,7 +21,7 @@ $data = json_decode($data,true);
 
 ?>
   <section class="header">
-    <h1><a href="../index.php">La Meilleure Épicerie</a></h1>
+    <h1><a href="../index.html">La Meilleure Épicerie</a></h1>
   </section>
   <section class="nav-bar">
     <ul class="nav-bar-content">
@@ -35,52 +35,61 @@ $data = json_decode($data,true);
   </section>
   <div class="content-container">
     <div class="col-50">
-      <h3><?php echo $data['products'][0]['name']?></h3>
+      <h3><?php echo $data['products'][31]['name']?></h3>
       <div class="img-container">
-       <?php  print('<img src="../../Images/Fruits-and-Vegetables-Aisle/' . $data['products'][0]['image'] . '.png" alt="' . $value->name . ' Image">');?>
+      <?php  print('<img src="../../Images/Dairy-Products-Aisle/' . $data['products'][31]['image'] . '.png" alt="' . $value->name . ' Image">');?>
       </div>
     </div>
     <div class="col-50">
-      <p id="price" class="price">For only $<?php echo $data['products'][0]['price'];?>per pound</p>
-      <button class="general-btn" onclick="getData()">Add To Cart</button>
+      <p id="price" class = "price">For only $<?php echo $data['products'][31]['price'];?> per pack</p>
+      <button class="general-btn" onclick ="getData()">Add To Cart</button>
       <div class="quantity-container">
         <label for="quantity"></label>
         <button class="general-btn add" onclick="add()">+</button>
         <input readonly type="text" id="quantity" name="quantity" placeholder="Quantity">
         <button class="general-btn subtract inactive-btn" onclick="subtract()">-</button>
       </div>
-      <button class="general-btn des-btn" onclick="description()">More Description</button>
-      <div class="description">
-        <p class="description-details">
-          Take a break and taste the tropics.<br> Our fresh organic Hawaiian pineapples are full of
-          Bromelain which is one of the most unique nutritional components since it helps our body to easily digest
-          proteins. Recent research also indicates that it may have other beneficial health benefits.
-        </p>
+      <button class="general-btn des-btn" onclick="moredescription()">More Description</button>
+      <div id= "des" style="visibility: hidden;">
         <table class="nutrition-value">
+          <p>
+           <p>
+            Say yes please to extra cheese at your next pizza night. Made with 100% Canadian milk, Cheese is a good source of calcium that’s high in protein, too.
+            This family-sized 400 g block is a great way to create ooey-gooey, extra cheesy, luscious layers of lasagna, and melty masterpieces of pizza pie perfection.
+          </p>
+          </p>
           <tr>
             <th colspan="2">Nutrition Facts</th>
           </tr>
           <tr>
-            <th colspan="2">Amounts are pers serving</th>
+            <th colspan="2">Amounts are per cup</th>
+          </tr>
+          <tr>
+            <th>Total Calories</th>
+            <td>402  </td>
           </tr>
           <tr>
             <th>Total fat</th>
-            <td>0%</td>
+            <td>33g </td>
           </tr>
           <tr>
             <th>Total Carbohydrate</th>
-            <td>4%</td>
+            <td>1.2g </td>
           </tr>
           <tr>
             <th colspan="2">Vitamins & Minerals</th>
           </tr>
           <tr>
-            <td>Vitamin A 2%</td>
-            <td>Vitamin C 50%</td>
+            <td>Vitamin A </td>
+            <td>Magmesium </td>
           </tr>
           <tr>
-            <td>Calcium 2%</td>
-            <td>Iron 2%</td>
+            <td>Calcium </td>
+            <td>Vitamin D  </td>
+          </tr>
+          <tr>
+            <td>Cobalamin </td>
+            <td>Vitamin C  </td>
           </tr>
         </table>
       </div>
@@ -92,12 +101,13 @@ $data = json_decode($data,true);
     <a href="https://twitter.com" target="_blank"><em class="fab fa-twitter-square fa-2x"></em></a>
     <h6>
       Thanks for shopping at La Meilleure Épicerie. <br>
-      To contact us, please click <a href="../../HTML/contact-us.html" class="contact-page">here</a>.
+      To contact us, please click <a href="../contact-us.html" class="contact-page">here</a>.
     </h6>
   </section>
-  <script src="../../JS/products.js"></script>
-  <script src="../../JS/prices.js"></script>
-  <script src ="../../JS/p3.js"></script>
+  <script src="../../JS/milkproduct.js"></script>
+  <script src="../../JS/p3.js"></script>
+  <script src ="../../JS/products.js"></script>
+ 
 </body>
 
 </html>
