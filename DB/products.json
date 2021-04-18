@@ -1,334 +1,335 @@
 {
     "products": [
-        {
-            "id": 0,
-            "name": "pineapple",
-            "stock": "600",
-            "price": 2.9900000000000002131628207280300557613372802734375,
-            "originalPrice": 2.9900000000000002131628207280300557613372802734375,
-            "description": "",
-            "aisle": "Fruits-and-Vegetables-Aisle",
-            "image": "pineapple"
-        },
-        {
-            "id": 1,
-            "name": "orange",
-            "stock": "770",
-            "price": 1.25,
-            "originalPrice": 1.25,
-            "description": "",
-            "aisle": "Fruits-and-Vegetables-Aisle",
-            "image": "orange"
-        },
-        {
-            "id": 2,
-            "name": "pear",
-            "stock": "900",
-            "price": 1.4899999999999999911182158029987476766109466552734375,
-            "originalPrice": 1.4899999999999999911182158029987476766109466552734375,
-            "description": "",
-            "aisle": "Fruits-and-Vegetables-Aisle",
-            "image": "pear"
-        },
-        {
-            "id": 3,
-            "name": "bell-pepper",
-            "stock": "550",
-            "price": 0.4899999999999999911182158029987476766109466552734375,
-            "originalPrice": 0.4899999999999999911182158029987476766109466552734375,
-            "description": "",
-            "aisle": "Fruits-and-Vegetables-Aisle",
-            "image": "bell-pepper"
-        },
-        {
-            "id": 4,
-            "name": "potato",
-            "stock": "1000",
-            "price": 1.4899999999999999911182158029987476766109466552734375,
-            "originalPrice": 1.4899999999999999911182158029987476766109466552734375,
-            "description": "",
-            "aisle": "Fruits-and-Vegetables-Aisle",
-            "image": "potato"
-        },
-        {
-            "id": 5,
-            "name": "tomato",
-            "stock": "500",
-            "price": 1.4899999999999999911182158029987476766109466552734375,
-            "originalPrice": 1.4899999999999999911182158029987476766109466552734375,
-            "description": "",
-            "aisle": "Fruits-and-Vegetables-Aisle",
-            "image": "tomato"
-        },
-        {
-            "id": 6,
-            "name": "Belted-Galloway-Sirloin",
-            "stock": "50",
-            "price": 7.9900000000000002131628207280300557613372802734375,
-            "originalPrice": 7.9900000000000002131628207280300557613372802734375,
-            "description": "",
-            "aisle": "Meat-Aisle",
-            "image": "Belted-Galloway-Sirloin"
-        },
-        {
-            "id": 7,
-            "name": "chicken-breast",
-            "stock": "50",
-            "price": 4.9900000000000002131628207280300557613372802734375,
-            "originalPrice": 4.9900000000000002131628207280300557613372802734375,
-            "description": "",
-            "aisle": "Meat-Aisle",
-            "image": "chicken-breast"
-        },
-        {
-            "id": 8,
-            "name": "ribeye-steak",
-            "stock": "20",
-            "price": 9.9900000000000002131628207280300557613372802734375,
-            "originalPrice": 9.9900000000000002131628207280300557613372802734375,
-            "description": "",
-            "aisle": "Meat-Aisle",
-            "image": "ribeye-steak"
-        },
-        {
-            "id": 9,
-            "name": "sausages",
-            "stock": "100",
-            "price": 7.9900000000000002131628207280300557613372802734375,
-            "originalPrice": 7.9900000000000002131628207280300557613372802734375,
-            "description": "",
-            "aisle": "Meat-Aisle",
-            "image": "sausages"
-        },
-        {
-            "id": 10,
-            "name": "t-bone-steak",
-            "stock": "10",
-            "price": 13.9900000000000002131628207280300557613372802734375,
-            "originalPrice": 13.9900000000000002131628207280300557613372802734375,
-            "description": "",
-            "aisle": "Meat-Aisle",
-            "image": "t-bone-steak"
-        },
-        {
-            "id": 11,
-            "name": "Tomahawk-Steak",
-            "stock": "200",
-            "price": 34.99000000000000198951966012828052043914794921875,
-            "originalPrice": 34.99000000000000198951966012828052043914794921875,
-            "description": "",
-            "aisle": "Meat-Aisle",
-            "image": "Tomahawk-Steak"
-        },
-        {
-            "id": 12,
-            "name": "bread",
-            "stock": "600",
-            "price": 0.9899999999999999911182158029987476766109466552734375,
-            "originalPrice": 0.9899999999999999911182158029987476766109466552734375,
-            "description": "",
-            "aisle": "Bakery-Aisle",
-            "image": "bread"
-        },
-        {
-            "id": 13,
-            "name": "chocolate-cake",
-            "stock": "800",
-            "price": 12.9900000000000002131628207280300557613372802734375,
-            "originalPrice": 12.9900000000000002131628207280300557613372802734375,
-            "description": "",
-            "aisle": "Bakery-Aisle",
-            "image": "chocolate-cake"
-        },
-        {
-            "id": 14,
-            "name": "chocolate-chip-cookies",
-            "stock": "400",
-            "price": 4.9900000000000002131628207280300557613372802734375,
-            "originalPrice": 4.9900000000000002131628207280300557613372802734375,
-            "description": "",
-            "aisle": "Bakery-Aisle",
-            "image": "chocolate-chip-cookies"
-        },
-        {
-            "id": 15,
-            "name": "cinnamon-rolls",
-            "stock": "400",
-            "price": 9.9900000000000002131628207280300557613372802734375,
-            "originalPrice": 9.9900000000000002131628207280300557613372802734375,
-            "description": "",
-            "aisle": "Bakery-Aisle",
-            "image": "cinnamon-rolls"
-        },
-        {
-            "id": 16,
-            "name": "croissant",
-            "stock": "550",
-            "price": 5.9900000000000002131628207280300557613372802734375,
-            "originalPrice": 5.9900000000000002131628207280300557613372802734375,
-            "description": "",
-            "aisle": "Bakery-Aisle",
-            "image": "croissant"
-        },
-        {
-            "id": 17,
-            "name": "cupcake",
-            "stock": "550",
-            "price": 24.989999999999998436805981327779591083526611328125,
-            "originalPrice": 24.989999999999998436805981327779591083526611328125,
-            "description": "",
-            "aisle": "Bakery-Aisle",
-            "image": "cupcake"
-        },
-        {
-            "id": 18,
-            "name": "crab",
-            "stock": "550",
-            "price": 8.9900000000000002131628207280300557613372802734375,
-            "originalPrice": 8.9900000000000002131628207280300557613372802734375,
-            "description": "",
-            "aisle": "Fish-And-Sea-Food-Aisle",
-            "image": "crab"
-        },
-        {
-            "id": 19,
-            "name": "lobster",
-            "stock": "550",
-            "price": 13.9900000000000002131628207280300557613372802734375,
-            "originalPrice": 13.9900000000000002131628207280300557613372802734375,
-            "description": "",
-            "aisle": "Fish-And-Sea-Food-Aisle",
-            "image": "lobster"
-        },
-        {
-            "id": 20,
-            "name": "Mackerel",
-            "stock": "550",
-            "price": 1.9899999999999999911182158029987476766109466552734375,
-            "originalPrice": 1.9899999999999999911182158029987476766109466552734375,
-            "description": "",
-            "aisle": "Fish-And-Sea-Food-Aisle",
-            "image": "Mackerel"
-        },
-        {
-            "id": 21,
-            "name": "salmon",
-            "stock": "550",
-            "price": 21.989999999999998436805981327779591083526611328125,
-            "originalPrice": 21.989999999999998436805981327779591083526611328125,
-            "description": "",
-            "aisle": "Fish-And-Sea-Food-Aisle",
-            "image": "salmon"
-        },
-        {
-            "id": 22,
-            "name": "shrimp",
-            "stock": "550",
-            "price": 11.9900000000000002131628207280300557613372802734375,
-            "originalPrice": 11.9900000000000002131628207280300557613372802734375,
-            "description": "",
-            "aisle": "Fish-And-Sea-Food-Aisle",
-            "image": "shrimp"
-        },
-        {
-            "id": 23,
-            "name": "tuna",
-            "stock": "550",
-            "price": 32.99000000000000198951966012828052043914794921875,
-            "originalPrice": 32.99000000000000198951966012828052043914794921875,
-            "description": "",
-            "aisle": "Fish-And-Sea-Food-Aisle",
-            "image": "tuna"
-        },
-        {
-            "id": 24,
-            "name": "Kitkat",
-            "stock": "150",
-            "price": 3.470000000000000195399252334027551114559173583984375,
-            "originalPrice": 3.470000000000000195399252334027551114559173583984375,
-            "description": "",
-            "aisle": "Snacks-Aisle",
-            "image": "Kitkat"
-        },
-        {
-            "id": 25,
-            "name": "Doritos",
-            "stock": "750",
-            "price": 2.970000000000000195399252334027551114559173583984375,
-            "originalPrice": 2.970000000000000195399252334027551114559173583984375,
-            "description": "",
-            "aisle": "Snacks-Aisle",
-            "image": "Doritos"
-        },
-        {
-            "id": 26,
-            "name": "Oreo",
-            "stock": "750",
-            "price": 3.770000000000000017763568394002504646778106689453125,
-            "originalPrice": 3.770000000000000017763568394002504646778106689453125,
-            "description": "",
-            "aisle": "Snacks-Aisle",
-            "image": "Oreo"
-        },
-        {
-            "id": 27,
-            "name": "Popcorn",
-            "stock": "50",
-            "price": 3.87000000000000010658141036401502788066864013671875,
-            "originalPrice": 3.87000000000000010658141036401502788066864013671875,
-            "description": "",
-            "aisle": "Snacks-Aisle",
-            "image": "Popcorn"
-        },
-        {
-            "id": 28,
-            "name": "snickers",
-            "stock": "750",
-            "price": 3.979999999999999982236431605997495353221893310546875,
-            "originalPrice": 3.979999999999999982236431605997495353221893310546875,
-            "description": "",
-            "aisle": "Snacks-Aisle",
-            "image": "snickers"
-        },
-        {
-            "id": 29,
-            "name": "Breakfast-Bars",
-            "stock": "1250",
-            "price": 1.9899999999999999911182158029987476766109466552734375,
-            "originalPrice": 1.9899999999999999911182158029987476766109466552734375,
-            "description": "",
-            "aisle": "Snacks-Aisle",
-            "image": "Breakfast-Bars"
-        },
-        {
-            "id": 30,
-            "name": "milk",
-            "stock": "50",
-            "price": 2.9900000000000002131628207280300557613372802734375,
-            "originalPrice": 2.9900000000000002131628207280300557613372802734375,
-            "description": "",
-            "aisle": "Dairy-Products-Aisle",
-            "image": "milk"
-        },
-        {
-            "id": 31,
-            "name": "cheese",
-            "stock": "750",
-            "price": 2.9900000000000002131628207280300557613372802734375,
-            "originalPrice": 2.9900000000000002131628207280300557613372802734375,
-            "description": "",
-            "aisle": "Dairy-Products-Aisle",
-            "image": "cheese"
-        },
-        {
-            "id": 32,
-            "name": "butter",
-            "stock": "250",
-            "price": 1.25,
-            "originalPrice": 1.25,
-            "description": "",
-            "aisle": "Dairy-Products-Aisle",
-            "image": "butter"
-        }
-    ]
-}
+      {
+        "id": 0,
+        "name": "pineapple",
+        "stock": "600",
+        "price": 2.99,
+        "originalPrice": 2.99,
+        "description": "",
+        "aisle": "Fruits-and-Vegetables-Aisle",
+        "image":"pineapple"
+      },
+      {
+        "id": 1,
+        "name": "orange",
+        "stock": "770",
+        "price": 1.25,
+        "originalPrice": 1.25,
+        "description": "",
+        "aisle": "Fruits-and-Vegetables-Aisle",
+        "image":"orange"
+      },  
+      {
+        "id": 2,
+        "name": "pear",
+        "stock": "900",
+        "price": 1.49,
+        "originalPrice": 1.49,
+        "description": "",
+        "aisle": "Fruits-and-Vegetables-Aisle",
+        "image":"pear"
+      },
+      {
+        "id": 3,
+        "name": "bell-pepper",
+        "stock": "550",
+        "price": 0.49,
+        "originalPrice": 0.49,
+        "description": "",
+        "aisle": "Fruits-and-Vegetables-Aisle",
+        "image":"bell-pepper"
+      },
+  
+      {
+        "id": 4,
+        "name": "potato",
+        "stock": "1000",
+        "price": 1.49,
+        "originalPrice": 1.49,
+        "description": "",
+        "aisle": "Fruits-and-Vegetables-Aisle",
+        "image":"potato"
+      },
+      {
+        "id": 5,
+        "name": "tomato",
+        "stock": "500",
+        "price": 1.49,
+        "originalPrice": 1.49,
+        "description": "",
+        "aisle": "Fruits-and-Vegetables-Aisle",
+        "image": "tomato"
+      },
+      {
+        "id": 6,
+        "name": "Belted-Galloway-Sirloin",
+        "stock": "50",
+        "price": 7.99,
+        "originalPrice": 7.99,
+        "description": "",
+        "aisle": "Meat-Aisle",
+        "image": "Belted-Galloway-Sirloin"
+      },
+      {
+        "id": 7,
+        "name": "chicken-breast",
+        "stock": "50",
+        "price": 4.99,
+        "originalPrice": 4.99,
+        "description": "",
+        "aisle": "Meat-Aisle",
+        "image":"chicken-breast"
+      },
+      {
+        "id": 8,
+        "name": "ribeye-steak",
+        "stock": "20",
+        "price": 9.99,
+        "originalPrice": 9.99,
+        "description": "",
+        "aisle": "Meat-Aisle",
+        "image":"ribeye-steak"
+      },
+      {
+        "id": 9,
+        "name": "sausages",
+        "stock": "100",
+        "price": 7.99,
+        "originalPrice": 7.99,
+        "description": "",
+        "aisle": "Meat-Aisle",
+        "image":"sausages"
+      },
+      {
+        "id": 10,
+        "name": "t-bone-steak",
+        "stock": "10",
+        "price": 13.99,
+        "originalPrice": 13.99,
+        "description": "",
+        "aisle": "Meat-Aisle",
+        "image":"t-bone-steak"
+      },
+      {
+        "id": 11,
+        "name": "Tomahawk-Steak",
+        "stock": "200",
+        "price": 34.99,
+        "originalPrice": 34.99,
+        "description": "",
+        "aisle": "Meat-Aisle",
+        "image":"Tomahawk-Steak"
+      },
+      {
+        "id": 12,
+        "name": "bread",
+        "stock": "600",
+        "price": 0.99,
+        "originalPrice": 0.99,
+        "description": "",
+        "aisle": "Bakery-Aisle",
+        "image":"bread"
+      },
+      {
+        "id": 13,
+        "name": "chocolate-cake",
+        "stock": "800",
+        "price": 12.99,
+        "originalPrice": 12.99,
+        "description": "",
+        "aisle": "Bakery-Aisle",
+        "image":"chocolate-cake"
+      },
+      {
+        "id": 14,
+        "name": "chocolate-chip-cookies",
+        "stock": "400",
+        "price": 4.99,
+        "originalPrice": 4.99,
+        "description": "",
+        "aisle": "Bakery-Aisle",
+        "image":"chocolate-chip-cookies"
+      },
+      {
+        "id": 15,
+        "name": "cinnamon-rolls",
+        "stock": "400",
+        "price": 9.99,
+        "originalPrice": 9.99,
+        "description": "",
+        "aisle": "Bakery-Aisle",
+        "image":"cinnamon-rolls"
+      },
+      {
+        "id": 16,
+        "name": "croissant",
+        "stock": "550",
+        "price": 5.99,
+        "originalPrice": 5.99,
+        "description": "",
+        "aisle": "Bakery-Aisle",
+        "image":"croissant"
+      },
+      {
+        "id": 17,
+        "name": "cupcake",
+        "stock": "550",
+        "price": 24.99,
+        "originalPrice": 24.99,
+        "description": "",
+        "aisle": "Bakery-Aisle",
+        "image":"cupcake"
+      },
+      {
+        "id": 18,
+        "name": "crab",
+        "stock": "550",
+        "price": 8.99,
+        "originalPrice": 8.99,
+        "description": "",
+        "aisle": "Fish-And-Sea-Food-Aisle",
+        "image":"crab"
+      },
+      {
+        "id": 19,
+        "name": "lobster",
+        "stock": "550",
+        "price": 13.99,
+        "originalPrice": 13.99,
+        "description": "",
+        "aisle": "Fish-And-Sea-Food-Aisle",
+        "image":"lobster"
+      },
+      {
+        "id": 20,
+        "name": "Mackerel",
+        "stock": "550",
+        "price": 1.99,
+        "originalPrice": 1.99,
+        "description": "",
+        "aisle": "Fish-And-Sea-Food-Aisle",
+        "image":"Mackerel"
+      },
+      {
+        "id": 21,
+        "name": "salmon",
+        "stock": "550",
+        "price": 21.99,
+        "originalPrice": 21.99,
+        "description": "",
+        "aisle": "Fish-And-Sea-Food-Aisle",
+        "image":"salmon"
+      },
+      {
+        "id": 22,
+        "name": "shrimp",
+        "stock": "550",
+        "price": 11.99,
+        "originalPrice": 11.99,
+        "description": "",
+        "aisle": "Fish-And-Sea-Food-Aisle",
+        "image":"shrimp"
+      },
+      {
+        "id": 23,
+        "name": "tuna",
+        "stock": "550",
+        "price": 32.99,
+        "originalPrice": 32.99,
+        "description": "",
+        "aisle": "Fish-And-Sea-Food-Aisle",
+        "image":"tuna"
+      },
+      {
+        "id": 24,
+        "name": "Kitkat",
+        "stock": "150",
+        "price": 3.47,
+        "originalPrice": 3.47,
+        "description": "",
+        "aisle": "Snacks-Aisle",
+        "image":"Kitkat"
+      },
+      {
+        "id": 25,
+        "name": "Doritos",
+        "stock": "750",
+        "price": 2.97,
+        "originalPrice": 2.97,
+        "description": "",
+        "aisle": "Snacks-Aisle",
+        "image":"Doritos"
+      },
+      {
+        "id": 26,
+        "name": "Oreo",
+        "stock": "750",
+        "price": 3.77,
+        "originalPrice": 3.77,
+        "description": "",
+        "aisle": "Snacks-Aisle",
+        "image":"Oreo"
+      },
+      {
+        "id": 27,
+        "name": "Popcorn",
+        "stock": "50",
+        "price": 3.87,
+        "originalPrice": 3.87,
+        "description": "",
+        "aisle": "Snacks-Aisle",
+        "image":"Popcorn"
+      },
+      {
+        "id": 28,
+        "name": "snickers",
+        "stock": "750",
+        "price": 3.98,
+        "originalPrice": 3.98,
+        "description": "",
+        "aisle": "Snacks-Aisle",
+        "image":"snickers"
+      },
+      {
+        "id": 29,
+        "name": "Breakfast-Bars",
+        "stock": "1250",
+        "price": 1.99,
+        "originalPrice": 1.99,
+        "description": "",
+        "aisle": "Snacks-Aisle",
+        "image":"Breakfast-Bars"
+      },
+      {
+        "id": 30,
+        "name": "milk",
+        "stock": "50",
+        "price": 2.99,
+        "originalPrice": 2.99,
+        "description": "",
+        "aisle": "Dairy-Products-Aisle",
+        "image":"milk"
+      },
+      {
+        "id": 31,
+        "name": "cheese",
+        "stock": "750",
+        "price": 2.99,
+        "originalPrice": 2.99,
+        "description": "",
+        "aisle": "Dairy-Products-Aisle",
+        "image":"cheese"
+      },
+      {
+        "id": 32,
+        "name": "butter",
+        "stock": "250",
+        "price": 1.25,
+        "originalPrice": 1.25,
+        "description": "",
+        "aisle": "Dairy-Products-Aisle",
+        "image":"butter"
+      }
+         ] 
+} 
