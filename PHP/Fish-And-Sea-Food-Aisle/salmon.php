@@ -27,7 +27,7 @@ $data = json_decode($data,true);
           <h2 class ="product"><?php echo $data['products'][21]['name']?></h2>
           <br/>
           <div class ="image">
-            <img src="../../Images/Fish-And-Sea-Food-Aisle/salmon.png"class="img-fluid" alt="Salmon">
+          <?php  print('<img src="../../Images/Fish-And-Sea-Food-Aisle/' . $data['products'][21]['image'] . '" alt="' . $value->name . ' Image">');?>
           </div>
         </div> 
         <div class="col-md-6 col-sm-12 col-lg-6 grey" style="margin-top:30px">

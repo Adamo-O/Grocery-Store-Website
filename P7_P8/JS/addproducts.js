@@ -69,12 +69,12 @@ function validateForm(formId) {
                 numOfInputs--;
             }
         }
-        else if (input[i].id == "date") {
+        else if (input[i].id == "id") {
             var dInvalid = document.getElementById("dInvalid");
 
             if (input[i].value == "") {
 
-                dInvalid.innerHTML = "Please enter a valid Expiry Date";
+                dInvalid.innerHTML = "Please enter a valid Product ID ";
                 dInvalid.style.color = "red";
 
 

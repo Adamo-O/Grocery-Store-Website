@@ -84,7 +84,7 @@
             ?>
             <tr>
             <th scope="row"><?php echo $value->id?></th>
-            <td class="img"><?php print('<img src="../../Images/'.$value->aisle.'/' . $value->image . '.png" alt="' . $value->name . ' Image" height="160px" width="160px">');?></td>
+            <td class="img"><?php print('<img src="../../Images/'.$value->aisle.'/' . $value->image . '" alt="' . $value->name . ' Image" height="160px" width="160px">');?></td>
               <td><?php echo $value->name?></td>
               <td><?php echo $value->price?></td>
               <td><?php echo $value->stock?></td>

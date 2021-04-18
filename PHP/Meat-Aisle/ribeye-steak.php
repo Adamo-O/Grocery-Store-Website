@@ -43,7 +43,7 @@ $data = json_decode($data,true);
           <h2 class ="product"><?php echo $data['products'][8]['name']?></h2>
           <br/>
           <div class ="image">
-            <img src="../../Images/Meat-Aisle/ribeye-steak.png"class="img-fluid" alt="Rib Eye Steak">
+          <?php  print('<img src="../../Images/Meat-Aisle/' . $data['products'][8]['image'] . '" alt="' . $value->name . ' Image">');?>
           </div>
         </div> 
         <div class="col-md-6 col-sm-12 col-lg-6 grey" style="margin-top:30px">

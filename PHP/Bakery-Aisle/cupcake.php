@@ -38,7 +38,7 @@ $data = json_decode($data,true);
           <h2 class ="product"><?php echo $data['products'][17]['name']?></h2>
           <br/>
           <div class ="image">
-          <?php  print('<img src="../../Images/Bakery-Aisle/' . $data['products'][17]['image'] . '.png" alt="' . $value->name . ' Image">');?>
+          <?php  print('<img src="../../Images/Bakery-Aisle/' . $data['products'][17]['image'] . '" alt="' . $value->name . ' Image">');?>
           </div>
         </div> 
         <div class="col-md-6 col-sm-12 col-lg-6 grey" style="margin-top:30px">

@@ -40,7 +40,7 @@
         print('
           <div class="fake-margin col">
           <div class="row">
-          <img src="../../Images/Fish-And-Sea-Food-Aisle/' . $value->name . '.png" alt="' . $value->name . ' Image">
+          <img src="../../Images/Fish-And-Sea-Food-Aisle/' . $value->image . '" alt="' . $value->name . ' Image">
           <p>' . $value->name . '<br>
           <a href="' . $value->name . '.php" class="check">Check it here</a>
           </p>
