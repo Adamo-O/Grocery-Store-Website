@@ -107,7 +107,23 @@
     if(isset($_POST["order"])){
       $orderNumber = "12345#AC";
       $data = json_decode(file_get_contents("../DB/orders.json"), true);
+<<<<<<< Updated upstream
       array_push($data,$array($orderNumber,$_SESSION['myArray'],$NetTotal));
+=======
+      $order;
+      for($i=0;$i<sizeof($_SESSION['myArray']);$i++){
+        array_push($order,
+        array("name" => $_SESSION['myArray'][$i][0],
+        "quantity" =>$_SESSION['myArray'][$i][1]));
+      }
+      $array = array(
+        "email"=>$userInfo['email'],
+        "orderNumber" => $orderNumber,
+        "order" => $order,
+        "total" => $NetTotal
+      );
+      array_push($data,$array);
+>>>>>>> Stashed changes
       $_SESSION['myArray'] = null;
       session_unset();
       session_destroy();
