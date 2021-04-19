@@ -104,3 +104,21 @@ JS:
 - addproducts.js
 - edit.js
 - products.js
+
+# SOEN 287 Assignment 3
+Web Programming Assignment 3.
+Due April 20th.
+## Contributions
+### Adamo Orsini (40174716) P5-6, 11-12
+P5-6:
+- [login.php](PHP/login.php)
+- [signup.php](PHP/signup.php)
+Database used:
+- [users.json](DB/users.json)
+
+P11-12:
+Order editing, deleting, product quanitity changing and deleting within order
+- [EditOrder.php](PHP/EditOrder.php)
+- [OrderHistory.php](PHP/OrderHistory.php)
+Database used:
+- [orders.json](DB/orders.json)
