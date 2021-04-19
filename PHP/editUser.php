@@ -27,7 +27,7 @@
       </div>
     <div id="containerPrav" class="container-md shadow rounded bg-light offset-3 p-4">
         <h1>Account</h1>
-        <form id = "pravForm" action="deleteUser.php" method="$_POST">
+        <form id = "pravForm" action="deleteUser.php" method="POST">
         <?php 
             if (isset($_POST['fname'])) {
                 $fname = $_POST['fname'];
@@ -43,6 +43,7 @@
                         <div class="col-sm-3">
                             <input class="form-control" id="fname" type="text" placeholder="'. $fname .'" readonly>
                             <p id="fnameyazInv" class="invalid"></p>
+                            <input type="text" id="id" name="id" value="'. $fname . '" hidden>
                         </div>
                         <label for="last name" id = "yazminlname" class="col-sm-2 col-form-label">Last Name</label>
                         <div class="col-sm-3">
