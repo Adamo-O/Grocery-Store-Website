@@ -27,10 +27,10 @@ $data = json_decode(file_get_contents('../DB/products.json'), true);
 <div class="sidebar">
     <header>La Meilleure Épicerie</header>
     <div class="list-group"></div>
-    <a href="../index.php" id="home"
+    <a href="../PHP/index.php" id="home"
       class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Home
 
-      <a href="products.php" id="Inventory"
+      <a href="products/products.php" id="Inventory"
         class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Inventory
 
         <a href="../userList.php" id="accounts"

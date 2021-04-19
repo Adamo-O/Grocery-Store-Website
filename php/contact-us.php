@@ -11,19 +11,9 @@
 </head>
 
 <body>
-    <section class="header">
-        <h1><a href="index.html">La Meilleure Épicerie</a></h1>
-    </section>
-    <section class="nav-bar">
-        <ul class="nav-bar-content">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#aisles">Aisles</a></li>
-            <li><a href="index.html#offers">Offers</a></li>
-            <li><a href="Login.html">Login</a></li>
-            <li><a href="Sign Up.html">Sign Up</a></li>
-            <li><a href="ShoppingCart.html" id="right">Shopping Cart</a></li>
-        </ul>
-    </section>
+    <?php
+	require('navbar.php');
+	?>
     <div class="contact-us">
         <div class="col-50">
             <h3>Contact Us</h3>
@@ -42,15 +32,9 @@
             </form>
         </div>
     </div>
-    <section id="footer">
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
-        <h6>
-            Thanks for shopping at La Meilleure Épicerie. <br>
-            To contact us, please click <a href="contact-us.html" class="contact-page">here</a>.
-        </h6>
-    </section>
+    <?php
+	require('footer.php');
+	?>
     
     <script src="../JS/index.js"></script>
 </body>
