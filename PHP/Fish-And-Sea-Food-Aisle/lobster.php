@@ -32,7 +32,7 @@ $data = json_decode($data,true);
       <p id="price" class="price">For only $<?php echo $data['products'][19]['price']?> per pound</p>
       <form method ="POST" action = "../Order.php">
           <input type ="hidden" name ="name" value ="Lobster" class ="name">
-          <input type ="hidden" value = "<?php echo $data['products'][18]['price']?>" name ="price"> </h3>
+          <input type ="hidden" value = "<?php echo $data['products'][19]['price']?>" name ="price"> </h3>
           <button type ="button" class="general-btn add" onclick="add()">+</button>
           
           <input readonly type="text" id="quantity" name="quantity" placeholder="Quantity">

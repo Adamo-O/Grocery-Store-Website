@@ -12,18 +12,7 @@
 </head>
 
 <body>
-  <section class="header">
-    <h1><a href="../index.php">La Meilleure Épicerie</a></h1>
-  </section>
-  <section class="nav-bar">
-    <ul class="nav-bar-content">
-      <li><a href="../index.php">Home</a></li>
-      <li><a href="../index.php#aisles">Aisles</a></li>
-      <li><a href="../index.php#offers">Offers</a></li>
-      <li><a href="../../HTML/Login.html">Sign in</a></li>
-      <li><a href="../../HTML/ShoppingCart.html" id="right">Shopping Cart</a></li>
-    </ul>
-  </section>
+<?php require('../navbar.php'); ?>
   <section class="banner">
     <img src="../../Images/Fish-And-Sea-Food-Aisle/banner.jpg" alt="Banner Image">
     <h2>Fish & Sea Food</h2>
@@ -51,14 +40,7 @@
     }
     ?>
   </section>
-  <section id="footer">
-    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
-    <h6>
-      Thanks for shopping at La Meilleure Épicerie. <br>
-      To contact us, please click <a href="../../HTML/contact-us.html" class="contact-page">here</a>.
-    </h6>
+  <?php require('../footer.php'); ?>
   </section>
 </body>
 

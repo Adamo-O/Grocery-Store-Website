@@ -20,19 +20,7 @@ $data = file_get_contents("../..//DB/products.json");
 $data = json_decode($data,true);
 
 ?>
-  <div class="header p-3">
-    <h1><a href="../index.html" class="link">La Meilleure Épicerie</a></h1>
-   </div>
-   <div class="nav-bar mx-4">
-     <ul class="nav-bar-content mb-3">
-       <li><a href="../index.php">Home</a></li>
-       <li><a href="../index.php#aisles">Aisles</a></li>
-       <li><a href="../index.php#offers">Offers</a></li>
-       <li><a href="../../HTML/Login.html">Login</a></li>
-       <li><a href="../../HTML/Sign Up.html">Sign Up</a></li>
-       <li><a href="../../HTML/ShoppingCart.html" id="right">Shopping Cart</a></li>
-     </ul>
-   </div>
+  <?php require('../navbar.php'); ?>
     <div class="container h-100 d-flex flex-column">
       <div class="row h-75 mb-4">
         <div class="col-md-6 col-lg-6 grey" style="margin-top:30px">
@@ -47,7 +35,7 @@ $data = json_decode($data,true);
           </h3>
           <form method ="POST" action = "http://localhost/SOEN-287/PHP/Shopping Cart.php">
 
-            <input type ="hidden" name ="name" value ="Bread" class ="name">
+            <input type ="hidden" name ="name" value ="<?php echo $data['products'][12]['name']?>" class ="name">
             <input type ="hidden" value = "0.99" name ="price"> </h3>
             <label for="quantity">Quantity:</label></br>
             <input type="number" id="quantity" class="quantity" name="quantity"></br>
@@ -102,15 +90,7 @@ $data = json_decode($data,true);
         </div>
     </div>
     
-  <div id="footer">
-    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
-    <h6>
-        Thanks for shopping at La Meilleure Épicerie. <br> 
-        To contact us please click <a href="contact-us.html" class="contact-page">here</a>.
-    </h6>
-  </div>
+    <?php require('../footer.php'); ?>
   <script src ="../../JS/p3.js"></script>
   <script src="../../JS/products.js"></script>
   <script src="../../JS/prices.js"></script>

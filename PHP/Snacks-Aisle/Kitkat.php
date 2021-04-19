@@ -21,19 +21,7 @@ $data = file_get_contents("../..//DB/products.json");
 $data = json_decode($data,true);
 
 ?>
-  <div class="header p-3">
-    <h1><a href="../index.html" class="link">La Meilleure Épicerie</a></h1>
-  </div>
-<div class="nav-bar mx-4">
-<ul class="nav-bar-content mb-3">
-        <li><a href="../index.php">Home</a></li>
-        <li><a href="../index.php#aisles">Aisles</a></li>
-        <li><a href="../index.php#offers">Offers</a></li>
-        <li><a href="../../HTML/Login.html">Login</a></li>
-        <li><a href="../../HTML/Sign Up.html">Sign Up</a></li>
-        <li><a href="../../HTML/ShoppingCart.html" id="right">Shopping Cart</a></li>
-    </ul>
-    </div>
+  <?php require('../navbar.php'); ?>
     <div class="container h-100 d-flex flex-column">
       <div class="row h-100 mb-4">
         <div class="col-md-6 col-lg-6 grey" style="margin-top:30px">
@@ -45,11 +33,17 @@ $data = json_decode($data,true);
         </div> 
         <div class="col-md-6 col-sm-12 col-lg-6 grey" style="margin-top:30px">
           <h3 id ="price" class ="price">For only $<?php echo $data['products'][24]['price']?> / 180g</h3>
-          <label for="quantity">Quantity:</label>
-          <div class="input">
-            <input type="number" id="quantity" class="quantity" name="quantity">
-          </div>
-          <br/>
+          <form method ="POST" action = "../Order.php">
+
+          <button class="general-btn" type ="submit" class="btn" class ="general-btn" onclick ="alert('Succesfully added to cart')" value ="Add To Cart🛒">Add To Cart</button>
+          <input type ="hidden" name ="name" value ="Kitkat" class ="name">
+          <input type ="hidden" value = "<?php echo $data['products'][24]['price']?>" name ="price"> </h3>
+          <button type ="button" class="general-btn add" onclick="add()">+</button>
+          
+          <input readonly type="text" id="quantity" name="quantity" placeholder="Quantity">
+          <button type ="button" class="general-btn subtract inactive-btn" onclick="subtract()">-</button>
+        
+      </form>
           <button  class="btn" style ="background-color:cyan" class="desButton" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">More Description</button>
           <br/>
           <h4 class="collapse" id="collapseExample"><br/><?php echo $data['products'][24]['description']?><br/></h4> 
@@ -88,15 +82,7 @@ $data = json_decode($data,true);
           <button class="btn" style ="background-color:cyan" id ="cartButton"  onclick="getData()">Add To Cart🛒</button>
         </div>
     </div>
-    <section id="footer">
-      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
-      <h6>
-        Thanks for shopping at La Meilleure Épicerie. <br>
-        To contact us, please click <a href="../contact-us.html" class="contact-page">here</a>.
-      </h6>
-    </section>
+    <?php require('../footer.php'); ?>
   <script src="../../JS/p3.js"></script>
   <script src ="../../JS/products.js"></script>
 </body>

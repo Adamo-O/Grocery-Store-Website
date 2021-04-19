@@ -20,19 +20,7 @@ $data = file_get_contents("../..//DB/products.json");
 $data = json_decode($data,true);
 
 ?>
-  <section class="header">
-    <h1><a href="../index.php">La Meilleure Épicerie</a></h1>
-  </section>
-  <section class="nav-bar">
-    <ul class="nav-bar-content">
-      <li><a href="../index.php">Home</a></li>
-      <li><a href="../index.php#aisles">Aisles</a></li>
-      <li><a href="../index.php#offers">Offers</a></li>
-      <li><a href="../../HTML/Login.html">Login</a></li>
-      <li><a href="../../HTML/Sign Up.html">Sign Up</a></li>
-      <li><a href="../../HTML/ShoppingCart.html" id="right">Shopping Cart</a></li>
-    </ul>
-  </section>
+  <?php require('../navbar.php'); ?>
   <div class="content-container">
     <div class="col-50">
       <h3><?php echo $data['products'][0]['name']?></h3>
@@ -42,13 +30,17 @@ $data = json_decode($data,true);
     </div>
     <div class="col-50">
       <p id="price" class="price">For only $<?php echo $data['products'][0]['price'];?>per pound</p>
-      <button class="general-btn" onclick="getData()">Add To Cart</button>
-      <div class="quantity-container">
-        <label for="quantity"></label>
-        <button class="general-btn add" onclick="add()">+</button>
-        <input readonly type="text" id="quantity" name="quantity" placeholder="Quantity">
-        <button class="general-btn subtract inactive-btn" onclick="subtract()">-</button>
-      </div>
+      <form method ="POST" action = "../Order.php">
+
+          <button class="general-btn" type ="submit" class="btn" class ="general-btn" onclick ="alert('Succesfully added to cart')" value ="Add To Cart🛒">Add To Cart</button>
+          <input type ="hidden" name ="name" value ="Pineapple" class ="name">
+          <input type ="hidden" value = "<?php echo $data['products'][0]['price']?>" name ="price"> </h3>
+          <button type ="button" class="general-btn add" onclick="add()">+</button>
+          
+          <input readonly type="text" id="quantity" name="quantity" placeholder="Quantity">
+          <button type ="button" class="general-btn subtract inactive-btn" onclick="subtract()">-</button>
+        
+      </form>
       <button class="general-btn des-btn" onclick="description()">More Description</button>
       <div class="description">
         <p class="description-details">
@@ -84,15 +76,7 @@ $data = json_decode($data,true);
       </div>
     </div>
   </div>
-  <section id="footer">
-    <a href="https://facebook.com" target="_blank"><em class="fab fa-facebook fa-2x"></em></a>
-    <a href="https://instagram.com" target="_blank"><em class="fab fa-instagram fa-2x"></em></a>
-    <a href="https://twitter.com" target="_blank"><em class="fab fa-twitter-square fa-2x"></em></a>
-    <h6>
-      Thanks for shopping at La Meilleure Épicerie. <br>
-      To contact us, please click <a href="../../HTML/contact-us.html" class="contact-page">here</a>.
-    </h6>
-  </section>
+  <?php require('../footer.php'); ?>
   <script src="../../JS/products.js"></script>
   <script src="../../JS/prices.js"></script>
   <script src ="../../JS/p3.js"></script>
