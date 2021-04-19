@@ -38,6 +38,7 @@
       <?php
 
       session_start();
+      $_SESSION['myArray'];
       $table ="</td>";
       if($_SESSION['myArray']!==null){
         for($i=0;$i<sizeof($_SESSION['myArray']);$i++){
@@ -76,59 +77,59 @@
             <tbody>
               <tr>
                 <th scope="row">Number of items</th>
-                <td id="numberOfItems" class = "numberOfitems"><?php echo sizeof($_SESSION['myArray']);?></td>
+                <td id="numberOfItems" class = "numberOfitems"><?php 
+                if($_SESSION['myArray']!=null){echo sizeof($_SESSION['myArray']);}?></td>
               </tr>
               <tr>
                 <th scope="row">Order Total: </th>
                 <td id="orderTotal" class = "OrderTotal"><?php 
-                $total = 0;
+                if($_SESSION['myArray']!=null){
+                  $total = 0;
                 for($i=0;$i<sizeof($_SESSION['myArray']);$i++){
                   $total += $_SESSION['myArray'][$i][1]*$_SESSION['myArray'][$i][2];
                 }
-                echo round($total,2);?></td>
+                echo round($total,2);
+                }?></td>
               </tr>
               <tr>
                 <th scope="row">QST:</th>
-                <td  id="qst" class ="qst"><?php $qst = 9.975/100 * $total; echo round($qst,2); ?></td>
+                <td  id="qst" class ="qst"><?php 
+                if($_SESSION['myArray']!=null){$qst = 9.975/100 * $total; echo round($qst,2);}?></td>
               </tr>
               <tr>
                 <th scope="row">GST:</th>
-                <td id="gst" class ="gst"><?php $gst = 5/100 * $total; echo round($gst,2); ?></td>
+                <td id="gst" class ="gst"><?php 
+                if($_SESSION['myArray']!=null){$gst = 5/100 * $total; echo round($gst,2);} ?></td>
               </tr>
               <tr>
                 <th scope="row">Total:</th>
-                <td id="total" class ="total"><?php $NetTotal = $total + $gst + $qst; echo round($NetTotal,2);?></td>
+                <td id="total" class ="total"><?php 
+                if($_SESSION['myArray']!=null){$NetTotal = $total + $gst + $qst; echo round($NetTotal,2);}?></td>
               </tr>
             </tbody>
         </table>
     </div>
     <?php require('footer.php'); ?>
     <?php
-    if(isset($_POST["order"])){
-      $orderNumber = "12345#AC";
-      $data = json_decode(file_get_contents("../DB/orders.json"), true);
-<<<<<<< Updated upstream
-      array_push($data,$array($orderNumber,$_SESSION['myArray'],$NetTotal));
-=======
-      $order;
-      for($i=0;$i<sizeof($_SESSION['myArray']);$i++){
-        array_push($order,
-        array("name" => $_SESSION['myArray'][$i][0],
-        "quantity" =>$_SESSION['myArray'][$i][1]));
-      }
-      $array = array(
-        "email"=>$userInfo['email'],
-        "orderNumber" => $orderNumber,
-        "order" => $order,
-        "total" => $NetTotal
-      );
-      array_push($data,$array);
->>>>>>> Stashed changes
-      $_SESSION['myArray'] = null;
-      session_unset();
-      session_destroy();
-      file_put_contents('../DB/orders.json', json_encode($data));
-      header('Location:http://localhost/SOEN-287/PHP/Shopping Cart.php',true);exit();
+    if(isset($_POST["order"])&&$_SESSION['myArray']!=null){
+        $orderNumber = "12345#AC";
+        $data = json_decode(file_get_contents("../DB/orders.json"), true);
+        $order=array();
+        for($i=0;$i<sizeof($_SESSION['myArray']);$i++){
+          array_push($order,
+          array("name" => $_SESSION['myArray'][$i][0],
+          "quantity" =>$_SESSION['myArray'][$i][1]));
+        }
+        $array = array(
+          "email"=>$userInfo['email'],
+          "orderNumber" => $orderNumber,
+          "order" => $order,
+          "total" => $NetTotal
+        );
+         array_push($data,$array);
+         file_put_contents('../DB/orders.json', json_encode($data));
+         $_SESSION['myArray'] = null;
+         header('Location:http://localhost/SOEN-287/PHP/index.php',true);exit();
     }
     ?>
 </body>
