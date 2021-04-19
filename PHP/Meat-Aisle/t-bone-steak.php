@@ -55,8 +55,7 @@ $data = json_decode($data,true);
           <button class="btn desButton" onclick="showDescription()">More Description</button>
           <div id="description" class="hideDesc">
             <p id="description-text">
-              The T-bone steak contains a strip of the top loin and a chunk of tenderloin.<br/>
-              Both of these are desired cuts, and having them together creates a classic dish.
+            <?php echo $data['products'][10]['description'];?>
             </p>
             <div>
               <table id="nutrition">

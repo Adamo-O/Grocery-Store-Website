@@ -52,8 +52,7 @@ $data = json_decode($data,true);
       <button class="general-btn des-btn" onclick="moredescription()">More Description</button>
       <div id= "des" style="visibility: hidden;">
         <p>
-          Nothing compares to a cold glass of fresh Sealtest Milk. A light, refreshing and natural taste with immense nutritional value. Sealtest offers you quality milk in all varieties. 
-          Whether it’s Homogenized, 2%, 1% or skim milk, Sealtest Milk provides an excellent source of calcium and vitamin D.No antibiotics or artificial growth hormones.
+        <?php echo $data['products'][30]['description']?>
         </p>
         
       

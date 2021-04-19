@@ -55,8 +55,7 @@ $data = json_decode($data,true);
           <button class="btn desButton" onclick="showDescription()">More Description</button>
           <div id="description" class="hideDesc">
             <p id="description-text">
-              Being one of our most popular imported meats, Italian Sausage merits its praise.<br/>
-              Perfect for sandwiches, combining with cheese spreads, or just devouring it alone. You can never go wrong with this one.
+            <?php echo $data['products'][9]['description']?>
             </p>
             <div>
               <table id="nutrition">

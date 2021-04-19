@@ -54,9 +54,8 @@ $data = json_decode($data,true);
           <button class="btn cartButton" onclick ="getData()">Add To Cart🛒</button><br />
           <button class="btn desButton" onclick="showDescription()">More Description</button>
           <div id="description" class="hideDesc">
-            <p id="description-text">Belted Galloway meat is considered one of the best tasting and healthiest meats.<br />
-            This is always a great choice for your next big dinner.
-            </p>
+            <p id="description-text">
+            <?php echo $data['products'][6]['description']?>
             <div>
               <table id="nutrition">
               <tr>

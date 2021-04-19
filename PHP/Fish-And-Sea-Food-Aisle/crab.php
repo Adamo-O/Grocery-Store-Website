@@ -44,8 +44,7 @@ $data = json_decode($data,true);
       <button class="general-btn des-btn" onclick="description()">More Description</button>
       <div class="description">
         <p class="description-details">
-          Our Finest Crab which is fully cooked and ready to eat. Wild harvested. Legs & Claws.
-        </p>
+        <?php echo $data['products'][18]['description']?></p>
         <table class="nutrition-value">
           <tr>
             <th colspan="2">Nutrition Facts</th>

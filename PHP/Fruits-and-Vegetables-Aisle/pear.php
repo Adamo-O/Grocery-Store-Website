@@ -43,7 +43,7 @@ $data = json_decode($data,true);
     <div class="col-50">
       <p id="price" class="price">For only $<?php echo $data['products'][2]['price'];?> per pound</p>
       <button class="general-btn" onclick="getData()">Add To Cart</button>
-      <div class="quantity-container">[[]]
+      <div class="quantity-container">
         <label for="quantity"></label>
         <button class="general-btn add" onclick="add()">+</button>
         <input readonly type="text" id="quantity" name="quantity" placeholder="Quantity">
@@ -52,9 +52,8 @@ $data = json_decode($data,true);
       <button class="general-btn des-btn" onclick="description()">More Description</button>
       <div class="description">
         <p class="description-details">
-          Take a break and taste the tropics.<br> Our fresh and organic pears are mildly sweet and rich in flavor pears
-        offer crunchiness of apples yet juicy as peach and nectarine. Our pears are packed with health benefiting nutrients
-        such as dietary fiber, anti-oxidants, and minerals which are necessary for optimum health.
+        <?php echo $data['products'][2]['description'];?>
+          
         </p>
         <table class="nutrition-value">
           <tr>

@@ -57,8 +57,7 @@ $data = json_decode($data,true);
           <button  class="btn desButton" onclick="showDescription()">More Description</button>
           <div id="description" class="hideDesc">
             <p id="description-text">
-              The Rib-eye steak's title of Prime Rib shows its meat supremacy over much of the market.<br/>
-              This meat is best grilled or boiled, since it allows its full flavor and soft texture to perfect its taste and quality.
+            <?php echo $data['products'][8]['description']?>
             </p>
             <div>
               <table id="nutrition">

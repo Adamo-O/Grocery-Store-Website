@@ -56,8 +56,7 @@ $data = json_decode($data,true);
           <button class="btn desButton" onclick="showDescription()">More Description</button>
           <div id="description" class="hideDesc">
             <p id="description-text">
-              The Tomahawk steak isn't just dreamy-it's real.<br/>
-              It is huge, well marbled, buttery, and perfect for sharing with others. Or going caveman-style on it yourself.
+            <?php echo $data['products'][11]['description'];?>
             </p>
             <div>
               <table id="nutrition">
