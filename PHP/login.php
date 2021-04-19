@@ -84,7 +84,7 @@ if (isset($_POST['email'])) {
                 session_start();
                 $_SESSION["user"] = $userInfo;
                 $_SESSION["logIn"] = true;
-                header('Location: ../HTML/index.html');
+                header('Location: index.php');
                 exit();
             }
             // Incorrect password

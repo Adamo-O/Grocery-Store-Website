@@ -1,1 +1,1 @@
-{"orders": [{"orderNumber": "#12345AB","order": [{"name":"pineapple","quantity":2}],"total":5}]}
+{"orders":[{"orderNumber":"12345AB","order":[{"name":"pineapple","quantity":"2"},{"name":"orange","quantity":"4"}],"total":5}]}
