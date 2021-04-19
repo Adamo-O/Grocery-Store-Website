@@ -121,7 +121,7 @@
           "quantity" =>$_SESSION['myArray'][$i][1]));
         }
         $array = array(
-          "email"=>$userInfo['email'],
+          "email"=>$_SESSION[$userInfo['email']],
           "orderNumber" => $orderNumber,
           "order" => $order,
           "total" => $NetTotal
