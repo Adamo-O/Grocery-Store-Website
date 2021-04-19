@@ -1,89 +1,89 @@
 // Delete method, displays the x buttons, goes back to normal afterwards, the specific delete methods are at the end of this document.
-$('#delUser').click(function() {
+// $('#delUser').click(function() {
 
-    if (document.getElementById('delUser').innerHTML == 'Delete User') {
-        document.getElementById('delUser').innerHTML = 'Back';
+//     if (document.getElementById('delUser').innerHTML == 'Delete User') {
+//         document.getElementById('delUser').innerHTML = 'Back';
 
-        if (document.getElementById('pravina') != null) {
-            document.getElementById('pravina').className = 'list-group-item disabled'; 
-        }
-        if (document.getElementById('estelle') != null) {
-            document.getElementById('estelle').className = 'list-group-item disabled';
-        }
-        if (document.getElementById('antonius') != null) {
-            document.getElementById('antonius').className = 'list-group-item disabled';
-        }
-        if (document.getElementById('alexandre') != null) {
-            document.getElementById('alexandre').className = 'list-group-item disabled';
-        }
-        if (document.getElementById('katrina') != null) {
-            document.getElementById('katrina').className = 'list-group-item disabled';
-        }
-        if (document.getElementById('nathaniel') != null) {
-            document.getElementById('nathaniel').className = 'list-group-item disabled';
-        }
-        if (document.getElementById('madelaine') != null) {
-            document.getElementById('madelaine').className = 'list-group-item disabled';
-        }
-        if (document.getElementById('yazmin') != null) {
-            document.getElementById('yazmin').className = 'list-group-item disabled';
-        }
-        if (document.getElementById('edward') != null) {
-            document.getElementById('edward').className = 'list-group-item disabled';
-        }
+//         if (document.getElementById('pravina') != null) {
+//             document.getElementById('pravina').className = 'list-group-item disabled'; 
+//         }
+//         if (document.getElementById('estelle') != null) {
+//             document.getElementById('estelle').className = 'list-group-item disabled';
+//         }
+//         if (document.getElementById('antonius') != null) {
+//             document.getElementById('antonius').className = 'list-group-item disabled';
+//         }
+//         if (document.getElementById('alexandre') != null) {
+//             document.getElementById('alexandre').className = 'list-group-item disabled';
+//         }
+//         if (document.getElementById('katrina') != null) {
+//             document.getElementById('katrina').className = 'list-group-item disabled';
+//         }
+//         if (document.getElementById('nathaniel') != null) {
+//             document.getElementById('nathaniel').className = 'list-group-item disabled';
+//         }
+//         if (document.getElementById('madelaine') != null) {
+//             document.getElementById('madelaine').className = 'list-group-item disabled';
+//         }
+//         if (document.getElementById('yazmin') != null) {
+//             document.getElementById('yazmin').className = 'list-group-item disabled';
+//         }
+//         if (document.getElementById('edward') != null) {
+//             document.getElementById('edward').className = 'list-group-item disabled';
+//         }
         
-        document.getElementById('pravinaclose').hidden = false;
-        document.getElementById('estelleclose').hidden = false;
-        document.getElementById('antoniusclose').hidden = false;
-        document.getElementById('alexandreclose').hidden = false;
-        document.getElementById('katrinaclose').hidden = false;
-        document.getElementById('nathanielclose').hidden = false;
-        document.getElementById('madelaineclose').hidden = false;
-        document.getElementById('yazminclose').hidden = false;
-        document.getElementById('edwardclose').hidden = false;
-    }
-    else {
-        document.getElementById('delUser').innerHTML = 'Delete User';
+//         document.getElementById('pravinaclose').hidden = false;
+//         document.getElementById('estelleclose').hidden = false;
+//         document.getElementById('antoniusclose').hidden = false;
+//         document.getElementById('alexandreclose').hidden = false;
+//         document.getElementById('katrinaclose').hidden = false;
+//         document.getElementById('nathanielclose').hidden = false;
+//         document.getElementById('madelaineclose').hidden = false;
+//         document.getElementById('yazminclose').hidden = false;
+//         document.getElementById('edwardclose').hidden = false;
+//     }
+//     else {
+//         document.getElementById('delUser').innerHTML = 'Delete User';
 
-        if (document.getElementById('pravina') != null) {
-            document.getElementById('pravina').className = 'list-group-item d-flex justify-content-between align-items-center list-group-item-action';
-        }
-        if (document.getElementById('estelle') != null) {
-            document.getElementById('estelle').className = 'list-group-item d-flex justify-content-between align-items-center list-group-item-action';
-        }
-        if (document.getElementById('antonius') != null) {
-            document.getElementById('antonius').className = 'list-group-item d-flex justify-content-between align-items-center list-group-item-action';
-        }
-        if (document.getElementById('alexandre') != null) {
-            document.getElementById('alexandre').className = 'list-group-item d-flex justify-content-between align-items-center list-group-item-action';
-        }
-        if (document.getElementById('katrina') != null) {
-            document.getElementById('katrina').className = 'list-group-item d-flex justify-content-between align-items-center list-group-item-action';
-        }
-        if (document.getElementById('nathaniel') != null) {
-            document.getElementById('nathaniel').className = 'list-group-item d-flex justify-content-between align-items-center list-group-item-action';
-        }
-        if (document.getElementById('madelaine') != null) {
-            document.getElementById('madelaine').className = 'list-group-item d-flex justify-content-between align-items-center list-group-item-action';
-        }
-        if (document.getElementById('yazmin') != null) {
-            document.getElementById('yazmin').className = 'list-group-item d-flex justify-content-between align-items-center list-group-item-action';
-        }
-        if (document.getElementById('edward') != null) {
-            document.getElementById('edward').className = 'list-group-item d-flex justify-content-between align-items-center list-group-item-action';
-        }
+//         if (document.getElementById('pravina') != null) {
+//             document.getElementById('pravina').className = 'list-group-item d-flex justify-content-between align-items-center list-group-item-action';
+//         }
+//         if (document.getElementById('estelle') != null) {
+//             document.getElementById('estelle').className = 'list-group-item d-flex justify-content-between align-items-center list-group-item-action';
+//         }
+//         if (document.getElementById('antonius') != null) {
+//             document.getElementById('antonius').className = 'list-group-item d-flex justify-content-between align-items-center list-group-item-action';
+//         }
+//         if (document.getElementById('alexandre') != null) {
+//             document.getElementById('alexandre').className = 'list-group-item d-flex justify-content-between align-items-center list-group-item-action';
+//         }
+//         if (document.getElementById('katrina') != null) {
+//             document.getElementById('katrina').className = 'list-group-item d-flex justify-content-between align-items-center list-group-item-action';
+//         }
+//         if (document.getElementById('nathaniel') != null) {
+//             document.getElementById('nathaniel').className = 'list-group-item d-flex justify-content-between align-items-center list-group-item-action';
+//         }
+//         if (document.getElementById('madelaine') != null) {
+//             document.getElementById('madelaine').className = 'list-group-item d-flex justify-content-between align-items-center list-group-item-action';
+//         }
+//         if (document.getElementById('yazmin') != null) {
+//             document.getElementById('yazmin').className = 'list-group-item d-flex justify-content-between align-items-center list-group-item-action';
+//         }
+//         if (document.getElementById('edward') != null) {
+//             document.getElementById('edward').className = 'list-group-item d-flex justify-content-between align-items-center list-group-item-action';
+//         }
 
-        document.getElementById('pravinaclose').hidden = true;
-        document.getElementById('estelleclose').hidden = true;
-        document.getElementById('antoniusclose').hidden = true;
-        document.getElementById('alexandreclose').hidden = true;
-        document.getElementById('katrinaclose').hidden = true;
-        document.getElementById('nathanielclose').hidden = true;
-        document.getElementById('madelaineclose').hidden = true;
-        document.getElementById('yazminclose').hidden = true;
-        document.getElementById('edwardclose').hidden = true;
-    }
-    })
+//         document.getElementById('pravinaclose').hidden = true;
+//         document.getElementById('estelleclose').hidden = true;
+//         document.getElementById('antoniusclose').hidden = true;
+//         document.getElementById('alexandreclose').hidden = true;
+//         document.getElementById('katrinaclose').hidden = true;
+//         document.getElementById('nathanielclose').hidden = true;
+//         document.getElementById('madelaineclose').hidden = true;
+//         document.getElementById('yazminclose').hidden = true;
+//         document.getElementById('edwardclose').hidden = true;
+//     }
+//     })
 
 // Edit methods for all users
 
@@ -452,6 +452,60 @@ function editUserNathaniel() {
         }
     }
 }
+function editUser(formId) {
+    var form = document.getElementById(formId);
+    if (document.getElementById('fname').readOnly == true) {
+        document.getElementById('fname').readOnly= false;
+        document.getElementById('lname').readOnly = false;
+        document.getElementById('email').readOnly= false;
+        document.getElementById('postalcode').readOnly = false;
+        document.getElementById('password').readOnly= false;
+    
+        document.getElementById('editbtn').innerHTML = 'Save Changes';
+    }
+    else {
+        var fname = document.getElementById('fname').value;
+        var lname = document.getElementById('lname').value;
+        var email = document.getElementById('email').value;
+        var postalCode = document.getElementById('postalcode').value;
+
+        var regex=/^[a-zA-Z]+$/;
+        var emailRegex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        var postCodeRegex = /[a-zA-Z][0-9][a-zA-Z](-| |)[0-9][a-zA-Z][0-9]/;
+        var isValid = false;
+        if (!fname.match(regex)) {
+            document.getElementById('fnameInv').style.color ='red';    
+            document.getElementById('fnameInv').innerHTML = 'The name must contain only letters';
+
+        }
+        if (!lname.match(regex)) {
+            document.getElementById('lnameInv').style.color='red';
+            document.getElementById('lnameInv').innerHTML='The name must contain only letters';
+        }
+        if (!email.match(emailRegex)) {
+            document.getElementById('emailInv').style.color='red';
+            document.getElementById('emailInv').innerHTML='This email is invalid.';
+        }
+        if (!postalCode.match(postCodeRegex)) {
+            document.getElementById('postcodeInv').style.color='red';
+            document.getElementById('postcodeInv').innerHTML='This postal code is invalid.';
+        }
+        if (fname.match(regex) && lname.match(regex) && email.match(emailRegex) && postalCode.match(postCodeRegex)) {
+            document.getElementById('fnameInv').hidden=true;
+            document.getElementById('lnameInv').hidden=true;
+            document.getElementById('emailInv').hidden=true;
+            document.getElementById('postcodeInv').hidden=true;
+            // document.getElementById('fname').readOnly= true;
+            // document.getElementById('lname').readOnly = true;
+            // document.getElementById('email').readOnly= true;
+            // document.getElementById('postalcode').readOnly = true;
+            // document.getElementById('password').readOnly= true;
+            document.getElementById('editbtn').innerHTML = 'Edit User';
+            window.alert('Changes saved!');
+            form.submit();
+        }
+    }
+}
 function editUserPravina() {
     if (document.getElementById('pravinafname').readOnly == true) {
         document.getElementById('pravinafname').readOnly= false;
@@ -561,7 +615,8 @@ function editUserYaz() {
 function addUser() {
     document.getElementById('addUserContainer').hidden = false;
 }
-function confirm() {
+function confirm(formId) {
+    var form = document.getElementById(formId);
     var fname = document.forms['addUserForm']['addfname'].value;
     var fnameInv = document.getElementById('addfnameInvalid');
     var lname = document.forms['addUserForm']['addlname'].value;
@@ -610,8 +665,9 @@ function confirm() {
         }
     
     if (isValid == true) {
-        $('#userList').append('<a id="name" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">'+fname+' ' + lname +'</a>');
-        document.getElementById('addUserContainer').hidden = true;
+        $('#addUserForm').submit();
+        // $('#userList').append('<a id="name" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">'+fname+' ' + lname +'</a>');
+        // document.getElementById('addUserContainer').hidden = true;
     }
 }
 // Delete methods for all users
