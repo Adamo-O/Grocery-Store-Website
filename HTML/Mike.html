@@ -21,7 +21,7 @@
                                         <a href="" id="reports" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Reports</a>
                                         <a href="#" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action" id="login"> <b>Logout</b></a>
                                     </div>
-                                  </div>
+                                </div>
                                 
                                 <div id="containerPrav" class="container-md shadow rounded bg-light offset-3 p-4">
                                     <h1>Account</h1>
@@ -29,26 +29,27 @@
                                         <div class="form-group row">
                                           <label for="first name" id="yazminfname" class="col-sm-2 col-form-label">First Name</label>
                                           <div class="col-sm-3">
-                                            <input class="form-control" id="fname" type="text" placeholder=Mike readonly>
+                                            <input class="form-control" id="fname" type="text" name="fname" placeholder=Mike readonly>
                                             <p id="fnameInv" class="invalid"></p>
+                                            <input type="text" id="id" name ="id" value="Mike" hidden>
                                           </div>
                                           <label for="last name" id = "yazminlname" class="col-sm-2 col-form-label">Last Name</label>
                                           <div class="col-sm-3">
-                                              <input class="form-control" id="lname"type="text" placeholder=John readonly>
+                                              <input class="form-control" id="lname"type="text" name="lname" placeholder=John readonly>
                                               <p id="lnameInv" class="invalid"></p>
                                           </div>
                                         </div>
                                         <div class="form-group row">
                                             <label for="email" id="yazminemail" class="col-sm-2 col-form-label">Email</label>
                                             <div class = "col-sm-3">
-                                                <input class="form-control" id="email" type="text" placeholder=haha@test.com readonly>
+                                                <input class="form-control" id="email" type="text" name="email" placeholder=haha@test.com readonly>
                                                 <p id="emailInv" class="invalid"></p>
                                             </div>
                                         </div>
                                         <div class = "form-group row">
                                             <label for="postcode" id="yazminpostalcode" class="col-sm-2 col-form-label">Postal Code</label>
                                             <div class="col-sm-3">
-                                                <input class="form-control" id="postalcode" type="text" placeholder=L0S1J1 readonly>
+                                                <input class="form-control" id="postalcode" type="text" name="postalcode" placeholder=L0S1J1 readonly>
                                                 <p id="postcodeInv" class="invalid"></p>
                                             </div>
                                         </div>
@@ -59,8 +60,7 @@
                                             </div>
                                         </div>
                                         <div class="banner mb-3 mx-4"></br>
-                                        <h1>General Information</h1>
-                                        <form id = "pravForm">
+                                            <h1>General Information</h1>
                                             <div class="form-group row">
                                               <label for="date"  class="col-sm-2 col-form-label">Date Joined:</label>
                                               <div class="col-sm-3">
@@ -81,19 +81,15 @@
                                                     <input class="form-control" id="pointsYaz" type="text" placeholder="0" readonly = "pointsYazz">
                                                 </div>
                                             </div>
-                                            <div class = "form-group row">
-                                                
-                                            </div>
-                                        </form>
                                         </div>
                                         <div class = "text-center">
-                                            <button type = "button" id = "editbtn" onclick = "editUser()" class = "btn btn-success">Edit this user</button>
+                                            <button type = "button" id = "editbtn" onclick = "editUser('formEdit')" class = "btn btn-success" name="editBtn">Edit this user</button>
                                             <button type = "button" id = "userListBtn" onclick = "location.href='../PHP/userList.php'" class = "btn btn-success">Select another user</button>
                                         </div>
                                     </form>
                                     
-                                  </div>
-                                  <div id="footer">
+                                </div>
+                                <div id="footer">
                                     <a href="https://facebook.com" id="facebookIcon" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
                                     <a href="https://instagram.com" id="instagramIcon" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
                                     <a href="https://twitter.com" id="twitterIcon" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
