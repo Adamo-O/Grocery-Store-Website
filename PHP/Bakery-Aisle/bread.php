@@ -58,7 +58,7 @@ $data = json_decode($data,true);
           <br/><br/>
           <h4 class="collapse" id="collapseExample"></h4> 
           <div id="descContainerBread" class="container-sm success shadow bg-success offset-3 p-4" hidden>
-            <h6 style="color: white;">A mostly baked food product prepared with dough<br/> made of flour and water. A great addition to any meal!</h6>
+            <h6 style="color: white;"><? echo $data['products'][12]['description']?></h6>
             <style>
               table,
               th,

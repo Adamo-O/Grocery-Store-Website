@@ -55,7 +55,7 @@ $data = json_decode($data,true);
           <button  class="btn" id="desButtonCcc" onclick="showDescriptionCcc()">More Description</button>
           <br/>
           <div id="descContainerCcc" class="container-sm success shadow bg-success offset-3 p-4" hidden>
-            <h6 style="color: white;">Oven baked, sweet and crunchy bites with melted<br/> chocolate inside. A delightful way to start the day!</h6>
+            <h6 style="color: white;"><? echo $data['products'][14]['description']?></h6>
             <style>
               table,
               th,

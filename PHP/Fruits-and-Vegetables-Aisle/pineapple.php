@@ -37,7 +37,7 @@ $data = json_decode($data,true);
     <div class="col-50">
       <h3><?php echo $data['products'][0]['name']?></h3>
       <div class="img-container">
-       <?php  print('<img src="../../Images/Fruits-and-Vegetables-Aisle/' . $data['products'][0]['image'] . '" alt="' . $value->name . ' Image">');?>
+       <?php  print('<img src="../../Images/Fruits-and-Vegetables-Aisle/' . $data['products'][0]['image'] . '" alt="' .  $data['products'][0]['name'] . ' Image">');?>
       </div>
     </div>
     <div class="col-50">
@@ -52,9 +52,7 @@ $data = json_decode($data,true);
       <button class="general-btn des-btn" onclick="description()">More Description</button>
       <div class="description">
         <p class="description-details">
-          Take a break and taste the tropics.<br> Our fresh organic Hawaiian pineapples are full of
-          Bromelain which is one of the most unique nutritional components since it helps our body to easily digest
-          proteins. Recent research also indicates that it may have other beneficial health benefits.
+        <?php echo $data['products'][0]['description'];?>
         </p>
         <table class="nutrition-value">
           <tr>

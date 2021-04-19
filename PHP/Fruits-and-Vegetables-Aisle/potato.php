@@ -52,8 +52,7 @@ $data = json_decode($data,true);
       <button class="general-btn des-btn" onclick="description()">More Description</button>
       <div class="description">
         <p class="description-details">
-          Eat Healthy, be nutrition wealthy.<br> Our fresh and organic yellow potatoes have sweet golden flesh and thin,
-          pale brown skin. All our potatoes are locally grown, and are excellent for mashing, boiling and baking.
+        <?php echo $data['products'][4]['description']?>
         </p>
         <table class="nutrition-value">
           <tr>

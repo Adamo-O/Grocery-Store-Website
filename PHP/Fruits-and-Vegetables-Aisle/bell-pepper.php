@@ -52,8 +52,7 @@ $data = json_decode($data,true);
       <button class="general-btn des-btn" onclick="description()">More Description</button>
       <div class="description">
         <p class="description-details">
-          Eat Healthy, be nutrition wealthy.<br> Our fresh and organic green bell peppers are smooth and shiny.
-          Our green bell peppers are low in calories, and high in dietary fiber, magnesium, and vitamins C and K .
+        <?php echo $data['products'][3]['description']?>
         </p>
         <table class="nutrition-value">
           <tr>

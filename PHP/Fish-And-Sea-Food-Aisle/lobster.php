@@ -43,8 +43,8 @@ $data = json_decode($data,true);
       <button class="general-btn des-btn" onclick="description()">More Description</button>
       <div class="description">
         <p class="description-details">
-          Whole Cooked Lobster is perfect for those special occasions. Just defrost lobster overnight and boil for 1 minute. Sourced from and MSC certified sustainable fishery.
-        </p>
+        <?php echo $data['products'][19]['description']?>
+      </p>
         <table class="nutrition-value">
           <tr>
             <th colspan="2">Nutrition Facts</th>

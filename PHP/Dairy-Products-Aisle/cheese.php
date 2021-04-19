@@ -54,8 +54,7 @@ $data = json_decode($data,true);
         <table class="nutrition-value">
           <p>
            <p>
-            Say yes please to extra cheese at your next pizza night. Made with 100% Canadian milk, Cheese is a good source of calcium that’s high in protein, too.
-            This family-sized 400 g block is a great way to create ooey-gooey, extra cheesy, luscious layers of lasagna, and melty masterpieces of pizza pie perfection.
+           <?php echo $data['products'][31]['description']?>
           </p>
           </p>
           <tr>

@@ -2,15 +2,14 @@
 	
 	$id = $_GET['id'];
  
-	$data = file_get_contents('../DB/products.json');
-	$json = json_decode($data);
+	$data = json_decode(file_get_contents('../DB/products.json'), true);
 
 
+      unset($data['products'][$id]);
+	// unset($json[$id]);
  
-	unset($json[$id]);
- 
-	$json = json_encode($json, JSON_PRETTY_PRINT);
+	$json = json_encode($data, JSON_PRETTY_PRINT);
 	file_put_contents('../DB/products.json"', $json);
  
-	header('location: index.php');
+    header('Location: products/products.php');
 ?>

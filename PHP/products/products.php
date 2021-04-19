@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" href="../../P7_P8/CSS/products.css">
+  <link rel="stylesheet" href="../../CSS/products.css">
 
 
 
@@ -27,12 +27,12 @@
     <a href="../index.php" id="home"
       class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Home
 
-      <a href="products.html" id="Inventory"
+      <a href="products.php" id="Inventory"
         class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Inventory
 
-        <a href="../HTML/userList.html" id="accounts"
+        <a href="../userList.php" id="accounts"
           class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Accounts</a>
-        <a href="../p11-12/orders.html" id="orders"
+        <a href="../OrderHistory.php" id="orders"
           class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Orders</a>
         <a href="#" id="analytics"
           class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Analytics</a>
@@ -88,7 +88,7 @@
               <td><?php echo $value->name?></td>
               <td><?php echo $value->price?></td>
               <td><?php echo $value->stock?></td>
-              <td><?php print('<a href="../../P7_P8/edit_pages/'.$value->name.'.html" class="edit">edit</a>');?> </td>
+              <td><a href="../edit.php?id=<?php echo $value->id?>">edit </td>
               <td> <a href="../delete.php?id=<?php echo $value->id?>" class="product-delete-link"> <i class="material-icons">delete</i> </a></td>
               
             
@@ -123,7 +123,7 @@
     <input type="button" value="Delete selected products" class="btn"onclick=" deletebtn()">
      
   </div>
-  <script src="../../P7_P8/JS/products.js"></script>
+  <script src="../../JS/products.js"></script>
 
 
 

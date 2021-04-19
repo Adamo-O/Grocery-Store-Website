@@ -59,8 +59,7 @@ $data = json_decode($data,true);
       <button class="general-btn des-btn" onclick="moredescription()">More Description</button>
       <div id= "des" style="visibility: hidden;">
         <p>
-          Butter is made from 100% canadian quality milk and contains only two ingredients: cream and a touch of salt. Good for a keto diet or to enhance the taste of your food.
-           A must to make all kinds of outstanding recipes or simply to put on your corn on the cob!
+        <?php echo $data['products'][32]['description']?>
         </p>
         <table class="nutrition-value">
           <tr>

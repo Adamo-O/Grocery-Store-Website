@@ -34,7 +34,7 @@
       <link href='../../css-fas/all.css' rel='stylesheet'>
       <link rel='shortcut icon' href='../../Images/re.ico' type='image/x-icon'>
       <link rel='stylesheet' href='../../CSS/ProductDes.css'>
-      <title>Green Bell Pepper</title>
+      <title>$code1 $name $code1</title>
     </head>
     
     <body>
@@ -71,36 +71,9 @@
           <button class='general-btn des-btn' onclick='description()'>More Description</button>
           <div class='description'>
             <p class='description-details'>
-              Eat Healthy, be nutrition wealthy.<br> Our fresh and organic green bell peppers are smooth and shiny.
-              Our green bell peppers are low in calories, and high in dietary fiber, magnesium, and vitamins C and K .
+            <?php echo $code1 $des $code1 ?>
             </p>
-            <table class='nutrition-value'>
-              <tr>
-                <th colspan='2'>Nutrition Facts</th>
-              </tr>
-              <tr>
-                <th colspan='2'>Amounts are pers serving</th>
-              </tr>
-              <tr>
-                <th>Total fat</th>
-                <td>0%</td>
-              </tr>
-              <tr>
-                <th>Total Carbohydrate</th>
-                <td>2%</td>
-              </tr>
-              <tr>
-                <th colspan='2'>Vitamins & Minerals</th>
-              </tr>
-              <tr>
-                <td>Vitamin A 7%</td>
-                <td>Vitamin C 134%</td>
-              </tr>
-              <tr>
-                <td>Calcium 1%</td>
-                <td>Iron 2%</td>
-              </tr>
-            </table>
+            
           </div>
         </div>
       </div>

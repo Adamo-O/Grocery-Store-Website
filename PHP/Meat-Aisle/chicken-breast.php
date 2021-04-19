@@ -54,8 +54,7 @@ $data = json_decode($data,true);
           <button  class="btn desButton" onclick="showDescription()">More Description</button>
           <div id="description" class="hideDesc">
             <p id="description-text">
-              The chicken breast's white meat and health benefits make it the most valuable cut of chicken.<br/>
-              It can be cooked in a variety of ways, making it a versatile and healthy meat option.
+            <?php echo $data['products'][7]['description']?>
             </p>
             <div>
               <table id="nutrition">

@@ -52,8 +52,7 @@ $data = json_decode($data,true);
       <button class="general-btn des-btn" onclick="description()">More Description</button>
       <div class="description">
         <p class="description-details">
-          Eat Healthy, be nutrition wealthy.<br> Our fresh and organic red tomatoes are hand-selected for excellent
-          quality. Our tomatoes are perfect for salads, sandwiches, soups, pastas, and omelets, as well as many more dishes.
+        <?php echo $data['products'][5]['description']?>
         </p>
         <table class="nutrition-value">
           <tr>

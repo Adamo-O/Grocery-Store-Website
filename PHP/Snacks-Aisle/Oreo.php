@@ -55,7 +55,7 @@ $data = json_decode($data,true);
           <br/>
           <button  class="btn" style ="background-color:cyan" class="desButton" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">More Description</button>
           <br/>
-          <h4 class="collapse" id="collapseExample"><br/>The world's favourite cookie. Delicious and full of Wonder for over 100 years. This traditional cookie couldn't be any simpler - rich, creamy filling between two chocolate wafers.<br/></h4> 
+          <h4 class="collapse" id="collapseExample"><br/><?php echo $data['products'][26]['description']?><br/></h4> 
           <table class="collapse"  id="collapseExample" style="border: 1px solid">
             <tr><th>Nutrition</th></tr>
             <tr>

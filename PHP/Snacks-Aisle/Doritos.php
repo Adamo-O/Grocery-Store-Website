@@ -52,7 +52,7 @@ $data = json_decode($data,true);
           </div>
           <button  class="btn" class="desButton" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">More Description</button>
           <br/>
-          <h4 class="collapse" id="collapseExample">Bite into the cheesy goodness of Doritos® Nacho Cheese flavoured tortilla chips for a tastebud-shattering crunch. With Doritos® Nacho Cheese chips every crunchy bite is packed with a burst of bold, cheesy flavour. Turn any event into a bold snacking experience!</h4> 
+          <h4 class="collapse" id="collapseExample"><?php echo $data['products'][25]['description'];?></h4> 
           <table class="collapse"  id="collapseExample" style="border: 1px solid">
             <tr><th>Nutrition</th></tr>
             <tr>

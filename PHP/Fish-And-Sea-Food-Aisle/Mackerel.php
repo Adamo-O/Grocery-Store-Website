@@ -43,8 +43,8 @@ $data = json_decode($data,true);
       <button class="general-btn des-btn" onclick="description()">More Description</button>
       <div class="description">
         <p class="description-details">
-          Grace Jack Mackerel - Grace Jack Mackerel brings delicious authentic flavour to your table. A Caribbean favorite, canned mackerel is perfect as a convenient meal or snack.
-        </p>
+        <?php echo $data['products'][20]['description']?>
+      </p>
         <table class="nutrition-value">
           <tr>
             <th colspan="2">Nutrition Facts</th>

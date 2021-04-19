@@ -52,7 +52,7 @@ $data = json_decode($data,true);
           <br/>
           <button  class="btn" style ="background-color:cyan" class="desButton" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">More Description</button>
           <br/>
-          <h4 class="collapse" id="collapseExample"><br/>It’s the classic chocolate-lovers’ delight! KIT KAT 4-Finger Milk Chocolate Bar with the signature KIT KAT crisp wafer, enrobed in a smooth and delicious milk chocolate coating – made from NESTLÉ COCOA PLAN sustainably-sourced cocoa.<br/></h4> 
+          <h4 class="collapse" id="collapseExample"><br/><?php echo $data['products'][24]['description']?><br/></h4> 
           <table class="collapse"  id="collapseExample" style="border: 1px solid">
             <tr><th>Nutrition</th></tr>
             <tr>

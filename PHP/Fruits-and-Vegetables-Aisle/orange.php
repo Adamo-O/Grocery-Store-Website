@@ -52,9 +52,7 @@ $data = json_decode($data,true);
       <button class="general-btn des-btn" onclick="description()">More Description</button>
       <div class="description">
         <p class="description-details">
-          Take a break and taste the tropics.<br> Our fresh and organic organges are your perfect choice sweet and juicy
-          snack. This is an is ideal for juicing; its skin is thin and smooth, and its flesh is heavy with tangy juice.
-          Our oranges are also ideal for eating because they have thick, easy-to-peel skins.
+        <?php echo $data['products'][1]['description'];?>
         </p>
         <table class="nutrition-value">
           <tr>
