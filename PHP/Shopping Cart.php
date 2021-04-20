@@ -124,7 +124,7 @@
           "email"=>$_SESSION["user"]['email'],
           "orderNumber" => $orderNumber,
           "order" => $order,
-          "total" => $NetTotal
+          "total" => round($NetTotal,2)
         );
          array_push($data,$array);
          file_put_contents('../DB/orders.json', json_encode($data));
