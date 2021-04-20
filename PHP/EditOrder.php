@@ -20,6 +20,14 @@
             //session_unregister('orderNumber');
             $_SESSION['orderNumber'] = $_GET['orderNumber'];
         }
+        if (isset($_GET['logIn'])) {
+            //session_unregister("logIn");
+            $_SESSION["logIn"] = false;
+            //session_unset();
+            //session_destroy();
+            header('Location: index.php');
+            exit();
+        }
     ?>
 </head>
 
@@ -43,7 +51,7 @@
               class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Settings</a>
             <a href="" id="reports"
               class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Reports</a>
-            <a href="#" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
+            <a href="EditOrder.php?logIn=false" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
               id="login"> <b>Logout</b></a></li>
     
     
