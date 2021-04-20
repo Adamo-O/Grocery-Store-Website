@@ -1,4 +1,4 @@
-// Form the varaible that contains the prices of the products in the deals section
+/*// Form the varaible that contains the prices of the products in the deals section
 // will be changed when implementing the feature to change the prices from the server side.
 var pineapplePrice = 2.99;
 var salmonPrice = 21.99;
@@ -31,4 +31,4 @@ const checkItemPrice = () => {
 	} else if (documentTitle === "Bread") {
 		price.textContent = `For only $${breadPrice} per oz`
 	}
-}
+}*/

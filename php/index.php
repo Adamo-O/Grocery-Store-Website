@@ -46,7 +46,7 @@ session_start();
           <img src="../Images/' . $value->aisle . '/' . $value->name . '.png" alt="' . $value->name . ' image">
           <p>Check our organic fresh<br>' . $value->name . '<br>
           <span class="offer-price">from only $' . $offerPrice . ' per pound</span><br>
-          <a href="../HTML/' . $value->aisle . '/' . $value->name . '.html" class="check">Check it here</a>
+          <a href="' . $value->aisle . '/' . $value->name . '.php" class="check">Check it here</a>
           </p>
           </div>
           </div>
