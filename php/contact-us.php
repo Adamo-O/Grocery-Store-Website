@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,8 +13,8 @@
 
 <body>
     <?php
-	require('navbar.php');
-	?>
+	  require('navbar.php');
+	  ?>
     <div class="contact-us">
         <div class="col-50">
             <h3>Contact Us</h3>
