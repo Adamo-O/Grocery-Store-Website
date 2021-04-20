@@ -112,7 +112,11 @@ Due April 20th.
 ### Adamo Orsini (40174716) P5-6, 11-12
 P5-6:
 - [login.php](PHP/login.php)
+    - Admin login:
+        - Email: admin@admin.com
+        - Password: admin
 - [signup.php](PHP/signup.php)
+
 Database used:
 - [users.json](DB/users.json)
 
@@ -120,5 +124,6 @@ P11-12:
 Order editing, deleting, product quanitity changing and deleting within order
 - [EditOrder.php](PHP/EditOrder.php)
 - [OrderHistory.php](PHP/OrderHistory.php)
+
 Database used:
 - [orders.json](DB/orders.json)

@@ -68,7 +68,7 @@
                             <th>Action</th>
                         </tr>
                         <?php
-                            // Save quantity changes
+                            // Save quantity changes into database
                             $ordersTemp = json_decode(file_get_contents("../DB/orders.json"), true);
                             $orderIndex = 0;
                             foreach ($ordersTemp['orders'] as $orderTemp => $orderInfoTemp) {
@@ -124,6 +124,8 @@
     
     </div>
     <?php
+    // @param $productName Name of the product
+    // @return relative file path to product's image file
     function findAisle($productName) {
         $ps = json_decode(file_get_contents("../DB/products.json"), true);
         foreach ($ps['products'] as $p => $pInfo) {
