@@ -81,7 +81,7 @@
                                         $productIndex++;
                                     }
                                     if (isset($_GET[$productInfoTemp['name']])) {
-                                        sendEmail($_SESSION['user']['email'], "Your order with order number " . $_SESSION['orderNumber'] . " has been edited.", "Please visit us to confirm. ");
+                                        sendEmail($orderInfoTemp['email'], "Your order with order number " . $_SESSION['orderNumber'] . " has been edited.", "Dear customer,<br /><br />Your order has been edited.<br />Please reply to this email to confirm.<br /><br />Regards,<br />La Meillure Epicerie");
                                     }
                                     break;
                                 }
