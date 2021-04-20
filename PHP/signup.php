@@ -125,6 +125,10 @@ if (isset($_POST['email'])) {
         echo "<script type='text/javascript'>alert('New account created with the email " . $userInfo['email'] .". Welcome " . $firstName . "!');</script>";
         $users['users'][] = $_POST;
         file_put_contents('../DB/users.json', json_encode($users));
+        $_SESSION["user"] = $_POST;
+        $_SESSION["logIn"] = true;
+        header("Location: index.php");
+        exit();
     }
 }
 ?>

@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,10 +24,7 @@
             $_SESSION['orderNumber'] = $_GET['orderNumber'];
         }
         if (isset($_GET['logIn'])) {
-            //session_unregister("logIn");
             $_SESSION["logIn"] = false;
-            //session_unset();
-            //session_destroy();
             header('Location: index.php');
             exit();
         }

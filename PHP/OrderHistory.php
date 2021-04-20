@@ -1,6 +1,15 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
-
+<?php
+if (isset($_GET['logIn'])) {
+  $_SESSION["logIn"] = false;
+  header('Location: index.php');
+  exit();
+}
+?>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +41,7 @@
           class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Settings</a>
         <a href="" id="reports"
           class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Reports</a>
-        <a href="#" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
+        <a href="OrderHistory.php?logIn=false" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
           id="login"> <b>Logout</b></a></li>
 
   </div>
