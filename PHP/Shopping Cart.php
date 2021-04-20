@@ -112,7 +112,7 @@
     <?php require('footer.php'); ?>
     <?php
     if(isset($_POST["order"])&&$_SESSION['myArray']!=null){
-        $orderNumber = "12345#AC";
+        $orderNumber = "#" +rand(12300,12400)+ (chr(rand(65,69))) + (chr(rand(65,69)));
         $data = json_decode(file_get_contents("../DB/orders.json"), true);
         $order=array();
         for($i=0;$i<sizeof($_SESSION['myArray']);$i++){
@@ -121,7 +121,7 @@
           "quantity" =>$_SESSION['myArray'][$i][1]));
         }
         $array = array(
-          "email"=>$_SESSION[$userInfo['email']],
+          "email"=>$_SESSION["user"]['email'],
           "orderNumber" => $orderNumber,
           "order" => $order,
           "total" => $NetTotal
