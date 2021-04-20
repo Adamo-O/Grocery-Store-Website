@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<?php require('../navbar.php'); ?>
+<?php require('../navbarAisle.php'); ?>
   <section class="banner">
     <img src="../../Images/Snacks-Aisle/snacks.jpeg" alt="Banner Image">
     <h2>Snacks</h2>
