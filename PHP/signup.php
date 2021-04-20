@@ -79,7 +79,7 @@
                     </div>
                 </div>
                 <div class="pb-2">
-                    <p class="text-center"><a href="Login.html" class="link">Already have an account? Click here to login.</a></p>
+                    <p class="text-center"><a href="login.php" class="link">Already have an account? Click here to login.</a></p>
                 </div>
                 <div class="row mb-3 justify-content-center">
                     <button class="btn btn-secondary col-7 col-lg-6 col-xxl-4" type="reset">Reset</button>
@@ -106,8 +106,6 @@ if (isset($_POST['email'])) {
     $postCode = $_POST['postalCode'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-
-    echo "User info: Name: $firstName $lastName, Postal Code: $postCode, Email: $email, Password: $password.";
 
     // Check if user already exists in user database
     $users = json_decode(file_get_contents("../DB/users.json"), true);

@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <div>
-                    <p class="text-center"><a href="Sign Up.html" class="link">Don't have an account? Click here to create one!</a></p>
+                    <p class="text-center"><a href="signup.php" class="link">Don't have an account? Click here to create one!</a></p>
                 </div>
                 <div class="row mb-3 justify-content-center">
                     <button class="btn btn-secondary col-7 col-lg-6 col-xxl-4" style="border: none;" type="button" onclick="location.href='ForgotPassword.html'">Forgot Password</button>
