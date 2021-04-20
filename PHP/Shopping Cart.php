@@ -21,7 +21,7 @@
 
     <br/>
 
-    <a href="../HTML/index.html" class="previous">&laquo; Continue Shopping</a>
+    <a href="index.php" class="previous">&laquo; Continue Shopping</a>
     <form method ="post">
       <button type ="submit" name ="order" value="submitted" class="previous" >Order Now >></button>
     </form>
@@ -114,6 +114,7 @@
     if(isset($_POST["order"])&&$_SESSION['myArray']!=null){
         $orderNumber = "#" +rand(12300,12400)+ (chr(rand(65,69))) + (chr(rand(65,69)));
         $data = json_decode(file_get_contents("../DB/orders.json"), true);
+        $data1 = $data[0];
         $order=array();
         for($i=0;$i<sizeof($_SESSION['myArray']);$i++){
           array_push($order,
@@ -126,10 +127,12 @@
           "order" => $order,
           "total" => round($NetTotal,2)
         );
-         array_push($data,$array);
-         file_put_contents('../DB/orders.json', json_encode($data));
-         $_SESSION['myArray'] = null;
-         header('Location:http://localhost/SOEN-287/PHP/index.php',true);exit();
+        $info = array($array);
+        array_push($data1,$info);
+        $data[0] = $data1;
+        file_put_contents('../DB/orders.json', json_encode($data));
+        $_SESSION['myArray'] = null;
+        header('Location:http://localhost/SOEN-287/PHP/index.php',true);exit();
     }
     ?>
 </body>
