@@ -123,7 +123,7 @@
         <a href="https://twitter.com" id="twitterIcon" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
         <h6 id="headFooter">
             Thanks for shopping at La Meilleure Épicerie. <br>
-            To contact us, please click <a href="contact-us.html" class="contact-page">here</a>.
+            To contact us, please click <a href="contact-us.php" class="contact-page">here</a>.
         </h6>
     </div>
       <script src="../JS/users.js"></script>

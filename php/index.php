@@ -1,5 +1,8 @@
 <?php
 session_start();
+if (isset($_GET['logIn'])) {
+  $_SESSION["logIn"] = false;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

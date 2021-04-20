@@ -14,6 +14,6 @@
     <?php
     }
     ?>
-    <li><a href="../../HTML/ShoppingCart.html" id="right">Shopping Cart</a></li>
+    <li><a href="../../PHP/Shopping Cart.php" id="right">Shopping Cart</a></li>
   </ul>
 </section>

@@ -19,6 +19,7 @@ if (isset($_POST["name"])) {
             }
         }
     }
-    header('Location:http://localhost/SOEN-287/PHP/Shopping Cart.php',true);exit();
+    header('Location: Shopping Cart.php');
+    exit();
 }
 ?>
