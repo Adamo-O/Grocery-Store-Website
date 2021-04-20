@@ -112,9 +112,8 @@
     <?php require('footer.php'); ?>
     <?php
     if(isset($_POST["order"])&&$_SESSION['myArray']!=null){
-        $orderNumber = "#" +rand(12300,12400)+ (chr(rand(65,69))) + (chr(rand(65,69)));
+        $orderNumber = "#".(string)(rand(12300,12400)).(string)(chr(rand(65,69))).(string)(chr(rand(65,69)));
         $data = json_decode(file_get_contents("../DB/orders.json"), true);
-        $data1 = $data[0];
         $order=array();
         for($i=0;$i<sizeof($_SESSION['myArray']);$i++){
           array_push($order,
@@ -122,14 +121,12 @@
           "quantity" =>$_SESSION['myArray'][$i][1]));
         }
         $array = array(
-          "email"=>$_SESSION["user"]['email'],
           "orderNumber" => $orderNumber,
+          "email"=>$_SESSION["user"]['email'],
           "order" => $order,
           "total" => round($NetTotal,2)
         );
-        $info = array($array);
-        array_push($data1,$info);
-        $data[0] = $data1;
+        array_push($data['orders'],$array);
         file_put_contents('../DB/orders.json', json_encode($data));
         $_SESSION['myArray'] = null;
         header('Location:http://localhost/SOEN-287/PHP/index.php',true);exit();
