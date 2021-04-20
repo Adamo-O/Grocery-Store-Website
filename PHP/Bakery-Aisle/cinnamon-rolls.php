@@ -20,7 +20,7 @@ $data = file_get_contents("../..//DB/products.json");
 $data = json_decode($data,true);
 
 ?>
- <?php require('../navbar.php'); ?>
+ <?php require('../navbarAisle.php'); ?>
     <div class="container h-100 d-flex flex-column">
       <div class="row h-75 mb-4">
         <div class="col-md-6 col-lg-6 grey" style="margin-top:30px">

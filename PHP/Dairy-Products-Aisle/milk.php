@@ -20,7 +20,7 @@ $data = file_get_contents("../..//DB/products.json");
 $data = json_decode($data,true);
 
 ?>
-  <?php require('../navbar.php'); ?>
+  <?php require('../navbarAisle.php'); ?>
   <div class="content-container">
     <div class="col-50">
       <h3><?php echo $data['products'][30]['name']?></h3>
