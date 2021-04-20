@@ -46,7 +46,7 @@ $data = json_decode($data,true);
           <br/>
         </div>
     </div>
-    <?php require('../footer.php'); ?>
+    <?php require('../footerAisle.php'); ?>
   <script src ="../../JS/p3.js"></script>
   <script src="../.../JS/products.js"></script>
 </body>

@@ -123,7 +123,7 @@
     <input type="button" value="Delete selected products" class="btn"onclick=" deletebtn()">
      
   </div>
-  <script src="../../JS/products.js"></script>
+  <script src="../../JS/p7_8products.js"></script>
 
 
 

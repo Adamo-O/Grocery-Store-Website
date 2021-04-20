@@ -80,7 +80,7 @@ $data = json_decode($data,true);
           </div>
         </div>
     </div>
-    <?php require('../footer.php'); ?>
+    <?php require('../footerAisle.php'); ?>
   <script src="../../JS/prices.js"></script>
   <script src="../../JS/meat.js"></script>
   <script src="../../JS/p3.js"></script>

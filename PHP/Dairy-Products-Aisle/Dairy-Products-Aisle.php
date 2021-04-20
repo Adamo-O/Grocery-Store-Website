@@ -41,7 +41,7 @@
     }
     ?>
   </section>
-  <?php require('../footer.php'); ?>
+  <?php require('../footerAisle.php'); ?>
 </body>
 
 </html>

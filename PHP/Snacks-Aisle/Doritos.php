@@ -84,7 +84,7 @@ $data = json_decode($data,true);
           <button class="btn" class ="cartButton" onclick ="getData()">Add To Cart🛒</button>
         </div>
     </div>
-    <?php require('../footer.php'); ?>
+    <?php require('../footerAisle.php'); ?>
   <script src="../../JS/p3.js"></script>
   <script src ="../../JS/products.js"></script>
 </body>

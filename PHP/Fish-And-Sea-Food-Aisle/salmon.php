@@ -44,7 +44,7 @@ $data = json_decode($data,true);
           <button class="general-btn" type ="submit" class="btn" class ="general-btn" onclick ="alert('Succesfully added to cart')" value ="Add To Cart🛒">Add To Cart</button>
         </form>
     </div>
-    <?php require('../footer.php'); ?>
+    <?php require('../footerAisle.php'); ?>
 
   <script src="../../JS/prices.js"></script>
   <script src="../../JS/p3.js"></script>
