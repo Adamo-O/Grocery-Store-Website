@@ -33,7 +33,7 @@ $data = json_decode($data,true);
         </div> 
         <div class="col-md-6 col-sm-12 col-lg-6 grey" style="margin-top:30px">
           <h3 id="price" class ="price">For only $<?php echo $data['products'][13]['price'];?> each</h3>
-          <form method ="POST" action = "http://localhost/SOEN-287/PHP/Shopping Cart.php">
+          <form method ="POST" action = "../Order.php">
 
             <input type ="hidden" name ="name" value ="<?php echo $data['products'][13]['name']?>" class ="name">
             <input type ="hidden" value = "<?php echo $data['products'][13]['price'];?>" name ="price"> </h3>
