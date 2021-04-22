@@ -14,10 +14,10 @@
         <div class="sidebar">
             <header>La Meilleure Épicerie</header>
             <div class="list-group">
-                <a href="index.html" id="home" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Home</a>
-                <a href="../P7_P8/products.html" id="Inventory" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Inventory</a>
-                <a href="userList.html" id="accounts" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Accounts</a>
-                <a href="../p11-12/orders.html" id="orders" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Orders</a> 
+                <a href="../PHP/index.php" id="home" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Home</a>
+                <a href="../PHP/products/products.php" id="Inventory" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Inventory</a>
+                <a href="../PHP/userList.php" id="accounts" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Accounts</a>
+                <a href="../HTML/orders.html" id="orders" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Orders</a> 
                 <a href="#" id="analytics" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Analytics</a>
                 <a href="#" id="settings" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Settings</a>
                 <a href="" id="reports" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Reports</a>
@@ -52,10 +52,10 @@
                                 <div class="sidebar">
                                     <header>La Meilleure Épicerie</header>
                                     <div class="list-group">
-                                        <a href="../HTML/index.html" id="home" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Home</a>
-                                        <a href="../HTML/P7_P8/products.html" id="Inventory" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Inventory</a>
+                                        <a href="../PHP/index.php" id="home" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Home</a>
+                                        <a href="../PHP/products/products.php" id="Inventory" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Inventory</a>
                                         <a href="../PHP/userList.php" id="accounts" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Accounts</a>
-                                        <a href="../HTML/p11-12/orders.html" id="orders" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Orders</a> 
+                                        <a href="../HTML/orders.html" id="orders" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Orders</a> 
                                         <a href="#" id="analytics" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Analytics</a>
                                         <a href="#" id="settings" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Settings</a>
                                         <a href="" id="reports" class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">Reports</a>
