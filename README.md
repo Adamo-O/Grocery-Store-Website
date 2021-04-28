@@ -1,138 +1,79 @@
-# Online Grocery Store Website
-Group assignment from SOEN 287 class where we make a website using HTML, CSS, JavaScript, and PHP.
+# Grocery Store Website (La Meilleure Épicerie)
+Semester-long group assignment for SOEN 287 (Web Programming) at Concordia University.
 
-# SOEN 287 Assignment 1
-Web Programming Assignment 1.
-Due February 22nd.
-## Contributions
-### Ghaith Chrit (40114180) p1-2
-HTML:
-- index.html 
-- bakery.html 
-- fish-and-sea-food.html 
-- fruits-and-vegetables.html 
-- meat.html
+Learned and used HTML, CSS with Bootstrap, JavaScript, and PHP.
 
-CSS:
-- style.css 
-- all.css (fas icons)
-### Abhay Panchoo (40174642) P3-4
-HTML: 
--GreenBellPaper.html
--Lobster.html
--Mackerel.html
--Oranges.html
--Pears.html
--Pineapple.html
--Potatoes.html
--Rib Eye Steak.html
--Salmon.html
--Sausages.html and other product pages
--Shopping Cart (P4)
+Designed and developed a grocery store website with the following criteria:
+- Users to browse products organized by aisles
+- Users can add different products to their cart
+- Users can create an account and log in to make their purchase
+- Customer, product, and order data must be held in a database
+- Admin must be able to edit customer, product, and order data in the back store
 
-CSS:
--P3.css
--P4.css
+## Front End
+### Home and Product Pages
+![Home and Product Pages](https://media.giphy.com/media/akiOFn7d4ksP3th3wT/giphy-downsized.gif)
 
-### Adamo Orsini (40174716) P5-6
-HTML:
-- [Login.html](HTML/Login.html)
-- [Sign Up.html](HTML/Sign%20Up.html)
+Users can browse aisles, view descriptions of products, and add products to their cart.
 
-CSS:
-- [Page5and6.css](CSS/Page5and6.css)
+Work involved:
+- HTML, CSS for static design
+- JavaScript for description buttons
+- PHP for reading which products are in offers section
 
-### Kunal H. Shah (40153500) P7_P8
-HTML:
-- products.html 
-- addproducts.html 
-- productname_edit.html
+Main contributor: Ghaith Crit
+### Shopping Cart
+![Shopping Cart](https://media.giphy.com/media/qg4AuuCG2HcpagwfFg/giphy.gif)
 
-CSS: 
-- product.css 
-- addproducts.css
+Users can view their cart before they place their order.
 
-### Mehdi Samy Refik (40175150) p9-10 
-html: 
-- userList.html 
-- EditUser.html 
-- users html files (Alexandre.html, Antonius.html...)
+Work involved:
+- HTML, CSS for static design
+- PHP for cart management
 
-css: 
-- p910styles.css
+Main contributor: Abhay Panchoo
+### Sign Up
+![Sign Up](https://media.giphy.com/media/i1tj1PGgAjNj3pcwDB/giphy.gif)
 
-### Tian Gao(40110068) p11-12:
-HTML: 
-- orders.html 
-- order1.html 
-- order2.html 
-- order3.html
+Users can create an account to purchase products.
 
-css: 
-- edit.css 
-- orderstyle.css
-        
-# SOEN 287 Assignment 2
-Web Programming Assignment 2.
-Due March 16th.
-## Contributions
-### Ghaith Chrit (40114180) P1-2
-JS: 
-- prices.js
-- index.js
-### Abhay Panchoo (40174642) P3-4
-JS:
-- P3.js
-### Adamo Orsini (40174716) P5-6
-"More description" Buttons in [meat aisle](HTML/Meat-Aisle)
-HTML:
-- [ForgotPassword.html](HTML/ForgotPassword.html)
-CSS:
-- [meatDesc.css](CSS/meatDesc.css)
-JS:
-- [P5_6.js](JS/P5_6.js)
-- [meat.js](JS/meat.js)
-### Mehdi Samy Refik (40175150) P9-10
-"More description" buttons in bakery aisle
-JS:
-- users.js
-- bakery.js
- ### Kunal Shah (40153500) P7-8
-"More description" buttons in Dairy Products aisle
-JS:
-- milkproducts.js
-- addproducts.js
-- edit.js
-- products.js
+Work involved:
+- HTML, CSS, Bootstrap for static design
+- JavaScript for form validation
+- PHP for user session management, writing to user database
 
-# SOEN 287 Assignment 3
-Web Programming Assignment 3.
-Due April 20th.
-## Contributions
-### Adamo Orsini (40174716) P5-6, 11-12
-P5-6:
-- [login.php](PHP/login.php)
-    - Admin login:
-        - Email: admin@admin.com
-        - Password: admin
-- [signup.php](PHP/signup.php)
+Main contributor: Adamo Orsini
+### Log In
+![Log In](https://media.giphy.com/media/JFgtrRPyjdPDAhYMAU/giphy.gif)
 
-Database used:
-- [users.json](DB/users.json)
+Work involved:
+- HTML, CSS, Bootstrap for static design
+- JavaScript for form validation
+- PHP for user session management, reading user database
 
-P11-12:
+Main contributor: Adamo Orsini
+## Back End
+### Edit User
+![Edit User](https://media.giphy.com/media/VpQopqjZyLyrIfNZ9n/giphy.gif)
 
-Order editing, deleting, product quanitity changing and deleting within order
-- [EditOrder.php](PHP/EditOrder.php)
-- [OrderHistory.php](PHP/OrderHistory.php)
+Work involved:
+- HTML, CSS, Bootstrap for static design
+- PHP for reading and writing from user database
 
-Database used:
-- [orders.json](DB/orders.json)
-### Mehdi Samy Refik (40175150) P9-10
-P9-10:
-- [userList.php](PHP/userList.php)
-- [editUser.php](PHP/editUser.php)
-- [deleteUser.php](PHP/deleteUser.php)
+Main contributor: Mehdi Samy Refik
+### Edit Product
+![Edit Product](https://media.giphy.com/media/O547jLZxPceG4uiP3Z/giphy.gif)
 
-Database used:
--[users.json](DB/users.json)
+Work involved:
+- HTML, CSS for static design
+- PHP for reading and writing from product database
+
+Main contributor: Kunal Shah
+### Edit Order
+![Edit Order](https://media.giphy.com/media/yIPxSfifpdB1ZH3XjI/giphy.gif)
+
+Work involved:
+- HTML, CSS for static design
+- PHP for reading and writing from order database
+
+Main contributor: Adamo Orsini
