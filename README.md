@@ -10,8 +10,8 @@ Designed and developed a grocery store website with the following criteria:
 - Customer, product, and order data must be held in a database
 - Admin must be able to edit customer, product, and order data in the back store
 
-## Front End
-### Home and Product Pages
+# Front End
+## Home and Product Pages
 ![Home and Product Pages](https://media.giphy.com/media/akiOFn7d4ksP3th3wT/giphy-downsized.gif)
 
 Users can browse aisles, view descriptions of products, and add products to their cart.
@@ -22,7 +22,7 @@ Work involved:
 - PHP for reading which products are in offers section
 
 Main contributor: Ghaith Crit
-### Shopping Cart
+## Shopping Cart
 ![Shopping Cart](https://media.giphy.com/media/qg4AuuCG2HcpagwfFg/giphy.gif)
 
 Users can view their cart before they place their order.
@@ -32,7 +32,7 @@ Work involved:
 - PHP for cart management
 
 Main contributor: Abhay Panchoo
-### Sign Up
+## Sign Up
 ![Sign Up](https://media.giphy.com/media/i1tj1PGgAjNj3pcwDB/giphy.gif)
 
 Users can create an account to purchase products.
@@ -43,7 +43,7 @@ Work involved:
 - PHP for user session management, writing to user database
 
 Main contributor: Adamo Orsini
-### Log In
+## Log In
 ![Log In](https://media.giphy.com/media/JFgtrRPyjdPDAhYMAU/giphy.gif)
 
 Work involved:
@@ -52,8 +52,8 @@ Work involved:
 - PHP for user session management, reading user database
 
 Main contributor: Adamo Orsini
-## Back End
-### Edit User
+# Back End
+## Edit User
 ![Edit User](https://media.giphy.com/media/VpQopqjZyLyrIfNZ9n/giphy.gif)
 
 Work involved:
@@ -61,7 +61,7 @@ Work involved:
 - PHP for reading and writing from user database
 
 Main contributor: Mehdi Samy Refik
-### Edit Product
+## Edit Product
 ![Edit Product](https://media.giphy.com/media/O547jLZxPceG4uiP3Z/giphy.gif)
 
 Work involved:
@@ -69,7 +69,7 @@ Work involved:
 - PHP for reading and writing from product database
 
 Main contributor: Kunal Shah
-### Edit Order
+## Edit Order
 ![Edit Order](https://media.giphy.com/media/yIPxSfifpdB1ZH3XjI/giphy.gif)
 
 Work involved:
